@@ -1,0 +1,2336 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 6
+  lastUpdatedAtString: 2020-01-22T15:47:25.698-06:00
+  initializedAtString: 2020-01-22T15:47:25.698-06:00
+  entries:
+  - path: ML-Breakout\Assets\Breakout level 01.unity
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Breakout
+      level 01.unity
+    projectPath: Assets\Breakout level 01.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Breakout level 01.unity.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Breakout
+      level 01.unity.meta
+    projectPath: Assets\Breakout level 01.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Materials.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Materials.meta
+    projectPath: Assets\Materials.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Materials\Brick_mat.mat
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Materials\Brick_mat.mat
+    projectPath: Assets\Materials\Brick_mat.mat
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Materials\Brick_mat.mat.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Materials\Brick_mat.mat.meta
+    projectPath: Assets\Materials\Brick_mat.mat.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins.meta
+    projectPath: Assets\Plugins.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub.meta
+    projectPath: Assets\Plugins\GitHub.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor.meta
+    projectPath: Assets\Plugins\GitHub\Editor.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+    projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\big-logo@2x.png
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\big-logo@2x.png
+    projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+    projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\credits.txt
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\credits.txt
+    projectPath: Assets\Plugins\GitHub\Editor\credits.txt
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\credits.txt.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\credits.txt.meta
+    projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\eula.txt
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\eula.txt
+    projectPath: Assets\Plugins\GitHub\Editor\eula.txt
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\eula.txt.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\eula.txt.meta
+    projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+    projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+    projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\libsfw.bundle
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\libsfw.bundle
+    projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+    projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\libsfw.so
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\libsfw.so
+    projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+    projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+    projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+    projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+    projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+    projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\sfw.net.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\sfw.net.dll
+    projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\System.Threading.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\System.Threading.dll
+    projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+    projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+    projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\x64.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\x64.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x64.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+    projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+    projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\x86.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\x86.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x86.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+    projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+    projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Prefabs.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Prefabs.meta
+    projectPath: Assets\Prefabs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Prefabs\Brick.prefab
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Prefabs\Brick.prefab
+    projectPath: Assets\Prefabs\Brick.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Prefabs\Brick.prefab.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Prefabs\Brick.prefab.meta
+    projectPath: Assets\Prefabs\Brick.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Scripts.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Scripts.meta
+    projectPath: Assets\Scripts.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Scripts\Brick.cs
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Scripts\Brick.cs
+    projectPath: Assets\Scripts\Brick.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Assets\Scripts\Brick.cs.meta
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Scripts\Brick.cs.meta
+    projectPath: Assets\Scripts\Brick.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\csharp_timers.json
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\csharp_timers.json
+    projectPath: csharp_timers.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\assetDatabase3
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\assetDatabase3
+    projectPath: Library\assetDatabase3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\CurrentLayout.dwlt
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\EditorInstance.json
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\EditorInstance.json
+    projectPath: Library\EditorInstance.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\EditorUserBuildSettings.asset
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\EditorUserBuildSettings.asset
+    projectPath: Library\EditorUserBuildSettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\expandedItems
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\expandedItems
+    projectPath: Library\expandedItems
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\gfu\cache\gituser.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\gituser.yaml
+    projectPath: Library\gfu\cache\gituser.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\metadata\5c\5c6eb88c7d476ea4395e1d0cc900aa7a
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\metadata\5c\5c6eb88c7d476ea4395e1d0cc900aa7a
+    projectPath: Library\metadata\5c\5c6eb88c7d476ea4395e1d0cc900aa7a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\metadata\5c\5c6eb88c7d476ea4395e1d0cc900aa7a.info
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\metadata\5c\5c6eb88c7d476ea4395e1d0cc900aa7a.info
+    projectPath: Library\metadata\5c\5c6eb88c7d476ea4395e1d0cc900aa7a.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\metadata\a9\a97449194bf81964e82bdaa852f9c9b5
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\metadata\a9\a97449194bf81964e82bdaa852f9c9b5
+    projectPath: Library\metadata\a9\a97449194bf81964e82bdaa852f9c9b5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\metadata\ad\ad8a21a00f37a4d42b6269afbd0cfca6
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\metadata\ad\ad8a21a00f37a4d42b6269afbd0cfca6
+    projectPath: Library\metadata\ad\ad8a21a00f37a4d42b6269afbd0cfca6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\metadata\ad\ad8a21a00f37a4d42b6269afbd0cfca6.info
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\metadata\ad\ad8a21a00f37a4d42b6269afbd0cfca6.info
+    projectPath: Library\metadata\ad\ad8a21a00f37a4d42b6269afbd0cfca6.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ScriptAssemblies\Barracuda.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Barracuda.dll
+    projectPath: Library\ScriptAssemblies\Barracuda.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Barracuda-editor.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Barracuda-editor.dll
+    projectPath: Library\ScriptAssemblies\Barracuda-editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\BurstBLAS.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\BurstBLAS.dll
+    projectPath: Library\ScriptAssemblies\BurstBLAS.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\iOSBLAS.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\iOSBLAS.dll
+    projectPath: Library\ScriptAssemblies\iOSBLAS.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\MacBLAS.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\MacBLAS.dll
+    projectPath: Library\ScriptAssemblies\MacBLAS.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Unity.Burst.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Unity.Burst.dll
+    projectPath: Library\ScriptAssemblies\Unity.Burst.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Unity.Burst.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.Burst.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Unity.Mathematics.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Unity.Mathematics.dll
+    projectPath: Library\ScriptAssemblies\Unity.Mathematics.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ShaderCache\0\003633a8d4d67b410d361463aef1402b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\003633a8d4d67b410d361463aef1402b.bin
+    projectPath: Library\ShaderCache\0\003633a8d4d67b410d361463aef1402b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\0094b2dfa0accfeccf47cdf041e3a96b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\0094b2dfa0accfeccf47cdf041e3a96b.bin
+    projectPath: Library\ShaderCache\0\0094b2dfa0accfeccf47cdf041e3a96b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\01153119a8acdf55e421a56045f665c2.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\01153119a8acdf55e421a56045f665c2.bin
+    projectPath: Library\ShaderCache\0\01153119a8acdf55e421a56045f665c2.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\016ae00b716fa66020a124a801bdafee.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\016ae00b716fa66020a124a801bdafee.bin
+    projectPath: Library\ShaderCache\0\016ae00b716fa66020a124a801bdafee.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\02a3c618041122003d619115aa308d1b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\02a3c618041122003d619115aa308d1b.bin
+    projectPath: Library\ShaderCache\0\02a3c618041122003d619115aa308d1b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\034b3d00313aecc1fea98b50b91e1ef1.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\034b3d00313aecc1fea98b50b91e1ef1.bin
+    projectPath: Library\ShaderCache\0\034b3d00313aecc1fea98b50b91e1ef1.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\03f9326d20c27c7968023bea6afcc705.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\03f9326d20c27c7968023bea6afcc705.bin
+    projectPath: Library\ShaderCache\0\03f9326d20c27c7968023bea6afcc705.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\043525b6d6238d6f64a0435f69863f78.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\043525b6d6238d6f64a0435f69863f78.bin
+    projectPath: Library\ShaderCache\0\043525b6d6238d6f64a0435f69863f78.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\05482228678baf5187ffcabad3602078.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\05482228678baf5187ffcabad3602078.bin
+    projectPath: Library\ShaderCache\0\05482228678baf5187ffcabad3602078.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\085d2ef7f3365e2138710f055c7ca4af.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\085d2ef7f3365e2138710f055c7ca4af.bin
+    projectPath: Library\ShaderCache\0\085d2ef7f3365e2138710f055c7ca4af.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\086771e78b82f1fef25bec816b235ed2.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\086771e78b82f1fef25bec816b235ed2.bin
+    projectPath: Library\ShaderCache\0\086771e78b82f1fef25bec816b235ed2.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\09c8aed8107659361e61a9efb0f04b6a.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\09c8aed8107659361e61a9efb0f04b6a.bin
+    projectPath: Library\ShaderCache\0\09c8aed8107659361e61a9efb0f04b6a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\0d4c91b50fa9197cdb578b28d31c326f.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\0d4c91b50fa9197cdb578b28d31c326f.bin
+    projectPath: Library\ShaderCache\0\0d4c91b50fa9197cdb578b28d31c326f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\0d6d52e6719af80d6a8286fefa87ef48.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\0d6d52e6719af80d6a8286fefa87ef48.bin
+    projectPath: Library\ShaderCache\0\0d6d52e6719af80d6a8286fefa87ef48.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\0db95d68a537d82c4fd2d2920640bfee.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\0db95d68a537d82c4fd2d2920640bfee.bin
+    projectPath: Library\ShaderCache\0\0db95d68a537d82c4fd2d2920640bfee.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\0e997e4b21fcd85bee76a76f1ba94763.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\0e997e4b21fcd85bee76a76f1ba94763.bin
+    projectPath: Library\ShaderCache\0\0e997e4b21fcd85bee76a76f1ba94763.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\0ebf27762bbd7632c309d09d8795fbb9.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\0ebf27762bbd7632c309d09d8795fbb9.bin
+    projectPath: Library\ShaderCache\0\0ebf27762bbd7632c309d09d8795fbb9.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\0fb182d62b8db3bbc2e4ef2cc3114b1c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\0fb182d62b8db3bbc2e4ef2cc3114b1c.bin
+    projectPath: Library\ShaderCache\0\0fb182d62b8db3bbc2e4ef2cc3114b1c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\0fb914ff17ce350f0dc36405e3849492.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\0fb914ff17ce350f0dc36405e3849492.bin
+    projectPath: Library\ShaderCache\0\0fb914ff17ce350f0dc36405e3849492.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\0\0fd637cc2a9b1f8b2befbc12b518e307.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\0\0fd637cc2a9b1f8b2befbc12b518e307.bin
+    projectPath: Library\ShaderCache\0\0fd637cc2a9b1f8b2befbc12b518e307.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\11c0db99876ae00b6e7c37b49acc602e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\11c0db99876ae00b6e7c37b49acc602e.bin
+    projectPath: Library\ShaderCache\1\11c0db99876ae00b6e7c37b49acc602e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\1345ee5280a4c6b572ebf93a3f2a2a7d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\1345ee5280a4c6b572ebf93a3f2a2a7d.bin
+    projectPath: Library\ShaderCache\1\1345ee5280a4c6b572ebf93a3f2a2a7d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\1366bc66af06cb556bda122f6ae3680a.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\1366bc66af06cb556bda122f6ae3680a.bin
+    projectPath: Library\ShaderCache\1\1366bc66af06cb556bda122f6ae3680a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\13e26cfaa2bb4cc0e5072cf10e2fbe55.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\13e26cfaa2bb4cc0e5072cf10e2fbe55.bin
+    projectPath: Library\ShaderCache\1\13e26cfaa2bb4cc0e5072cf10e2fbe55.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\13f9e5b95061ccac31479a738fdd6477.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\13f9e5b95061ccac31479a738fdd6477.bin
+    projectPath: Library\ShaderCache\1\13f9e5b95061ccac31479a738fdd6477.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\14bdca6495733ab26bf5751282dab65b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\14bdca6495733ab26bf5751282dab65b.bin
+    projectPath: Library\ShaderCache\1\14bdca6495733ab26bf5751282dab65b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\1598cbca5d5dc8e230137d073e68dec6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\1598cbca5d5dc8e230137d073e68dec6.bin
+    projectPath: Library\ShaderCache\1\1598cbca5d5dc8e230137d073e68dec6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\172c085493d631f1acc7a67fed0986e0.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\172c085493d631f1acc7a67fed0986e0.bin
+    projectPath: Library\ShaderCache\1\172c085493d631f1acc7a67fed0986e0.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\1a2483e465eb269c8b97979e5268c925.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\1a2483e465eb269c8b97979e5268c925.bin
+    projectPath: Library\ShaderCache\1\1a2483e465eb269c8b97979e5268c925.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\1b9482df251085e9f8851557f01374c0.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\1b9482df251085e9f8851557f01374c0.bin
+    projectPath: Library\ShaderCache\1\1b9482df251085e9f8851557f01374c0.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\1c4de2b8bd0bd8b1307a73d32256e9cd.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\1c4de2b8bd0bd8b1307a73d32256e9cd.bin
+    projectPath: Library\ShaderCache\1\1c4de2b8bd0bd8b1307a73d32256e9cd.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\1c52ca0458512b9826797233cf492f7e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\1c52ca0458512b9826797233cf492f7e.bin
+    projectPath: Library\ShaderCache\1\1c52ca0458512b9826797233cf492f7e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\1d925f9624903504ded623e2a3979138.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\1d925f9624903504ded623e2a3979138.bin
+    projectPath: Library\ShaderCache\1\1d925f9624903504ded623e2a3979138.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\1dd31434fb4c03ec8c9520b07205454c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\1dd31434fb4c03ec8c9520b07205454c.bin
+    projectPath: Library\ShaderCache\1\1dd31434fb4c03ec8c9520b07205454c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\1f251f3e62c42aea1e9f5445b6627e98.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\1f251f3e62c42aea1e9f5445b6627e98.bin
+    projectPath: Library\ShaderCache\1\1f251f3e62c42aea1e9f5445b6627e98.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\1f886a0335713d7042f3c06875de4cb7.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\1f886a0335713d7042f3c06875de4cb7.bin
+    projectPath: Library\ShaderCache\1\1f886a0335713d7042f3c06875de4cb7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\1\1f9c7777cc7b321058c45651d55db5e8.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\1\1f9c7777cc7b321058c45651d55db5e8.bin
+    projectPath: Library\ShaderCache\1\1f9c7777cc7b321058c45651d55db5e8.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\202e87e1a603daba1aac8a8df4740c36.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\202e87e1a603daba1aac8a8df4740c36.bin
+    projectPath: Library\ShaderCache\2\202e87e1a603daba1aac8a8df4740c36.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\2247a2704c190e07b6ce42621093d97e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\2247a2704c190e07b6ce42621093d97e.bin
+    projectPath: Library\ShaderCache\2\2247a2704c190e07b6ce42621093d97e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\226068f7dd9105437b57758da054188b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\226068f7dd9105437b57758da054188b.bin
+    projectPath: Library\ShaderCache\2\226068f7dd9105437b57758da054188b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\250e777129e62aced5d6b723da38e2d3.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\250e777129e62aced5d6b723da38e2d3.bin
+    projectPath: Library\ShaderCache\2\250e777129e62aced5d6b723da38e2d3.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\26079688301be801acf6fd5a4d82a74c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\26079688301be801acf6fd5a4d82a74c.bin
+    projectPath: Library\ShaderCache\2\26079688301be801acf6fd5a4d82a74c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\27ce237638cf84e24bf1102126639e44.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\27ce237638cf84e24bf1102126639e44.bin
+    projectPath: Library\ShaderCache\2\27ce237638cf84e24bf1102126639e44.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\283831d8bd8337b6d2f48bc108a692e4.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\283831d8bd8337b6d2f48bc108a692e4.bin
+    projectPath: Library\ShaderCache\2\283831d8bd8337b6d2f48bc108a692e4.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\2838d5fdc7ae6e531d694c244ed1b503.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\2838d5fdc7ae6e531d694c244ed1b503.bin
+    projectPath: Library\ShaderCache\2\2838d5fdc7ae6e531d694c244ed1b503.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\2882f9ae1ed92db2549f5c887330a85d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\2882f9ae1ed92db2549f5c887330a85d.bin
+    projectPath: Library\ShaderCache\2\2882f9ae1ed92db2549f5c887330a85d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\28c10c3778b5c1958fba1bfe2fc24a03.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\28c10c3778b5c1958fba1bfe2fc24a03.bin
+    projectPath: Library\ShaderCache\2\28c10c3778b5c1958fba1bfe2fc24a03.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\28f0151c2f70e5db4cddc2401a9ee111.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\28f0151c2f70e5db4cddc2401a9ee111.bin
+    projectPath: Library\ShaderCache\2\28f0151c2f70e5db4cddc2401a9ee111.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\294e867acdc4ab98f52d1d7a990710ab.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\294e867acdc4ab98f52d1d7a990710ab.bin
+    projectPath: Library\ShaderCache\2\294e867acdc4ab98f52d1d7a990710ab.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\298b1f0025e2ffd7d5aef9534afc3722.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\298b1f0025e2ffd7d5aef9534afc3722.bin
+    projectPath: Library\ShaderCache\2\298b1f0025e2ffd7d5aef9534afc3722.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\29d30b1d91b0818776f475317636d4d9.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\29d30b1d91b0818776f475317636d4d9.bin
+    projectPath: Library\ShaderCache\2\29d30b1d91b0818776f475317636d4d9.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\2a792af668786e8cf7d945657ceff4ab.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\2a792af668786e8cf7d945657ceff4ab.bin
+    projectPath: Library\ShaderCache\2\2a792af668786e8cf7d945657ceff4ab.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\2e6402e3e0579e940d760a069831d313.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\2e6402e3e0579e940d760a069831d313.bin
+    projectPath: Library\ShaderCache\2\2e6402e3e0579e940d760a069831d313.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\2ef0f22ab2451ff98f017057f2611a1d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\2ef0f22ab2451ff98f017057f2611a1d.bin
+    projectPath: Library\ShaderCache\2\2ef0f22ab2451ff98f017057f2611a1d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\2f143fdefa177af18ee6a6c6db46c0f5.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\2f143fdefa177af18ee6a6c6db46c0f5.bin
+    projectPath: Library\ShaderCache\2\2f143fdefa177af18ee6a6c6db46c0f5.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\2\2f3a1f14c3c5f482ab982e79b96efb65.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\2\2f3a1f14c3c5f482ab982e79b96efb65.bin
+    projectPath: Library\ShaderCache\2\2f3a1f14c3c5f482ab982e79b96efb65.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\3\31b5fcd0ffb8e78bbb3913a5bb7ceb8f.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\3\31b5fcd0ffb8e78bbb3913a5bb7ceb8f.bin
+    projectPath: Library\ShaderCache\3\31b5fcd0ffb8e78bbb3913a5bb7ceb8f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\3\321994a1930bf1a12512e919525e7d60.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\3\321994a1930bf1a12512e919525e7d60.bin
+    projectPath: Library\ShaderCache\3\321994a1930bf1a12512e919525e7d60.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\3\3766aade83e14449d73ff5e52e181f58.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\3\3766aade83e14449d73ff5e52e181f58.bin
+    projectPath: Library\ShaderCache\3\3766aade83e14449d73ff5e52e181f58.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\3\38777b9b1c4e70f97ca6c811af01e037.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\3\38777b9b1c4e70f97ca6c811af01e037.bin
+    projectPath: Library\ShaderCache\3\38777b9b1c4e70f97ca6c811af01e037.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\3\39b5f670d86cec79828abb1efbc774b6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\3\39b5f670d86cec79828abb1efbc774b6.bin
+    projectPath: Library\ShaderCache\3\39b5f670d86cec79828abb1efbc774b6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\3\3b1a4fbaf6b7f1b14020d52be178bf28.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\3\3b1a4fbaf6b7f1b14020d52be178bf28.bin
+    projectPath: Library\ShaderCache\3\3b1a4fbaf6b7f1b14020d52be178bf28.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\3\3b385dadeded21491fdc2f00c4230a7b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\3\3b385dadeded21491fdc2f00c4230a7b.bin
+    projectPath: Library\ShaderCache\3\3b385dadeded21491fdc2f00c4230a7b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\3\3bd0b6f8f53359c66cdbfbe1e8651adc.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\3\3bd0b6f8f53359c66cdbfbe1e8651adc.bin
+    projectPath: Library\ShaderCache\3\3bd0b6f8f53359c66cdbfbe1e8651adc.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\3\3c10fe4fe62883f982072b1d08437ef1.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\3\3c10fe4fe62883f982072b1d08437ef1.bin
+    projectPath: Library\ShaderCache\3\3c10fe4fe62883f982072b1d08437ef1.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\3\3caaaf92a68c300a9c280eefef6f48c7.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\3\3caaaf92a68c300a9c280eefef6f48c7.bin
+    projectPath: Library\ShaderCache\3\3caaaf92a68c300a9c280eefef6f48c7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\3\3e3abde654adc5302397db9a29cb023f.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\3\3e3abde654adc5302397db9a29cb023f.bin
+    projectPath: Library\ShaderCache\3\3e3abde654adc5302397db9a29cb023f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\403d82cf2b5f9f01c65a8b19b404086e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\403d82cf2b5f9f01c65a8b19b404086e.bin
+    projectPath: Library\ShaderCache\4\403d82cf2b5f9f01c65a8b19b404086e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\4041542a72895294c1afeb1abc74a91f.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\4041542a72895294c1afeb1abc74a91f.bin
+    projectPath: Library\ShaderCache\4\4041542a72895294c1afeb1abc74a91f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\40a9acce2a18a9c307ede2acc51b519f.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\40a9acce2a18a9c307ede2acc51b519f.bin
+    projectPath: Library\ShaderCache\4\40a9acce2a18a9c307ede2acc51b519f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\45207cf6ae0ddce68d4f73443b91b5c4.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\45207cf6ae0ddce68d4f73443b91b5c4.bin
+    projectPath: Library\ShaderCache\4\45207cf6ae0ddce68d4f73443b91b5c4.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\47fea3541154f647a9472ee5aae09e93.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\47fea3541154f647a9472ee5aae09e93.bin
+    projectPath: Library\ShaderCache\4\47fea3541154f647a9472ee5aae09e93.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\499fb6f69d0a2c8b3a67a947ebaa74a5.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\499fb6f69d0a2c8b3a67a947ebaa74a5.bin
+    projectPath: Library\ShaderCache\4\499fb6f69d0a2c8b3a67a947ebaa74a5.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\49c8d4edab67b8de42aef18fef19be2d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\49c8d4edab67b8de42aef18fef19be2d.bin
+    projectPath: Library\ShaderCache\4\49c8d4edab67b8de42aef18fef19be2d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\4a3ea9b72720a410f0d269ff66c72c95.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\4a3ea9b72720a410f0d269ff66c72c95.bin
+    projectPath: Library\ShaderCache\4\4a3ea9b72720a410f0d269ff66c72c95.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\4ba0af9ba1230b7799e0ccb1a074a358.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\4ba0af9ba1230b7799e0ccb1a074a358.bin
+    projectPath: Library\ShaderCache\4\4ba0af9ba1230b7799e0ccb1a074a358.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\4c1a1cc3fa65ca1aee5c74492036dda1.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\4c1a1cc3fa65ca1aee5c74492036dda1.bin
+    projectPath: Library\ShaderCache\4\4c1a1cc3fa65ca1aee5c74492036dda1.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\4c376c0cdf203eab54d9525c94095830.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\4c376c0cdf203eab54d9525c94095830.bin
+    projectPath: Library\ShaderCache\4\4c376c0cdf203eab54d9525c94095830.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\4cad1b4faae609674ba08f9ee8e3584b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\4cad1b4faae609674ba08f9ee8e3584b.bin
+    projectPath: Library\ShaderCache\4\4cad1b4faae609674ba08f9ee8e3584b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\4cd9caa894a038e79c577450b29320d0.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\4cd9caa894a038e79c577450b29320d0.bin
+    projectPath: Library\ShaderCache\4\4cd9caa894a038e79c577450b29320d0.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\4ea4e8da9caf469ca8c96509948ec9e1.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\4ea4e8da9caf469ca8c96509948ec9e1.bin
+    projectPath: Library\ShaderCache\4\4ea4e8da9caf469ca8c96509948ec9e1.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\4\4fb302933d1d64656c7fb5fa94279133.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\4\4fb302933d1d64656c7fb5fa94279133.bin
+    projectPath: Library\ShaderCache\4\4fb302933d1d64656c7fb5fa94279133.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\50b8e719ad97e4d1dde9252eef8da9e6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\50b8e719ad97e4d1dde9252eef8da9e6.bin
+    projectPath: Library\ShaderCache\5\50b8e719ad97e4d1dde9252eef8da9e6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\5171cc1911ffa161a22ee79ff58a3940.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\5171cc1911ffa161a22ee79ff58a3940.bin
+    projectPath: Library\ShaderCache\5\5171cc1911ffa161a22ee79ff58a3940.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\52abd95cbc5bc2c2e399d2465bcfea84.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\52abd95cbc5bc2c2e399d2465bcfea84.bin
+    projectPath: Library\ShaderCache\5\52abd95cbc5bc2c2e399d2465bcfea84.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\54101734b9f7189f060cbaebf33be69d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\54101734b9f7189f060cbaebf33be69d.bin
+    projectPath: Library\ShaderCache\5\54101734b9f7189f060cbaebf33be69d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\54159b5a75c3f1e085311e099992877c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\54159b5a75c3f1e085311e099992877c.bin
+    projectPath: Library\ShaderCache\5\54159b5a75c3f1e085311e099992877c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\5442b02d84f5e4aedd98e2ea6da53e4e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\5442b02d84f5e4aedd98e2ea6da53e4e.bin
+    projectPath: Library\ShaderCache\5\5442b02d84f5e4aedd98e2ea6da53e4e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\5a8b602aa4beedc849c43913aea64da2.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\5a8b602aa4beedc849c43913aea64da2.bin
+    projectPath: Library\ShaderCache\5\5a8b602aa4beedc849c43913aea64da2.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\5ad5cb040e607c0d0e47dd80f5e33c82.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\5ad5cb040e607c0d0e47dd80f5e33c82.bin
+    projectPath: Library\ShaderCache\5\5ad5cb040e607c0d0e47dd80f5e33c82.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\5b2b4a62e07a6a3a88f1a48865cb570e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\5b2b4a62e07a6a3a88f1a48865cb570e.bin
+    projectPath: Library\ShaderCache\5\5b2b4a62e07a6a3a88f1a48865cb570e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\5b78d584f028644fcfc58a295fe21ec5.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\5b78d584f028644fcfc58a295fe21ec5.bin
+    projectPath: Library\ShaderCache\5\5b78d584f028644fcfc58a295fe21ec5.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\5d87164b915e171fd71bb21b47f03c43.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\5d87164b915e171fd71bb21b47f03c43.bin
+    projectPath: Library\ShaderCache\5\5d87164b915e171fd71bb21b47f03c43.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\5ea61b78eada863f6b50873e3c16eb8d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\5ea61b78eada863f6b50873e3c16eb8d.bin
+    projectPath: Library\ShaderCache\5\5ea61b78eada863f6b50873e3c16eb8d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\5\5f4f217963c35988f9122e875f60c9d7.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\5\5f4f217963c35988f9122e875f60c9d7.bin
+    projectPath: Library\ShaderCache\5\5f4f217963c35988f9122e875f60c9d7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\616f04f70d55d7ed99056ca433b0ee0b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\616f04f70d55d7ed99056ca433b0ee0b.bin
+    projectPath: Library\ShaderCache\6\616f04f70d55d7ed99056ca433b0ee0b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\61ee1eda2e987924949064033b60be0b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\61ee1eda2e987924949064033b60be0b.bin
+    projectPath: Library\ShaderCache\6\61ee1eda2e987924949064033b60be0b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\621019688ff0bf505e8e352bd1bb6015.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\621019688ff0bf505e8e352bd1bb6015.bin
+    projectPath: Library\ShaderCache\6\621019688ff0bf505e8e352bd1bb6015.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\62478be26c3926e02b9abcc7691ad60b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\62478be26c3926e02b9abcc7691ad60b.bin
+    projectPath: Library\ShaderCache\6\62478be26c3926e02b9abcc7691ad60b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\63eabda0d55c9f9de3b5fe2385092a3d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\63eabda0d55c9f9de3b5fe2385092a3d.bin
+    projectPath: Library\ShaderCache\6\63eabda0d55c9f9de3b5fe2385092a3d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\65c21ac926a5528c97b631c73fea8c3d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\65c21ac926a5528c97b631c73fea8c3d.bin
+    projectPath: Library\ShaderCache\6\65c21ac926a5528c97b631c73fea8c3d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\6683f3c5e8cbcb72474ca91fea89c2c1.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\6683f3c5e8cbcb72474ca91fea89c2c1.bin
+    projectPath: Library\ShaderCache\6\6683f3c5e8cbcb72474ca91fea89c2c1.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\66ee22f0742d82f61b14b5727fee19d1.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\66ee22f0742d82f61b14b5727fee19d1.bin
+    projectPath: Library\ShaderCache\6\66ee22f0742d82f61b14b5727fee19d1.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\66ff63ca15c3c2ad510f451c3a7c9953.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\66ff63ca15c3c2ad510f451c3a7c9953.bin
+    projectPath: Library\ShaderCache\6\66ff63ca15c3c2ad510f451c3a7c9953.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\67b5ea3f360315462224f679cf70d647.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\67b5ea3f360315462224f679cf70d647.bin
+    projectPath: Library\ShaderCache\6\67b5ea3f360315462224f679cf70d647.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\68813fdb4eeb724cc72130b897fba834.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\68813fdb4eeb724cc72130b897fba834.bin
+    projectPath: Library\ShaderCache\6\68813fdb4eeb724cc72130b897fba834.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\690f2d3d4ef26cecf7b814e33c189f0c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\690f2d3d4ef26cecf7b814e33c189f0c.bin
+    projectPath: Library\ShaderCache\6\690f2d3d4ef26cecf7b814e33c189f0c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\6a049ad4425245b5fcfc79783662d594.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\6a049ad4425245b5fcfc79783662d594.bin
+    projectPath: Library\ShaderCache\6\6a049ad4425245b5fcfc79783662d594.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\6bf81a6f3c161a5f8e77751a59a1f233.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\6bf81a6f3c161a5f8e77751a59a1f233.bin
+    projectPath: Library\ShaderCache\6\6bf81a6f3c161a5f8e77751a59a1f233.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\6\6f749f8248785baf5a50e4a1ad86a611.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\6\6f749f8248785baf5a50e4a1ad86a611.bin
+    projectPath: Library\ShaderCache\6\6f749f8248785baf5a50e4a1ad86a611.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\712db05e638ab254f46b50eac1897258.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\712db05e638ab254f46b50eac1897258.bin
+    projectPath: Library\ShaderCache\7\712db05e638ab254f46b50eac1897258.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\71705fb74b4af7d118dd8eae47191a13.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\71705fb74b4af7d118dd8eae47191a13.bin
+    projectPath: Library\ShaderCache\7\71705fb74b4af7d118dd8eae47191a13.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\71d250a0466fcb7ad73cf9bfd60e1083.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\71d250a0466fcb7ad73cf9bfd60e1083.bin
+    projectPath: Library\ShaderCache\7\71d250a0466fcb7ad73cf9bfd60e1083.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\72320bc33da74aeeb7172e74b88260e6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\72320bc33da74aeeb7172e74b88260e6.bin
+    projectPath: Library\ShaderCache\7\72320bc33da74aeeb7172e74b88260e6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\742190f9aa894446b7fe46235304397f.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\742190f9aa894446b7fe46235304397f.bin
+    projectPath: Library\ShaderCache\7\742190f9aa894446b7fe46235304397f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\74e559410e8f1e7b801730f2d9286524.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\74e559410e8f1e7b801730f2d9286524.bin
+    projectPath: Library\ShaderCache\7\74e559410e8f1e7b801730f2d9286524.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\77f77a2350b577370356a371ff93909f.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\77f77a2350b577370356a371ff93909f.bin
+    projectPath: Library\ShaderCache\7\77f77a2350b577370356a371ff93909f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\788a6e3aa00bbfab94663b9bdce8cf61.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\788a6e3aa00bbfab94663b9bdce8cf61.bin
+    projectPath: Library\ShaderCache\7\788a6e3aa00bbfab94663b9bdce8cf61.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\78cda471cadfbcd80c68ed6fe6f02816.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\78cda471cadfbcd80c68ed6fe6f02816.bin
+    projectPath: Library\ShaderCache\7\78cda471cadfbcd80c68ed6fe6f02816.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\79df92ecbbb4c0faf4a44b9d028789ff.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\79df92ecbbb4c0faf4a44b9d028789ff.bin
+    projectPath: Library\ShaderCache\7\79df92ecbbb4c0faf4a44b9d028789ff.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\7c01c3413484edba31e635ae0964d27f.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\7c01c3413484edba31e635ae0964d27f.bin
+    projectPath: Library\ShaderCache\7\7c01c3413484edba31e635ae0964d27f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\7cc81493edf5b8ddfa6e5f8ef335569a.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\7cc81493edf5b8ddfa6e5f8ef335569a.bin
+    projectPath: Library\ShaderCache\7\7cc81493edf5b8ddfa6e5f8ef335569a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\7cd22995fffc81a10ac0c8cf1456ee0c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\7cd22995fffc81a10ac0c8cf1456ee0c.bin
+    projectPath: Library\ShaderCache\7\7cd22995fffc81a10ac0c8cf1456ee0c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\7d65b9c8af5f41ef261ee2aae36a7598.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\7d65b9c8af5f41ef261ee2aae36a7598.bin
+    projectPath: Library\ShaderCache\7\7d65b9c8af5f41ef261ee2aae36a7598.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\7df06637434e9586a4296f2142719e13.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\7df06637434e9586a4296f2142719e13.bin
+    projectPath: Library\ShaderCache\7\7df06637434e9586a4296f2142719e13.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\7e67201864452a682b0367e9a1a5c0d5.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\7e67201864452a682b0367e9a1a5c0d5.bin
+    projectPath: Library\ShaderCache\7\7e67201864452a682b0367e9a1a5c0d5.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\7\7e72e01807a7034b99314cea5ff29328.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\7\7e72e01807a7034b99314cea5ff29328.bin
+    projectPath: Library\ShaderCache\7\7e72e01807a7034b99314cea5ff29328.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\8010b82a41262b7175f6b23a46ae72c6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\8010b82a41262b7175f6b23a46ae72c6.bin
+    projectPath: Library\ShaderCache\8\8010b82a41262b7175f6b23a46ae72c6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\814d323db48056dfdeed71b486200557.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\814d323db48056dfdeed71b486200557.bin
+    projectPath: Library\ShaderCache\8\814d323db48056dfdeed71b486200557.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\81ccbdd3e5315ad7725ec9b8ab8c322e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\81ccbdd3e5315ad7725ec9b8ab8c322e.bin
+    projectPath: Library\ShaderCache\8\81ccbdd3e5315ad7725ec9b8ab8c322e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\82eea85c67f9fa71dde673c14949f077.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\82eea85c67f9fa71dde673c14949f077.bin
+    projectPath: Library\ShaderCache\8\82eea85c67f9fa71dde673c14949f077.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\83a42bb2b65e66d85b9e37629c306e7d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\83a42bb2b65e66d85b9e37629c306e7d.bin
+    projectPath: Library\ShaderCache\8\83a42bb2b65e66d85b9e37629c306e7d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\83ff51033ce98ac4918d8116cb86a42a.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\83ff51033ce98ac4918d8116cb86a42a.bin
+    projectPath: Library\ShaderCache\8\83ff51033ce98ac4918d8116cb86a42a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\842ed7f2b954f812bda524a00cce7311.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\842ed7f2b954f812bda524a00cce7311.bin
+    projectPath: Library\ShaderCache\8\842ed7f2b954f812bda524a00cce7311.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\84c728716a6f8fdd37113db8e5c9d6d9.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\84c728716a6f8fdd37113db8e5c9d6d9.bin
+    projectPath: Library\ShaderCache\8\84c728716a6f8fdd37113db8e5c9d6d9.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\85a9a34cae5ae5718e02f4aa0c878100.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\85a9a34cae5ae5718e02f4aa0c878100.bin
+    projectPath: Library\ShaderCache\8\85a9a34cae5ae5718e02f4aa0c878100.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\85b4d7fff617cf62b66c61c4cd144ea7.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\85b4d7fff617cf62b66c61c4cd144ea7.bin
+    projectPath: Library\ShaderCache\8\85b4d7fff617cf62b66c61c4cd144ea7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\88698c543d2ed609fd244bad5fc59132.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\88698c543d2ed609fd244bad5fc59132.bin
+    projectPath: Library\ShaderCache\8\88698c543d2ed609fd244bad5fc59132.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\88a14ad5c348595da5bab8d2e7d0abfd.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\88a14ad5c348595da5bab8d2e7d0abfd.bin
+    projectPath: Library\ShaderCache\8\88a14ad5c348595da5bab8d2e7d0abfd.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\8903f7de0292127754ea8a88c9ab5c2a.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\8903f7de0292127754ea8a88c9ab5c2a.bin
+    projectPath: Library\ShaderCache\8\8903f7de0292127754ea8a88c9ab5c2a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\8a51e80a21cc30fbcae65d852e1adcea.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\8a51e80a21cc30fbcae65d852e1adcea.bin
+    projectPath: Library\ShaderCache\8\8a51e80a21cc30fbcae65d852e1adcea.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\8c20f58926951149a0d4f645d2cc358a.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\8c20f58926951149a0d4f645d2cc358a.bin
+    projectPath: Library\ShaderCache\8\8c20f58926951149a0d4f645d2cc358a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\8d76e01d193ec06396638c472c74e2fb.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\8d76e01d193ec06396638c472c74e2fb.bin
+    projectPath: Library\ShaderCache\8\8d76e01d193ec06396638c472c74e2fb.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\8e36f00600cbd876af279dd4f3a30d79.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\8e36f00600cbd876af279dd4f3a30d79.bin
+    projectPath: Library\ShaderCache\8\8e36f00600cbd876af279dd4f3a30d79.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\8\8fa8812705c3d37bd3863e8fc1723092.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\8\8fa8812705c3d37bd3863e8fc1723092.bin
+    projectPath: Library\ShaderCache\8\8fa8812705c3d37bd3863e8fc1723092.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\9014a7e81e85b23f7739494dcdf6c629.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\9014a7e81e85b23f7739494dcdf6c629.bin
+    projectPath: Library\ShaderCache\9\9014a7e81e85b23f7739494dcdf6c629.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\91532cead6c0efed3df1303797660af2.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\91532cead6c0efed3df1303797660af2.bin
+    projectPath: Library\ShaderCache\9\91532cead6c0efed3df1303797660af2.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\931596a12077690bfe5477ca96a736f3.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\931596a12077690bfe5477ca96a736f3.bin
+    projectPath: Library\ShaderCache\9\931596a12077690bfe5477ca96a736f3.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\941ef2fadb0a270964590329c876ef46.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\941ef2fadb0a270964590329c876ef46.bin
+    projectPath: Library\ShaderCache\9\941ef2fadb0a270964590329c876ef46.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\946dbaea8b84c305a154335c48e1af36.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\946dbaea8b84c305a154335c48e1af36.bin
+    projectPath: Library\ShaderCache\9\946dbaea8b84c305a154335c48e1af36.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\9520030702ccd645c4773b7be172ed6b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\9520030702ccd645c4773b7be172ed6b.bin
+    projectPath: Library\ShaderCache\9\9520030702ccd645c4773b7be172ed6b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\9558df566bd30da00db6543e55ad27a5.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\9558df566bd30da00db6543e55ad27a5.bin
+    projectPath: Library\ShaderCache\9\9558df566bd30da00db6543e55ad27a5.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\959c51146873a1db67af6dcca0489078.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\959c51146873a1db67af6dcca0489078.bin
+    projectPath: Library\ShaderCache\9\959c51146873a1db67af6dcca0489078.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\983bb13ef6e504cf66a32c64c14440f8.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\983bb13ef6e504cf66a32c64c14440f8.bin
+    projectPath: Library\ShaderCache\9\983bb13ef6e504cf66a32c64c14440f8.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\9902d5104129be6fe6e420bcc7d72f8b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\9902d5104129be6fe6e420bcc7d72f8b.bin
+    projectPath: Library\ShaderCache\9\9902d5104129be6fe6e420bcc7d72f8b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\99cdc71a3a52f7c9257a0122592e1713.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\99cdc71a3a52f7c9257a0122592e1713.bin
+    projectPath: Library\ShaderCache\9\99cdc71a3a52f7c9257a0122592e1713.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\9a6d3369ff4f3c33a9d14871aad1807c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\9a6d3369ff4f3c33a9d14871aad1807c.bin
+    projectPath: Library\ShaderCache\9\9a6d3369ff4f3c33a9d14871aad1807c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\9abbd4bcf47acc931b5bc660df6068fa.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\9abbd4bcf47acc931b5bc660df6068fa.bin
+    projectPath: Library\ShaderCache\9\9abbd4bcf47acc931b5bc660df6068fa.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\9acd646a3ab0e860bfc4efaed35cbba7.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\9acd646a3ab0e860bfc4efaed35cbba7.bin
+    projectPath: Library\ShaderCache\9\9acd646a3ab0e860bfc4efaed35cbba7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\9afab4b6243738b48a9c4382c7c429d5.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\9afab4b6243738b48a9c4382c7c429d5.bin
+    projectPath: Library\ShaderCache\9\9afab4b6243738b48a9c4382c7c429d5.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\9b0303ce79deb9498c7164b142abcb2a.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\9b0303ce79deb9498c7164b142abcb2a.bin
+    projectPath: Library\ShaderCache\9\9b0303ce79deb9498c7164b142abcb2a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\9e8353947bfda56f76c4670db27fa736.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\9e8353947bfda56f76c4670db27fa736.bin
+    projectPath: Library\ShaderCache\9\9e8353947bfda56f76c4670db27fa736.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\9\9f0764937c1b502a1b0cae785d25522e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\9\9f0764937c1b502a1b0cae785d25522e.bin
+    projectPath: Library\ShaderCache\9\9f0764937c1b502a1b0cae785d25522e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\a224c916ed8b7f7bde7e7e3a0724ee57.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\a224c916ed8b7f7bde7e7e3a0724ee57.bin
+    projectPath: Library\ShaderCache\a\a224c916ed8b7f7bde7e7e3a0724ee57.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\a2294fffa8f1e347679a080e20dd81c4.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\a2294fffa8f1e347679a080e20dd81c4.bin
+    projectPath: Library\ShaderCache\a\a2294fffa8f1e347679a080e20dd81c4.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\a4a24e771e47cdfa373f528b5ded102b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\a4a24e771e47cdfa373f528b5ded102b.bin
+    projectPath: Library\ShaderCache\a\a4a24e771e47cdfa373f528b5ded102b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\a5d7c97d10f786a54e8306be3c15f43c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\a5d7c97d10f786a54e8306be3c15f43c.bin
+    projectPath: Library\ShaderCache\a\a5d7c97d10f786a54e8306be3c15f43c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\a669e3d8f70bf97d77ed5d0dc463029c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\a669e3d8f70bf97d77ed5d0dc463029c.bin
+    projectPath: Library\ShaderCache\a\a669e3d8f70bf97d77ed5d0dc463029c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\a6b69c797ecf3588e28c9756e91519f4.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\a6b69c797ecf3588e28c9756e91519f4.bin
+    projectPath: Library\ShaderCache\a\a6b69c797ecf3588e28c9756e91519f4.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\a6f2ceb59f2e10b4ee9dc922e8b722dd.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\a6f2ceb59f2e10b4ee9dc922e8b722dd.bin
+    projectPath: Library\ShaderCache\a\a6f2ceb59f2e10b4ee9dc922e8b722dd.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\a8ff8b6acfce533352d69b4481b4e146.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\a8ff8b6acfce533352d69b4481b4e146.bin
+    projectPath: Library\ShaderCache\a\a8ff8b6acfce533352d69b4481b4e146.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\a9e3db2efa907f3ee6c53d4f434cff1d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\a9e3db2efa907f3ee6c53d4f434cff1d.bin
+    projectPath: Library\ShaderCache\a\a9e3db2efa907f3ee6c53d4f434cff1d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\aba4fc64a89b515cdf96ae46fb40e49b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\aba4fc64a89b515cdf96ae46fb40e49b.bin
+    projectPath: Library\ShaderCache\a\aba4fc64a89b515cdf96ae46fb40e49b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\ac39ea2d5be7fbb61955d42ed55fbd72.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\ac39ea2d5be7fbb61955d42ed55fbd72.bin
+    projectPath: Library\ShaderCache\a\ac39ea2d5be7fbb61955d42ed55fbd72.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\ad5506d3d285538b673b39d8fbd50238.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\ad5506d3d285538b673b39d8fbd50238.bin
+    projectPath: Library\ShaderCache\a\ad5506d3d285538b673b39d8fbd50238.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\a\ad661ea165f952c63987e425cac63bd6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\a\ad661ea165f952c63987e425cac63bd6.bin
+    projectPath: Library\ShaderCache\a\ad661ea165f952c63987e425cac63bd6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\b0f5001fd6a48be8a89470fd269fb081.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\b0f5001fd6a48be8a89470fd269fb081.bin
+    projectPath: Library\ShaderCache\b\b0f5001fd6a48be8a89470fd269fb081.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\b1e3fc4d36974454171f5e7da0a6bbf6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\b1e3fc4d36974454171f5e7da0a6bbf6.bin
+    projectPath: Library\ShaderCache\b\b1e3fc4d36974454171f5e7da0a6bbf6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\b24ea21962209e4a254f57b0d3bb073c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\b24ea21962209e4a254f57b0d3bb073c.bin
+    projectPath: Library\ShaderCache\b\b24ea21962209e4a254f57b0d3bb073c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\b319b8577b937301005671070c07c5d4.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\b319b8577b937301005671070c07c5d4.bin
+    projectPath: Library\ShaderCache\b\b319b8577b937301005671070c07c5d4.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\b47acdb0fdf07fc4c0d30b8d06016ee6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\b47acdb0fdf07fc4c0d30b8d06016ee6.bin
+    projectPath: Library\ShaderCache\b\b47acdb0fdf07fc4c0d30b8d06016ee6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\b6c10b43890229107c8f5abe17493108.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\b6c10b43890229107c8f5abe17493108.bin
+    projectPath: Library\ShaderCache\b\b6c10b43890229107c8f5abe17493108.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\b6dcfa5fc2883fe8b1654de9ea9d0aa6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\b6dcfa5fc2883fe8b1654de9ea9d0aa6.bin
+    projectPath: Library\ShaderCache\b\b6dcfa5fc2883fe8b1654de9ea9d0aa6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\b7e75683392b2a6d182566fcca0c7879.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\b7e75683392b2a6d182566fcca0c7879.bin
+    projectPath: Library\ShaderCache\b\b7e75683392b2a6d182566fcca0c7879.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\b8da49042c220d217738cf8016cc1fbe.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\b8da49042c220d217738cf8016cc1fbe.bin
+    projectPath: Library\ShaderCache\b\b8da49042c220d217738cf8016cc1fbe.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\bab3f26de9ffa25590e206886c1def1b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\bab3f26de9ffa25590e206886c1def1b.bin
+    projectPath: Library\ShaderCache\b\bab3f26de9ffa25590e206886c1def1b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\bb56362d476a862498e54d695d7083d3.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\bb56362d476a862498e54d695d7083d3.bin
+    projectPath: Library\ShaderCache\b\bb56362d476a862498e54d695d7083d3.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\bc9aecd745d4d18e837afdbd769ee95e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\bc9aecd745d4d18e837afdbd769ee95e.bin
+    projectPath: Library\ShaderCache\b\bc9aecd745d4d18e837afdbd769ee95e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\bce6b920f4723114b164073bb9ed024f.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\bce6b920f4723114b164073bb9ed024f.bin
+    projectPath: Library\ShaderCache\b\bce6b920f4723114b164073bb9ed024f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\bd098803e2144ce63ae0166b6931bd1a.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\bd098803e2144ce63ae0166b6931bd1a.bin
+    projectPath: Library\ShaderCache\b\bd098803e2144ce63ae0166b6931bd1a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\bdc1ead873ef0829ac3045cf016c549a.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\bdc1ead873ef0829ac3045cf016c549a.bin
+    projectPath: Library\ShaderCache\b\bdc1ead873ef0829ac3045cf016c549a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\b\bf7c36f843cdbc4dda1504ef940d5f74.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\b\bf7c36f843cdbc4dda1504ef940d5f74.bin
+    projectPath: Library\ShaderCache\b\bf7c36f843cdbc4dda1504ef940d5f74.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\c04256d5d0c025e3a9dc0d4a68ec4892.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\c04256d5d0c025e3a9dc0d4a68ec4892.bin
+    projectPath: Library\ShaderCache\c\c04256d5d0c025e3a9dc0d4a68ec4892.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\c30736531afbc315e3f311a6dfaf208e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\c30736531afbc315e3f311a6dfaf208e.bin
+    projectPath: Library\ShaderCache\c\c30736531afbc315e3f311a6dfaf208e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\c401c5bc39f4b084aa34ce0d929a75ca.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\c401c5bc39f4b084aa34ce0d929a75ca.bin
+    projectPath: Library\ShaderCache\c\c401c5bc39f4b084aa34ce0d929a75ca.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\c6c1a80f7aea50030c1f25d127c4ce5f.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\c6c1a80f7aea50030c1f25d127c4ce5f.bin
+    projectPath: Library\ShaderCache\c\c6c1a80f7aea50030c1f25d127c4ce5f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\c7dd09276b9f4b316e1f24cc447d1dc7.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\c7dd09276b9f4b316e1f24cc447d1dc7.bin
+    projectPath: Library\ShaderCache\c\c7dd09276b9f4b316e1f24cc447d1dc7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\c821e40af8649fbf455bc45e3077cdcc.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\c821e40af8649fbf455bc45e3077cdcc.bin
+    projectPath: Library\ShaderCache\c\c821e40af8649fbf455bc45e3077cdcc.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\c8721aad012f74c96258143d0340c6c6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\c8721aad012f74c96258143d0340c6c6.bin
+    projectPath: Library\ShaderCache\c\c8721aad012f74c96258143d0340c6c6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\c8dcdf758d74dfbc4a2c463714b02bce.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\c8dcdf758d74dfbc4a2c463714b02bce.bin
+    projectPath: Library\ShaderCache\c\c8dcdf758d74dfbc4a2c463714b02bce.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\c9d1db9c85e6e3c3428f2f147108066c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\c9d1db9c85e6e3c3428f2f147108066c.bin
+    projectPath: Library\ShaderCache\c\c9d1db9c85e6e3c3428f2f147108066c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\ca245a47c11563bb80e450b91321313f.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\ca245a47c11563bb80e450b91321313f.bin
+    projectPath: Library\ShaderCache\c\ca245a47c11563bb80e450b91321313f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\cb9aeb7cd5f17d8031b354b77df61b4d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\cb9aeb7cd5f17d8031b354b77df61b4d.bin
+    projectPath: Library\ShaderCache\c\cb9aeb7cd5f17d8031b354b77df61b4d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\cda4f96e39bd50e78b8b3e8eea2c8141.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\cda4f96e39bd50e78b8b3e8eea2c8141.bin
+    projectPath: Library\ShaderCache\c\cda4f96e39bd50e78b8b3e8eea2c8141.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\cde2a85f4aeec46ba98d8c1c5fb14220.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\cde2a85f4aeec46ba98d8c1c5fb14220.bin
+    projectPath: Library\ShaderCache\c\cde2a85f4aeec46ba98d8c1c5fb14220.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\cdf38bcbc0e16803a88620894191c298.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\cdf38bcbc0e16803a88620894191c298.bin
+    projectPath: Library\ShaderCache\c\cdf38bcbc0e16803a88620894191c298.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\c\ce0b7f4672b385d7501a21a0718f7d6f.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\c\ce0b7f4672b385d7501a21a0718f7d6f.bin
+    projectPath: Library\ShaderCache\c\ce0b7f4672b385d7501a21a0718f7d6f.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d09c19a141c9e049cbafff18201c7188.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d09c19a141c9e049cbafff18201c7188.bin
+    projectPath: Library\ShaderCache\d\d09c19a141c9e049cbafff18201c7188.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d14fdddf69eb9b6e47c3a21e4bfee1b9.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d14fdddf69eb9b6e47c3a21e4bfee1b9.bin
+    projectPath: Library\ShaderCache\d\d14fdddf69eb9b6e47c3a21e4bfee1b9.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d1c7f93f8f1265fa0a1d97f19c9aee26.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d1c7f93f8f1265fa0a1d97f19c9aee26.bin
+    projectPath: Library\ShaderCache\d\d1c7f93f8f1265fa0a1d97f19c9aee26.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d1f27626f844b68335c53437bae24fac.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d1f27626f844b68335c53437bae24fac.bin
+    projectPath: Library\ShaderCache\d\d1f27626f844b68335c53437bae24fac.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d2b39d990c509dc313023b008592717d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d2b39d990c509dc313023b008592717d.bin
+    projectPath: Library\ShaderCache\d\d2b39d990c509dc313023b008592717d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d2b3b6ac487711fbf5b7b45f306073bd.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d2b3b6ac487711fbf5b7b45f306073bd.bin
+    projectPath: Library\ShaderCache\d\d2b3b6ac487711fbf5b7b45f306073bd.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d2d02d33f828fa56623b9934896240f0.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d2d02d33f828fa56623b9934896240f0.bin
+    projectPath: Library\ShaderCache\d\d2d02d33f828fa56623b9934896240f0.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d375c3416ce1da352a748a4cee705284.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d375c3416ce1da352a748a4cee705284.bin
+    projectPath: Library\ShaderCache\d\d375c3416ce1da352a748a4cee705284.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d4aa9dff4b7a1f345b00e29c500034e6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d4aa9dff4b7a1f345b00e29c500034e6.bin
+    projectPath: Library\ShaderCache\d\d4aa9dff4b7a1f345b00e29c500034e6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d5b90c5a1fbc8f7c5bb4b1b0ad790c76.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d5b90c5a1fbc8f7c5bb4b1b0ad790c76.bin
+    projectPath: Library\ShaderCache\d\d5b90c5a1fbc8f7c5bb4b1b0ad790c76.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d5d41bede468aab9b627b62f0bd5f5de.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d5d41bede468aab9b627b62f0bd5f5de.bin
+    projectPath: Library\ShaderCache\d\d5d41bede468aab9b627b62f0bd5f5de.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d76936aef919b21f42132b123395439b.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d76936aef919b21f42132b123395439b.bin
+    projectPath: Library\ShaderCache\d\d76936aef919b21f42132b123395439b.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d8519a753c0d5b4fb967f141ead1dcb2.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d8519a753c0d5b4fb967f141ead1dcb2.bin
+    projectPath: Library\ShaderCache\d\d8519a753c0d5b4fb967f141ead1dcb2.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d8522ff369bf666f9eee7097da9accfa.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d8522ff369bf666f9eee7097da9accfa.bin
+    projectPath: Library\ShaderCache\d\d8522ff369bf666f9eee7097da9accfa.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d8564b095548ec6af8f86731427b60f5.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d8564b095548ec6af8f86731427b60f5.bin
+    projectPath: Library\ShaderCache\d\d8564b095548ec6af8f86731427b60f5.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d87798e057d9143e9062d376892d6821.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d87798e057d9143e9062d376892d6821.bin
+    projectPath: Library\ShaderCache\d\d87798e057d9143e9062d376892d6821.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d8c33046ffcda35bf12d5bea7ed172bc.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d8c33046ffcda35bf12d5bea7ed172bc.bin
+    projectPath: Library\ShaderCache\d\d8c33046ffcda35bf12d5bea7ed172bc.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\d9a83d46e0f39132f1bd3a77e1fe65f7.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d9a83d46e0f39132f1bd3a77e1fe65f7.bin
+    projectPath: Library\ShaderCache\d\d9a83d46e0f39132f1bd3a77e1fe65f7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\da5aff2dadb3926dc78d7ead569f0b12.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\da5aff2dadb3926dc78d7ead569f0b12.bin
+    projectPath: Library\ShaderCache\d\da5aff2dadb3926dc78d7ead569f0b12.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\dbb4b0be11d7f778490c82d641375ef4.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\dbb4b0be11d7f778490c82d641375ef4.bin
+    projectPath: Library\ShaderCache\d\dbb4b0be11d7f778490c82d641375ef4.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\dbff591936c140eaddff813c8f3afef0.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\dbff591936c140eaddff813c8f3afef0.bin
+    projectPath: Library\ShaderCache\d\dbff591936c140eaddff813c8f3afef0.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\dde08bb5c54467ef85262202854cfda0.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\dde08bb5c54467ef85262202854cfda0.bin
+    projectPath: Library\ShaderCache\d\dde08bb5c54467ef85262202854cfda0.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\df5c05ae4d32137f997ea960c0494d48.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\df5c05ae4d32137f997ea960c0494d48.bin
+    projectPath: Library\ShaderCache\d\df5c05ae4d32137f997ea960c0494d48.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\d\dfa45726998fc10b2ca6c08787ce7e0d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\d\dfa45726998fc10b2ca6c08787ce7e0d.bin
+    projectPath: Library\ShaderCache\d\dfa45726998fc10b2ca6c08787ce7e0d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\e07fbc4fed9809482fc6bb98971cf204.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\e07fbc4fed9809482fc6bb98971cf204.bin
+    projectPath: Library\ShaderCache\e\e07fbc4fed9809482fc6bb98971cf204.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\e088e93fb95a15a048876ddfab671a8c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\e088e93fb95a15a048876ddfab671a8c.bin
+    projectPath: Library\ShaderCache\e\e088e93fb95a15a048876ddfab671a8c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\e1eebf187350e34e90e92f184c303dcf.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\e1eebf187350e34e90e92f184c303dcf.bin
+    projectPath: Library\ShaderCache\e\e1eebf187350e34e90e92f184c303dcf.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\e3940919a3e6e89b7d51550d82136402.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\e3940919a3e6e89b7d51550d82136402.bin
+    projectPath: Library\ShaderCache\e\e3940919a3e6e89b7d51550d82136402.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\e4879c1c838daabd1b49374ce9ceb42c.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\e4879c1c838daabd1b49374ce9ceb42c.bin
+    projectPath: Library\ShaderCache\e\e4879c1c838daabd1b49374ce9ceb42c.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\e554c281f89e7cdae046a35a16d779e7.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\e554c281f89e7cdae046a35a16d779e7.bin
+    projectPath: Library\ShaderCache\e\e554c281f89e7cdae046a35a16d779e7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\e6651e041c5dab458ca77ec0521a8abf.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\e6651e041c5dab458ca77ec0521a8abf.bin
+    projectPath: Library\ShaderCache\e\e6651e041c5dab458ca77ec0521a8abf.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\e6e410c6db8ab1a32eb365defb55b98e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\e6e410c6db8ab1a32eb365defb55b98e.bin
+    projectPath: Library\ShaderCache\e\e6e410c6db8ab1a32eb365defb55b98e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\e774660d808c0236e2710d2e7953e5ba.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\e774660d808c0236e2710d2e7953e5ba.bin
+    projectPath: Library\ShaderCache\e\e774660d808c0236e2710d2e7953e5ba.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\e7ce3d4bea56b9712c6e975c25f433f2.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\e7ce3d4bea56b9712c6e975c25f433f2.bin
+    projectPath: Library\ShaderCache\e\e7ce3d4bea56b9712c6e975c25f433f2.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\e82f3da6c5abe6b90212f2c885898563.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\e82f3da6c5abe6b90212f2c885898563.bin
+    projectPath: Library\ShaderCache\e\e82f3da6c5abe6b90212f2c885898563.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\e8426326168ee1442705f9b1e5cff56a.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\e8426326168ee1442705f9b1e5cff56a.bin
+    projectPath: Library\ShaderCache\e\e8426326168ee1442705f9b1e5cff56a.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\eb998bfe1203ca32dd7ccd9d0809deb1.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\eb998bfe1203ca32dd7ccd9d0809deb1.bin
+    projectPath: Library\ShaderCache\e\eb998bfe1203ca32dd7ccd9d0809deb1.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\ee76e9e0caa5ecae846df07e2a43f08e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\ee76e9e0caa5ecae846df07e2a43f08e.bin
+    projectPath: Library\ShaderCache\e\ee76e9e0caa5ecae846df07e2a43f08e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\e\ef1cc065d136539029cf1c63b9b953b6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\e\ef1cc065d136539029cf1c63b9b953b6.bin
+    projectPath: Library\ShaderCache\e\ef1cc065d136539029cf1c63b9b953b6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f0505948b8409c60194e9c0318e76f3e.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f0505948b8409c60194e9c0318e76f3e.bin
+    projectPath: Library\ShaderCache\f\f0505948b8409c60194e9c0318e76f3e.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f0fa224f0d40c7921e9f6622097a4d37.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f0fa224f0d40c7921e9f6622097a4d37.bin
+    projectPath: Library\ShaderCache\f\f0fa224f0d40c7921e9f6622097a4d37.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f111d54099e2f8ac315057d4cb8823b7.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f111d54099e2f8ac315057d4cb8823b7.bin
+    projectPath: Library\ShaderCache\f\f111d54099e2f8ac315057d4cb8823b7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f24393ceab0e20c160aeedfd95515a24.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f24393ceab0e20c160aeedfd95515a24.bin
+    projectPath: Library\ShaderCache\f\f24393ceab0e20c160aeedfd95515a24.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f2fcf6d03ba35ea136ad15754224d287.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f2fcf6d03ba35ea136ad15754224d287.bin
+    projectPath: Library\ShaderCache\f\f2fcf6d03ba35ea136ad15754224d287.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f38db2e3efe7071f73171313238865de.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f38db2e3efe7071f73171313238865de.bin
+    projectPath: Library\ShaderCache\f\f38db2e3efe7071f73171313238865de.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f4f023bfc6682f8f60cbc993e41f2e11.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f4f023bfc6682f8f60cbc993e41f2e11.bin
+    projectPath: Library\ShaderCache\f\f4f023bfc6682f8f60cbc993e41f2e11.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f55d6d8e7e4a62667f436ca3dfcd6dc4.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f55d6d8e7e4a62667f436ca3dfcd6dc4.bin
+    projectPath: Library\ShaderCache\f\f55d6d8e7e4a62667f436ca3dfcd6dc4.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f5dfe04ed3d504dfef92172bce1858c7.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f5dfe04ed3d504dfef92172bce1858c7.bin
+    projectPath: Library\ShaderCache\f\f5dfe04ed3d504dfef92172bce1858c7.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f6adefb56e643307338ae8650793d268.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f6adefb56e643307338ae8650793d268.bin
+    projectPath: Library\ShaderCache\f\f6adefb56e643307338ae8650793d268.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f6ea806f6c28ce2713d3553682049fdc.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f6ea806f6c28ce2713d3553682049fdc.bin
+    projectPath: Library\ShaderCache\f\f6ea806f6c28ce2713d3553682049fdc.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f768473d534769f8a7be538378f23289.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f768473d534769f8a7be538378f23289.bin
+    projectPath: Library\ShaderCache\f\f768473d534769f8a7be538378f23289.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\f7773955ec602a06bd59948ad68b317d.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\f7773955ec602a06bd59948ad68b317d.bin
+    projectPath: Library\ShaderCache\f\f7773955ec602a06bd59948ad68b317d.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\fa4535c80bda24ffa89bfc7e042a74ea.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\fa4535c80bda24ffa89bfc7e042a74ea.bin
+    projectPath: Library\ShaderCache\f\fa4535c80bda24ffa89bfc7e042a74ea.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\fa90189fe43c803d899445ca8b071190.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\fa90189fe43c803d899445ca8b071190.bin
+    projectPath: Library\ShaderCache\f\fa90189fe43c803d899445ca8b071190.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\fdf58eec0bb9e49e660a017b397401e8.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\fdf58eec0bb9e49e660a017b397401e8.bin
+    projectPath: Library\ShaderCache\f\fdf58eec0bb9e49e660a017b397401e8.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\ShaderCache\f\fe1d02d55b208c6e936354e5568993b6.bin
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ShaderCache\f\fe1d02d55b208c6e936354e5568993b6.bin
+    projectPath: Library\ShaderCache\f\fe1d02d55b208c6e936354e5568993b6.bin
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe1.log
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe1.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe1.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe2.log
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe2.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe2.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe3.log
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe3.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe3.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe4.log
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe4.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe4.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe5.log
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe5.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe5.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe6.log
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe6.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe6.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe7.log
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe7.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe7.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\StateCache\Hierarchy\7c0795-a97449194bf81964e8.json
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\StateCache\Hierarchy\7c0795-a97449194bf81964e8.json
+    projectPath: Library\StateCache\Hierarchy\7c0795-a97449194bf81964e8.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\StateCache\Hierarchy\7c0795-mainStage.json
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\StateCache\Hierarchy\7c0795-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\7c0795-mainStage.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\StateCache\Hierarchy\b8c410-a97449194bf81964e8.json
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\StateCache\Hierarchy\b8c410-a97449194bf81964e8.json
+    projectPath: Library\StateCache\Hierarchy\b8c410-a97449194bf81964e8.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\StateCache\Hierarchy\b8c410-mainStage.json
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\StateCache\Hierarchy\b8c410-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\b8c410-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\StateCache\SceneView\3561ba-a97449194bf81964e8.json
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\StateCache\SceneView\3561ba-a97449194bf81964e8.json
+    projectPath: Library\StateCache\SceneView\3561ba-a97449194bf81964e8.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\StateCache\SceneView\3561ba-mainStage.json
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\StateCache\SceneView\3561ba-mainStage.json
+    projectPath: Library\StateCache\SceneView\3561ba-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\StateCache\SceneView\41efe6-a97449194bf81964e8.json
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\StateCache\SceneView\41efe6-a97449194bf81964e8.json
+    projectPath: Library\StateCache\SceneView\41efe6-a97449194bf81964e8.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\Library\StateCache\SceneView\41efe6-mainStage.json
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\StateCache\SceneView\41efe6-mainStage.json
+    projectPath: Library\StateCache\SceneView\41efe6-mainStage.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    projectPath: obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    projectPath: obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ML-Breakout\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    projectPath: obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
