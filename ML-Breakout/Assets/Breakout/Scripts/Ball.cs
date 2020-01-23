@@ -6,20 +6,22 @@ public class Ball : MonoBehaviour
 {
 
 	public float ballSpeed = 2f;
-	public Vector3 ballMovement;
+	public Vector3 ballDirection;
+	public Vector3 ballVelocity;
 
-	private float hori = 0.25f;
-	private float vert = 0.25f;
+	private float horiDirection = 1f;
+	private float vertDirection = 1f;
 	private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
     	rb = GetComponent<Rigidbody>();
-        hori = 1;
-        vert = 1;
-        ballMovement = new Vector3(hori, vert, 0f);
-        rb.AddForce(600f, 600f, 0);
+        horiDirection = 1;
+        vertDirection = 1;
+        ballDirection = new Vector3(horiDirection, vertDirection, 0f);
+
+        rb.velocity = ballDirection * ballSpeed;
     }
 
     // Update is called once per frame
@@ -28,11 +30,12 @@ public class Ball : MonoBehaviour
     	//ballMovement = new Vector3(hori, vert, 0f);
     	//transform.position += ballMovement;
         //rb.AddForce(new Vector3(ballSpeed, ballSpeed, 0f));
+        ballVelocity = rb.velocity;
     }
 
     void OnCollisionEnter(Collision col)
     {
-    	hori *= -1;
-    	vert *= -1;
+    	horiDirection *= -1;
+    	vertDirection *= -1;
     }
 }
