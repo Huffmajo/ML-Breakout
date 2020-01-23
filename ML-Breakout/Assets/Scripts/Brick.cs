@@ -13,7 +13,12 @@ public class Brick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		//check for collision and disappear if hit by ball
-        
+		    
     }
+
+	//check for collisions and destroy brick
+	void OnCollisionEnter(Collision other)
+	{
+		Destroy(gameObject);
+	}
 }
