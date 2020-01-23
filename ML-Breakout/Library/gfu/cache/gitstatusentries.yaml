@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 6
+  lastUpdatedAtString: 2020-01-22T18:19:48.778-06:00
+  initializedAtString: 2020-01-22T18:18:24.372-06:00
+  entries:
+  - path: ML-Breakout\Assets\Scripts\Brick.cs
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Assets\Scripts\Brick.cs
+    projectPath: Assets\Scripts\Brick.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\assetDatabase3
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\assetDatabase3
+    projectPath: Library\assetDatabase3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\CurrentLayout.dwlt
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\EditorInstance.json
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\EditorInstance.json
+    projectPath: Library\EditorInstance.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\metadata\5c\5c6eb88c7d476ea4395e1d0cc900aa7a
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\metadata\5c\5c6eb88c7d476ea4395e1d0cc900aa7a
+    projectPath: Library\metadata\5c\5c6eb88c7d476ea4395e1d0cc900aa7a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\VR_PC\Desktop\Unity_Projects\ML-Breakout\ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
