@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Breakout/Scenes/Breakout level 01.unity
+  isLoaded: 1
+  isActive: 1
