@@ -42,9 +42,9 @@ public class Ball : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
     	// bounce off paddle is dependent on proximity to paddle center
-    	if (col.gameObject.tag == "paddle")
+    	if (col.gameObject.tag == "Paddle")
     	{
-    		Debug.Log("Ball hit paddle");
+    		Debug.Log("Ball hit Paddle");
     		// insert bounce equations here once paddle prefab is available
     	}
     	// bounce off any other surface as usual
