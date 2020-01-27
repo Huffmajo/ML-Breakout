@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-01-26T15:29:17.689-08:00
-  initializedAtString: 2020-01-26T15:29:17.689-08:00
+  lastUpdatedAtString: 2020-01-27T16:03:03.170-06:00
+  initializedAtString: 2020-01-27T16:03:03.170-06:00
   currentGitRemote:
     name: origin
     url: https://github.com/Huffmajo/ML-Breakout.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: master
-    tracking: origin/master
+    name: Jeff
+    tracking: 
   currentConfigBranch:
-    name: master
+    name: Jeff
     remote:
-      name: origin
-      url: https://github.com/Huffmajo/ML-Breakout.git
-    trackingBranch: master
+      name: 
+      url: 
+    trackingBranch: 
   currentConfigRemote:
     name: origin
     url: https://github.com/Huffmajo/ML-Breakout.git
