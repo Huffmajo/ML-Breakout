@@ -13,39 +13,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-01-27T16:44:34.506-06:00
-  initializedAtString: 2020-01-27T16:44:34.506-06:00
+  lastUpdatedAtString: 2020-01-27T18:41:51.424-06:00
+  initializedAtString: 2020-01-27T18:28:34.550-06:00
   entries:
-  - path: ML-Breakout\.vscode\settings.json
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\.vscode\settings.json
-    projectPath: .vscode\settings.json
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ML-Breakout\Assets\Breakout\Materials\Paddle.mat
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Assets\Breakout\Materials\Paddle.mat
-    projectPath: Assets\Breakout\Materials\Paddle.mat
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ML-Breakout\Assets\Breakout\Materials\Paddle.mat.meta
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Assets\Breakout\Materials\Paddle.mat.meta
-    projectPath: Assets\Breakout\Materials\Paddle.mat.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: ML-Breakout\Assets\Breakout\Prefabs\Paddle.prefab
     fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Assets\Breakout\Prefabs\Paddle.prefab
     projectPath: Assets\Breakout\Prefabs\Paddle.prefab
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ML-Breakout\Assets\Breakout\Prefabs\Paddle.prefab.meta
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Assets\Breakout\Prefabs\Paddle.prefab.meta
-    projectPath: Assets\Breakout\Prefabs\Paddle.prefab.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: ML-Breakout\Assets\Breakout\Scenes\Breakout level 01.unity
     fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Assets\Breakout\Scenes\Breakout
       level 01.unity
@@ -53,24 +29,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ML-Breakout\Assets\Breakout\Scripts\Ball.cs
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Assets\Breakout\Scripts\Ball.cs
-    projectPath: Assets\Breakout\Scripts\Ball.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: ML-Breakout\Assets\Breakout\Scripts\Paddle.cs
     fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Assets\Breakout\Scripts\Paddle.cs
     projectPath: Assets\Breakout\Scripts\Paddle.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ML-Breakout\Assets\Breakout\Scripts\Paddle.cs.meta
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Assets\Breakout\Scripts\Paddle.cs.meta
-    projectPath: Assets\Breakout\Scripts\Paddle.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: ML-Breakout\Library\assetDatabase3
     fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\assetDatabase3
     projectPath: Library\assetDatabase3
@@ -86,6 +50,12 @@ MonoBehaviour:
   - path: ML-Breakout\Library\gfu\cache\branches.yaml
     fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ML-Breakout\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -123,44 +93,20 @@ MonoBehaviour:
     fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\metadata\39\39878d364ce3a7f419ad5f0198d3a76a
     projectPath: Library\metadata\39\39878d364ce3a7f419ad5f0198d3a76a
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: ML-Breakout\Library\metadata\39\39878d364ce3a7f419ad5f0198d3a76a.info
     fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\metadata\39\39878d364ce3a7f419ad5f0198d3a76a.info
     projectPath: Library\metadata\39\39878d364ce3a7f419ad5f0198d3a76a.info
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: ML-Breakout\Library\metadata\c9\c90ff56e571c37b4ea67904eb3b42ad0
     fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\metadata\c9\c90ff56e571c37b4ea67904eb3b42ad0
     projectPath: Library\metadata\c9\c90ff56e571c37b4ea67904eb3b42ad0
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ML-Breakout\Library\metadata\c9\c90ff56e571c37b4ea67904eb3b42ad0.info
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\metadata\c9\c90ff56e571c37b4ea67904eb3b42ad0.info
-    projectPath: Library\metadata\c9\c90ff56e571c37b4ea67904eb3b42ad0.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ML-Breakout\Library\metadata\d8\d8c01240cccd17f4995e234dde2cd6d2
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\metadata\d8\d8c01240cccd17f4995e234dde2cd6d2
-    projectPath: Library\metadata\d8\d8c01240cccd17f4995e234dde2cd6d2
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ML-Breakout\Library\metadata\d8\d8c54bc780de6f04eabc6caa9cc2749a
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\metadata\d8\d8c54bc780de6f04eabc6caa9cc2749a
-    projectPath: Library\metadata\d8\d8c54bc780de6f04eabc6caa9cc2749a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ML-Breakout\Library\metadata\d8\d8c54bc780de6f04eabc6caa9cc2749a.info
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\metadata\d8\d8c54bc780de6f04eabc6caa9cc2749a.info
-    projectPath: Library\metadata\d8\d8c54bc780de6f04eabc6caa9cc2749a.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -173,15 +119,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ML-Breakout\Library\ShaderCache\3\33fa9f5e1bce344eb18a9ed60378a2ef.bin
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\ShaderCache\3\33fa9f5e1bce344eb18a9ed60378a2ef.bin
-    projectPath: Library\ShaderCache\3\33fa9f5e1bce344eb18a9ed60378a2ef.bin
+  - path: ML-Breakout\Library\ShaderCache\1\15d9a953a7bdb67f57b39ef3c931deb4.bin
+    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\ShaderCache\1\15d9a953a7bdb67f57b39ef3c931deb4.bin
+    projectPath: Library\ShaderCache\1\15d9a953a7bdb67f57b39ef3c931deb4.bin
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ML-Breakout\Library\ShaderCache\7\7a238e429fb04aabb9e503376c6c90a6.bin
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\ShaderCache\7\7a238e429fb04aabb9e503376c6c90a6.bin
-    projectPath: Library\ShaderCache\7\7a238e429fb04aabb9e503376c6c90a6.bin
+  - path: ML-Breakout\Library\ShaderCache\d\d9e70421cf062fdf761a1f8399922183.bin
+    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\ShaderCache\d\d9e70421cf062fdf761a1f8399922183.bin
+    projectPath: Library\ShaderCache\d\d9e70421cf062fdf761a1f8399922183.bin
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -195,59 +141,23 @@ MonoBehaviour:
     fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\StateCache\Hierarchy\b8c410-39878d364ce3a7f419.json
     projectPath: Library\StateCache\Hierarchy\b8c410-39878d364ce3a7f419.json
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: ML-Breakout\Library\StateCache\Hierarchy\b8c410-mainStage.json
     fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\StateCache\Hierarchy\b8c410-mainStage.json
     projectPath: Library\StateCache\Hierarchy\b8c410-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ML-Breakout\Library\StateCache\SceneView\3561ba-39878d364ce3a7f419.json
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\StateCache\SceneView\3561ba-39878d364ce3a7f419.json
-    projectPath: Library\StateCache\SceneView\3561ba-39878d364ce3a7f419.json
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: ML-Breakout\Library\StateCache\SceneView\3561ba-mainStage.json
     fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\Library\StateCache\SceneView\3561ba-mainStage.json
     projectPath: Library\StateCache\SceneView\3561ba-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ML-Breakout\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+  - path: ML-Breakout\ProjectSettings\InputManager.asset
+    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\ProjectSettings\InputManager.asset
+    projectPath: ProjectSettings\InputManager.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ML-Breakout\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ML-Breakout\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ML-Breakout\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ML-Breakout\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ML-Breakout\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\unity-ml\ml-agents\UnitySDK\ML-Breakout\ML-Breakout\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1

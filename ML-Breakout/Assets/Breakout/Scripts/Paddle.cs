@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Paddle : MonoBehaviour
 {
+
+    public float paddleSpeed = 20f;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +17,6 @@ public class Paddle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * 20, 0f, 0f);
+        transform.Translate( 0f, Input.GetAxis("Horizontal") * Time.deltaTime * paddleSpeed, 0f);
     }
 }
