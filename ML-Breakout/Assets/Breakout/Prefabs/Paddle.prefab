@@ -289,3 +289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c90ff56e571c37b4ea67904eb3b42ad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paddleSpeed: 20
+  xPosLimit: 9
+  xNegLimit: -9
