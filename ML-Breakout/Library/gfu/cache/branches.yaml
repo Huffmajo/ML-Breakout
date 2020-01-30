@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-01-27T18:28:43.343-06:00
-  initializedAtString: 2020-01-27T18:28:43.188-06:00
+  lastUpdatedAtString: 2020-01-29T16:55:51.478-08:00
+  initializedAtString: 2020-01-29T16:55:51.322-08:00
   localBranches:
-  - name: Jeff
-    tracking: origin/Jeff
+  - name: joel
+    tracking: origin/joel
   - name: master
     tracking: origin/master
   remoteBranches:
@@ -29,9 +29,9 @@ MonoBehaviour:
     tracking: '[None]'
   - name: origin/master
     tracking: '[None]'
-  - name: origin/tera-test
+  - name: origin/tera
     tracking: '[None]'
-  - name: origin/dependabot/pip/ML-Breakout/Library/PackageCache/com.unity.barracuda@0.4.0-preview/Tools/tensorflow-1.15.0
+  - name: origin/dependabot/pip/ML-Breakout/Library/PackageCache/com.unity.barracuda@0.4.0-preview/Tools/tensorflow-1.15.2
     tracking: '[None]'
   remotes:
   - name: origin
@@ -41,16 +41,23 @@ MonoBehaviour:
     host: 
     function: 0
     token: 
+  - name: joel
+    url: joel
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
   localConfigBranches:
     keys:
-    - Jeff
+    - joel
     - master
     values:
-    - name: Jeff
+    - name: joel
       remote:
         name: origin
         url: https://github.com/Huffmajo/ML-Breakout.git
-      trackingBranch: Jeff
+      trackingBranch: joel
     - name: master
       remote:
         name: origin
@@ -65,8 +72,8 @@ MonoBehaviour:
       - Jeff
       - joel
       - master
-      - tera-test
-      - dependabot/pip/ML-Breakout/Library/PackageCache/com.unity.barracuda@0.4.0-preview/Tools/tensorflow-1.15.0
+      - tera
+      - dependabot/pip/ML-Breakout/Library/PackageCache/com.unity.barracuda@0.4.0-preview/Tools/tensorflow-1.15.2
     subKeyValues:
     - Values:
       - name: HEAD
@@ -89,12 +96,12 @@ MonoBehaviour:
           name: origin
           url: https://github.com/Huffmajo/ML-Breakout.git
         trackingBranch: 
-      - name: tera-test
+      - name: tera
         remote:
           name: origin
           url: https://github.com/Huffmajo/ML-Breakout.git
         trackingBranch: 
-      - name: dependabot/pip/ML-Breakout/Library/PackageCache/com.unity.barracuda@0.4.0-preview/Tools/tensorflow-1.15.0
+      - name: dependabot/pip/ML-Breakout/Library/PackageCache/com.unity.barracuda@0.4.0-preview/Tools/tensorflow-1.15.2
         remote:
           name: origin
           url: https://github.com/Huffmajo/ML-Breakout.git
@@ -102,6 +109,9 @@ MonoBehaviour:
   configRemotes:
     keys:
     - origin
+    - joel
     values:
     - name: origin
       url: https://github.com/Huffmajo/ML-Breakout.git
+    - name: joel
+      url: joel
