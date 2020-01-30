@@ -13,9 +13,143 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-01-29T18:13:59.576-08:00
+  lastUpdatedAtString: 2020-01-29T20:46:35.943-08:00
   initializedAtString: 2020-01-29T16:55:59.960-08:00
   log:
+  - commitID: dd8542a29eb9fd904a8f451caeb51ae28f0e61fd
+    mergeA: 
+    mergeB: 
+    authorName: Huffmajo
+    authorEmail: huffmajo@oregonstate.edu
+    commitEmail: huffmajo@oregonstate.edu
+    commitName: Huffmajo
+    summary: At start of game, ball hovers above paddle until released by user. Added
+      small security measures to prevent ball from getting stuck.
+    description: 
+    timeString: 2020-01-29T20:45:37.000-08:00
+    commitTimeString: 2020-01-29T20:45:37.000-08:00
+    changes:
+    - path: ML-Breakout\Assets\Breakout\Prefabs\Pad.prefab
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Assets\Breakout\Prefabs\Pad.prefab
+      projectPath: Assets\Breakout\Prefabs\Pad.prefab
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: ML-Breakout\Assets\Breakout\Prefabs\Pad.prefab.meta
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Assets\Breakout\Prefabs\Pad.prefab.meta
+      projectPath: Assets\Breakout\Prefabs\Pad.prefab.meta
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: ML-Breakout\Assets\Breakout\Prefabs\Paddle.prefab
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Assets\Breakout\Prefabs\Paddle.prefab
+      projectPath: Assets\Breakout\Prefabs\Paddle.prefab
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Assets\Breakout\Scenes\Breakout level 01.unity
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Assets\Breakout\Scenes\Breakout
+        level 01.unity
+      projectPath: Assets\Breakout\Scenes\Breakout level 01.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Assets\Breakout\Scripts\Ball.cs
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Assets\Breakout\Scripts\Ball.cs
+      projectPath: Assets\Breakout\Scripts\Ball.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\StateCache\Hierarchy\b8c410-3b73166e3595f4d489.json
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\StateCache\Hierarchy\b8c410-3b73166e3595f4d489.json
+      projectPath: Library\StateCache\Hierarchy\b8c410-3b73166e3595f4d489.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\StateCache\Hierarchy\b8c410-mainStage.json
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\StateCache\Hierarchy\b8c410-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\b8c410-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\assetDatabase3
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\metadata\39\39878d364ce3a7f419ad5f0198d3a76a
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\metadata\39\39878d364ce3a7f419ad5f0198d3a76a
+      projectPath: Library\metadata\39\39878d364ce3a7f419ad5f0198d3a76a
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\metadata\39\39878d364ce3a7f419ad5f0198d3a76a.info
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\metadata\39\39878d364ce3a7f419ad5f0198d3a76a.info
+      projectPath: Library\metadata\39\39878d364ce3a7f419ad5f0198d3a76a.info
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\metadata\3b\3b73166e3595f4d48972c5838a409b1b
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\metadata\3b\3b73166e3595f4d48972c5838a409b1b
+      projectPath: Library\metadata\3b\3b73166e3595f4d48972c5838a409b1b
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\metadata\d8\d8c01240cccd17f4995e234dde2cd6d2
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\metadata\d8\d8c01240cccd17f4995e234dde2cd6d2
+      projectPath: Library\metadata\d8\d8c01240cccd17f4995e234dde2cd6d2
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ML-Breakout\ProjectSettings\TagManager.asset
+      fullPath: C:\Users\Joel\ML-Breakout\ML-Breakout\ProjectSettings\TagManager.asset
+      projectPath: ProjectSettings\TagManager.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 30747d0fe9f90a7e2cfdfbccc939d8b125095733
     mergeA: 
     mergeB: 
