@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 8880647795858857771}
   m_Layer: 0
   m_Name: Middle Paddle
-  m_TagString: Untagged
+  m_TagString: paddle_mid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 2793667048900968330}
   m_Layer: 0
   m_Name: Right Side
-  m_TagString: Untagged
+  m_TagString: paddle_right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 1058370718256776735}
   m_Layer: 0
   m_Name: Left Side
-  m_TagString: Untagged
+  m_TagString: paddle_left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

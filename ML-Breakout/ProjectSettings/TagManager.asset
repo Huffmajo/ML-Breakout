@@ -31,6 +31,9 @@ TagManager:
   - purpleGoal
   - baby
   - fish
+  - paddle_mid
+  - paddle_left
+  - paddle_right
   layers:
   - Default
   - TransparentFX
