@@ -64,9 +64,9 @@ public class Ball : MonoBehaviour
     		// if ball has little to no y velocity, give it some
     		float absVelocityY = Mathf.Abs(rb.velocity.y);
 
-    		if (absVelocityY < 1f)
+    		if (absVelocityY < 10f)
     		{
-    			ballDirection = new Vector3(rb.velocity.x, 3f, rb.velocity.z);
+    			ballDirection = new Vector3(rb.velocity.x, startingSpeed, rb.velocity.z);
     			rb.velocity = ballDirection;
     			Debug.Log("Y velocity too low, added some vertical oof!");
     		}
