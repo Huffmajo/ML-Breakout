@@ -1,0 +1,57 @@
+Base path: C:/Program Files/Unity/2018.4.14f1/Editor/Data
+Cmd: initializeCompiler
+Cmd: preprocess
+  insize=3466 outsize=1210 ok=1
+Cmd: preprocess
+  insize=3508 outsize=1607 ok=1
+Cmd: preprocess
+  insize=3464 outsize=1257 ok=1
+Cmd: preprocess
+  insize=1828 outsize=677 ok=1
+Cmd: preprocessCompute
+  insize=7938 outsize=7960 ok=1
+Cmd: preprocess
+  insize=10559 outsize=3882 ok=1
+Cmd: preprocessCompute
+  insize=64064 outsize=64076 ok=1
+Cmd: preprocessCompute
+  insize=9889 outsize=9919 ok=1
+Cmd: preprocessCompute
+  insize=24319 outsize=24335 ok=1
+Cmd: preprocessCompute
+  insize=7323 outsize=7335 ok=1
+Cmd: preprocess
+  insize=3478 outsize=2592 ok=1
+Cmd: preprocess
+  insize=2009 outsize=2184 ok=1
+Cmd: preprocess
+  insize=7605 outsize=2406 ok=1
+Cmd: preprocessCompute
+  insize=44214 outsize=44336 ok=1
+Cmd: preprocess
+  insize=4400 outsize=1843 ok=1
+Cmd: preprocess
+  insize=7773 outsize=2674 ok=1
+Cmd: preprocessCompute
+  insize=4073 outsize=4081 ok=1
+Cmd: preprocess
+  insize=2307 outsize=1077 ok=1
+Cmd: preprocessCompute
+  insize=1808 outsize=1810 ok=1
+Cmd: preprocess
+  insize=10548 outsize=3873 ok=1
+Cmd: preprocess
+  insize=4297 outsize=3592 ok=1
+Cmd: preprocessCompute
+  insize=29208 outsize=29386 ok=1
+Cmd: preprocess
+  insize=7631 outsize=2417 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler

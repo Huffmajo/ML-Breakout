@@ -10,12 +10,14 @@ public class Ball : MonoBehaviour
 	public Vector3 ballDirection;
 	public Vector3 ballVelocity;
 	public GameObject paddle;
+	public float totalVelocity;
 
 	private float horiDirection = 1f;
 	private float vertDirection = 1f;
 	private Rigidbody rb;
 	private bool heldByPaddle;
 	private Vector3 heldBallPosition;
+	private float minBallVerticalVelocity = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -64,7 +66,7 @@ public class Ball : MonoBehaviour
     		// if ball has little to no y velocity, give it some
     		float absVelocityY = Mathf.Abs(rb.velocity.y);
 
-    		if (absVelocityY < 10f)
+    		if (absVelocityY < minBallVerticalVelocity)
     		{
     			ballDirection = new Vector3(rb.velocity.x, startingSpeed, rb.velocity.z);
     			rb.velocity = ballDirection;
@@ -74,6 +76,7 @@ public class Ball : MonoBehaviour
 
         // track velocity for interactions with bricks and paddle
         ballVelocity = rb.velocity;
+        totalVelocity = Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.y);
     }
 
     // ball bounces toward side of paddle hit, bounces as usual in center of paddle
