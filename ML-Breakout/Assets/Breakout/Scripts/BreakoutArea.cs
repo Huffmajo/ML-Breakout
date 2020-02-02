@@ -68,6 +68,6 @@ public class BreakoutArea : Area
     // Update is called once per frame
     private void Update()
     {
-        currentReward.text = paddleAgent.GetCurrentReward().ToString("0.00");
+//        currentReward.text = paddleAgent.GetCurrentReward().ToString("0.00");
     }
 }

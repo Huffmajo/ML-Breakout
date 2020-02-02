@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MLAgents;
 
-public class Paddle : Agent
+public class PaddleAgent : Agent
 {
 
     private BreakoutArea breakoutArea;
@@ -16,7 +16,7 @@ public class Paddle : Agent
     public float xPosLimit = 9f;
     public float xNegLimit = -9f;
 
-
+/*
     public override float Heuristic()
     {
         float leftOrRight = 0f;
@@ -32,11 +32,11 @@ public class Paddle : Agent
 
         return  leftOrRight;
     }
+*/
 
 
 
-
-
+/*
     public override void AgentAction(float vectorAction)
     {;
 
@@ -45,13 +45,16 @@ public class Paddle : Agent
         //AddReward(-1f / agentParameters.maxSteps);
 
     }
+*/
 
-
+/*
     public override void AgentReset()
     {
         breakoutArea.ResetArea();
     }
+*/
 
+/*
     public override void CollectObservations()
     {
 
@@ -66,16 +69,17 @@ public class Paddle : Agent
 
         //or use raycasting to determine where objects positions are...
 
-/*
+
+
 
         float rayDistance = 20f;
 		float[] rayAngles = {30f, 60f, 90f, 120f, 150f};
 		string[] detectableObjects = {"ball", "brick", "wall"};
 		AddVectorObs(rayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
+    }
 */
 
-    }
-
+/*
     // Start is called before the first frame update
     void Start()
     {
@@ -84,7 +88,7 @@ public class Paddle : Agent
         
         //rayPerception = GetComponent<RayPerception3D>();
     }
-
+*/
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -109,6 +113,6 @@ public class Paddle : Agent
 
         transform.Translate( 0f, Input.GetAxis("Horizontal") * Time.deltaTime * paddleSpeed, 0f);
     }
+*/
 }
 
-*/
