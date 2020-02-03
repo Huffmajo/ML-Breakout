@@ -82,6 +82,9 @@ public class Ball : MonoBehaviour
     // ball bounces toward side of paddle hit, bounces as usual in center of paddle
     void OnCollisionEnter(Collision col)
     {
+    	// play bounce sound
+    	FindObjectOfType<AudioManager>().Play("Bounce");
+
     	// leftside hit makes ball bounce left
     	if (col.gameObject.tag == "paddle_left")
     	{

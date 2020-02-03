@@ -191,13 +191,24 @@ MonoBehaviour:
   m_FillRect: {fileID: 1113740156}
   m_HandleRect: {fileID: 1612345253}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.8
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1387749424}
+        m_MethodName: SetMusicVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &310644884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,6 +2313,78 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1333330764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1333330766}
+  - component: {fileID: 1333330765}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1333330765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333330764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80409b5e749085418741b61e620f1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: BGM
+    clip: {fileID: 8300000, guid: 2bdf41b142aad3d41a49d0e5d51bc199, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 1
+    group: {fileID: 243287121024162970, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
+    source: {fileID: 0}
+  - name: Bounce
+    clip: {fileID: 8300000, guid: 2ecec41c0906ca744b966a9181e51019, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
+    source: {fileID: 0}
+  - name: Break
+    clip: {fileID: 8300000, guid: 36c43e6d342af2847b3fcc1deab05db4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
+    source: {fileID: 0}
+  - name: Pop
+    clip: {fileID: 8300000, guid: f6592a1cf6c28844395a3d153c25f681, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
+    source: {fileID: 0}
+--- !u!4 &1333330766
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333330764}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1338440579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,13 +2464,24 @@ MonoBehaviour:
   m_FillRect: {fileID: 730015982}
   m_HandleRect: {fileID: 683671516}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.8
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1387749424}
+        m_MethodName: SetSoundVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1353916125
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,6 +2684,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1387749423}
+  - component: {fileID: 1387749424}
   m_Layer: 5
   m_Name: OptionsMenu
   m_TagString: Untagged
@@ -2620,6 +2715,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1387749424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387749422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bad06fd12d53740a964bc36bef648b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
 --- !u!1 &1393133138
 GameObject:
   m_ObjectHideFlags: 0
