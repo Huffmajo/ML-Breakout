@@ -8,12 +8,18 @@ public class MainMenu : MonoBehaviour
 {
 
 	// loads level select scene
-	public void LevelSelect()
+	public void level01()
 	{
-		// loads first level
-		// TODO: change this to load the level select screen once implemented
 		SceneManager.LoadScene("Breakout Level 01");
 	}
+
+	public void level02()
+	{
+		SceneManager.LoadScene("Breakout Level 02");
+	}
+
+
+
 
 	// exits game
 	public void Quit()

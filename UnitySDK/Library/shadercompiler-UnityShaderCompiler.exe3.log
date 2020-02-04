@@ -1,54 +1,46 @@
 Base path: F:/Unity/Editors Path/2018.4.14f1/Editor/Data
 Cmd: initializeCompiler
 Cmd: compileComputeKernel
-  api=4 insize=7960 outsize=1065 ok=1
+  api=4 insize=8273 outsize=1581 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=64076 outsize=4665 ok=1
+  api=4 insize=65748 outsize=5393 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=9919 outsize=1905 ok=1
+  api=4 insize=10277 outsize=1905 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=9919 outsize=1937 ok=1
+  api=4 insize=10277 outsize=1945 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=24335 outsize=2709 ok=1
+  api=4 insize=10277 outsize=2085 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=7335 outsize=2557 ok=1
+  api=4 insize=24974 outsize=2709 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=44336 outsize=1585 ok=1
+  api=4 insize=7595 outsize=2053 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=44336 outsize=1433 ok=1
+  error: 1 plat 4 at BarracudaReferenceImpl.compute(1256): array reference cannot be used as an l-value; not natively addressable, forcing loop to unroll
+  error: 1 plat 4 at BarracudaReferenceImpl.compute(1266): array reference cannot be used as an l-value; not natively addressable, forcing loop to unroll
+  api=4 insize=46033 outsize=8609 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=44336 outsize=3069 ok=1
+  api=4 insize=4240 outsize=1717 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=44336 outsize=1885 ok=1
+  api=4 insize=30635 outsize=785 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=44336 outsize=1905 ok=1
+  api=4 insize=30635 outsize=1045 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=44336 outsize=1937 ok=1
+  api=4 insize=30635 outsize=813 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=44336 outsize=2085 ok=1
+  api=4 insize=30635 outsize=757 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=44336 outsize=1345 ok=1
+  api=4 insize=30635 outsize=801 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=29386 outsize=777 ok=1
+  api=4 insize=30635 outsize=765 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=29386 outsize=813 ok=1
+  api=4 insize=30635 outsize=789 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=29386 outsize=873 ok=1
+  api=4 insize=30635 outsize=1885 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=29386 outsize=705 ok=1
+  api=4 insize=30635 outsize=1309 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=29386 outsize=765 ok=1
+  api=4 insize=30635 outsize=1341 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=29386 outsize=1293 ok=1
+  api=4 insize=30635 outsize=1265 ok=1
 Cmd: compileComputeKernel
-  api=4 insize=29386 outsize=1553 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=29386 outsize=1361 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=29386 outsize=1365 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=29386 outsize=1249 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=29386 outsize=1633 ok=1
-
-Quitting shader compiler process
+  api=4 insize=30635 outsize=1393 ok=1
