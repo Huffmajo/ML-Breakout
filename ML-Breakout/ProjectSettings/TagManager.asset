@@ -34,6 +34,7 @@ TagManager:
   - paddle_mid
   - paddle_left
   - paddle_right
+  - paddle
   layers:
   - Default
   - TransparentFX

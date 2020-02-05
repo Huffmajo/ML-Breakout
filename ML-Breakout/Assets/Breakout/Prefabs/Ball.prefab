@@ -122,5 +122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballSpeed: 20
+  startingSpeed: 20
   ballDirection: {x: 0, y: 0, z: 0}
   ballVelocity: {x: 0, y: 0, z: 0}
+  paddle: {fileID: 0}
+  totalVelocity: 0
+  heldByPaddle: 0

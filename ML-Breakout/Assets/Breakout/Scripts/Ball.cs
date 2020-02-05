@@ -11,11 +11,12 @@ public class Ball : MonoBehaviour
 	public Vector3 ballVelocity;
 	public GameObject paddle;
 	public float totalVelocity;
+	public bool heldByPaddle;
 
 	private float horiDirection = 1f;
 	private float vertDirection = 1f;
 	private Rigidbody rb;
-	private bool heldByPaddle;
+	//private bool heldByPaddle;
 	private Vector3 heldBallPosition;
 	private float minBallVerticalVelocity = 5f;
 
@@ -83,7 +84,7 @@ public class Ball : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
     	// play bounce sound
-    	FindObjectOfType<AudioManager>().Play("Bounce");
+    	//FindObjectOfType<AudioManager>().Play("Bounce");
 
     	// leftside hit makes ball bounce left
     	if (col.gameObject.tag == "paddle_left")

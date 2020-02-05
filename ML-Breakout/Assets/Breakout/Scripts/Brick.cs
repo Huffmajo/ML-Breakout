@@ -20,7 +20,7 @@ public class Brick : MonoBehaviour
 	void OnCollisionEnter(Collision other)
 	{
         // play break sound
-        FindObjectOfType<AudioManager>().Play("Pop");
+        //FindObjectOfType<AudioManager>().Play("Pop");
 
 		Destroy(gameObject);
 	}
