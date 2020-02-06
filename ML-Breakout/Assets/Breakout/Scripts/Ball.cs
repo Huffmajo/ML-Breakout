@@ -12,6 +12,7 @@ public class Ball : MonoBehaviour
 	public GameObject paddle;
 	public float totalVelocity;
 	public bool heldByPaddle;
+	public float velocityAngle;
 
 	private float horiDirection = 1f;
 	private float vertDirection = 1f;
@@ -81,6 +82,8 @@ public class Ball : MonoBehaviour
         // track velocity for interactions with bricks and paddle
         ballVelocity = rb.velocity;
         totalVelocity = Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.y);
+
+        velocityAngle = Mathf.Atan2(ballVelocity.y, ballVelocity.x) * Mathf.Rad2Deg;
     }
 
     // ball bounces toward side of paddle hit, bounces as usual in center of paddle
@@ -94,24 +97,43 @@ public class Ball : MonoBehaviour
     	{
     		Debug.Log("Leftside paddle hit");
     		
+    		/*
     		// if ball is moving right, reverse x velocity
     		if (rb.velocity.x > 0)
     		{
 				ballDirection = new Vector3((rb.velocity.x * -1), rb.velocity.y, rb.velocity.z);
 				rb.velocity = ballDirection;
     		}
+    		*/
+
+    		float angle = 135f;
+    		float velx = ballSpeed * Mathf.Cos(angle * Mathf.Deg2Rad);
+    		float vely = ballSpeed * Mathf.Sin(angle * Mathf.Deg2Rad);
+    		rb.velocity = new Vector3(velx, vely, 0f);
     	}
     	// rightside hit makes ball bounce right
     	else if (col.gameObject.tag == "paddle_right")
     	{
     		Debug.Log("Rightside paddle hit");
-    		
+    		/*
     		// if ball is moving right, reverse x velocity
     		if (rb.velocity.x < 0)
     		{
 				ballDirection = new Vector3((rb.velocity.x * -1), rb.velocity.y, rb.velocity.z);
 				rb.velocity = ballDirection;
     		}	
+    		*/
+    		float angle = 45f;
+    		float velx = ballSpeed * Mathf.Cos(angle * Mathf.Deg2Rad);
+    		float vely = ballSpeed * Mathf.Sin(angle * Mathf.Deg2Rad);
+    		rb.velocity = new Vector3(velx, vely, 0f);
+    	}
+    	else if (col.gameObject.tag == "paddle_mid")
+    	{
+    		float angle = 0f;
+    		float velx = ballSpeed * Mathf.Cos(angle * Mathf.Deg2Rad);
+    		float vely = ballSpeed * Mathf.Sin(angle * Mathf.Deg2Rad);
+    		rb.velocity = new Vector3(velx, vely, 0f);
     	}
     }
 }
