@@ -52,6 +52,9 @@ public class Ball : MonoBehaviour
     		heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
     		transform.position = heldBallPosition;
 
+    		// remove velocity while ball is held
+    		rb.velocity = Vector3.zero;
+
     		// release ball from user input
     		if (releaseButton)
     		{
@@ -84,7 +87,7 @@ public class Ball : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
     	// play bounce sound
-    	//FindObjectOfType<AudioManager>().Play("Bounce");
+    	FindObjectOfType<AudioManager>().Play("Bounce");
 
     	// leftside hit makes ball bounce left
     	if (col.gameObject.tag == "paddle_left")
