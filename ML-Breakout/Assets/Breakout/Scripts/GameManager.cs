@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
 	{
 		//respawn ball above paddle
 		Debug.Log("Respawn Ball");
-		ballScript.heldByPaddle = true;
+		ballScript.ResetBall();
 	}
 
 	void GameOver()

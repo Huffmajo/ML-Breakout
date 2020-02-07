@@ -13,11 +13,10 @@ public class Ball : MonoBehaviour
 	public float totalVelocity;
 	public bool heldByPaddle;
 	public float velocityAngle;
+	public Vector3 ballImpactVector;
+	public float launchAngle;
 
-	private float horiDirection = 1f;
-	private float vertDirection = 1f;
 	private Rigidbody rb;
-	//private bool heldByPaddle;
 	private Vector3 heldBallPosition;
 	private float minBallVerticalVelocity = 5f;
 
@@ -30,15 +29,7 @@ public class Ball : MonoBehaviour
     	// ball speed is starting speed
     	ballSpeed = startingSpeed;
 
-    	// set starting velocity directions
-        horiDirection = 1;
-        vertDirection = 1;
-        ballDirection = new Vector3(horiDirection, vertDirection, 0f);
-
-        // ball starts docked to paddle
-        heldByPaddle = true;
-        heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
-        transform.position = heldBallPosition;
+    	ResetBall();
     }
 
     // Update is called once per frame
@@ -53,8 +44,7 @@ public class Ball : MonoBehaviour
     		heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
     		transform.position = heldBallPosition;
 
-    		// remove velocity while ball is held
-    		rb.velocity = Vector3.zero;
+    		
 
     		// release ball from user input
     		if (releaseButton)
@@ -62,7 +52,7 @@ public class Ball : MonoBehaviour
     			heldByPaddle = false;
 
 	    		// start ball moving
-    	    	rb.velocity = ballDirection * ballSpeed;
+    	    	LaunchBall(ballSpeed, launchAngle);
     		}
     	}
     	// otherwise ball is released and play is active
@@ -81,8 +71,11 @@ public class Ball : MonoBehaviour
 
         // track velocity for interactions with bricks and paddle
         ballVelocity = rb.velocity;
+
+        // get combined velocity
         totalVelocity = Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.y);
 
+        // get angle of ball's vector DELETE AFTER TESTING
         velocityAngle = Mathf.Atan2(ballVelocity.y, ballVelocity.x) * Mathf.Rad2Deg;
     }
 
@@ -92,48 +85,45 @@ public class Ball : MonoBehaviour
     	// play bounce sound
     	FindObjectOfType<AudioManager>().Play("Bounce");
 
-    	// leftside hit makes ball bounce left
-    	if (col.gameObject.tag == "paddle_left")
+    	if (col.gameObject.tag == "paddle")
     	{
-    		Debug.Log("Leftside paddle hit");
-    		
-    		/*
-    		// if ball is moving right, reverse x velocity
-    		if (rb.velocity.x > 0)
-    		{
-				ballDirection = new Vector3((rb.velocity.x * -1), rb.velocity.y, rb.velocity.z);
-				rb.velocity = ballDirection;
-    		}
-    		*/
+    		// get where ball hits paddle
+    		ContactPoint contact = col.contacts[0];
+    		Vector3 pos = contact.point;
+    		ballImpactVector = paddle.transform.InverseTransformPoint(pos); 
 
-    		float angle = 135f;
-    		float velx = ballSpeed * Mathf.Cos(angle * Mathf.Deg2Rad);
-    		float vely = ballSpeed * Mathf.Sin(angle * Mathf.Deg2Rad);
-    		rb.velocity = new Vector3(velx, vely, 0f);
+	    	launchAngle = CalculateLaunchAngle(ballImpactVector.x);
+
+	    	// launch ball at angle
+    		LaunchBall(ballSpeed, launchAngle);
     	}
-    	// rightside hit makes ball bounce right
-    	else if (col.gameObject.tag == "paddle_right")
-    	{
-    		Debug.Log("Rightside paddle hit");
-    		/*
-    		// if ball is moving right, reverse x velocity
-    		if (rb.velocity.x < 0)
-    		{
-				ballDirection = new Vector3((rb.velocity.x * -1), rb.velocity.y, rb.velocity.z);
-				rb.velocity = ballDirection;
-    		}	
-    		*/
-    		float angle = 45f;
-    		float velx = ballSpeed * Mathf.Cos(angle * Mathf.Deg2Rad);
-    		float vely = ballSpeed * Mathf.Sin(angle * Mathf.Deg2Rad);
-    		rb.velocity = new Vector3(velx, vely, 0f);
-    	}
-    	else if (col.gameObject.tag == "paddle_mid")
-    	{
-    		float angle = 0f;
-    		float velx = ballSpeed * Mathf.Cos(angle * Mathf.Deg2Rad);
-    		float vely = ballSpeed * Mathf.Sin(angle * Mathf.Deg2Rad);
-    		rb.velocity = new Vector3(velx, vely, 0f);
-    	}
+    }
+
+    // resets local variables and location of the ball
+    public void ResetBall()
+    {
+    	launchAngle = 45f;
+
+        // ball is docked to paddle
+        heldByPaddle = true;
+        heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
+        transform.position = heldBallPosition;
+
+        // ball has no velocity
+    	rb.velocity = Vector3.zero;
+    }
+
+    // returns launch angle based on where the paddle is impacted
+    float CalculateLaunchAngle(float impactPos)
+    {
+    	return 90 - (12 * impactPos);
+    }
+
+    // launches ball at specified speed and angle
+    void LaunchBall(float speed, float angle)
+    {
+    	float xVelocity = speed * Mathf.Cos(angle * Mathf.Deg2Rad);
+    	float yVelocity = speed * Mathf.Sin(angle * Mathf.Deg2Rad);
+    	rb.velocity = new Vector3(xVelocity, yVelocity, 0f);
     }
 }
