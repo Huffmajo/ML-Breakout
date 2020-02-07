@@ -5,32 +5,28 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-	//[SerializeField]
-	//private int _lives = 3;
 	public static int _lives = 3;
 	public static GameObject ball;
 	static Ball ballScript;
 	public static GameObject paddle;
-	//public Text livesText;
-	//public Text gameOverText;
+	public static bool gameOver = false;
 
 	// Start is called before the first frame update
 	void Start()
 	{
+		gameOver = false;
 		_lives = 3;
 		ball = GameObject.FindWithTag("ball");
 		paddle = GameObject.FindWithTag("paddle");
 		ballScript = ball.GetComponent<Ball>();
 		ball.SetActive(true);
 		paddle.SetActive(true);
-		//gameOverText.gameObject.SetActive(false);
 
 		if (ballScript == null)
 		{
 			Debug.Log("ballScript is NULL");
 		}
 
-		//livesText.text = "Lives: " + _lives.ToString();
 	}
 
 	//gets called by floor when ball hits it
@@ -55,17 +51,17 @@ public class GameManager : MonoBehaviour
 	void RespawnBall()
 	{
 		//respawn ball above paddle
-		Debug.Log("Respawn Ball");
 		ballScript.ResetBall();
 	}
 
 	void GameOver()
 	{
+		//update game over message
+		gameOver = true;
 		//make paddle and ball disappear
 		ball.SetActive(false);
 		paddle.SetActive(false);
-		//Game Over Message
-		//gameOverText.gameObject.SetActive(true);
+		
 	}
 
 
