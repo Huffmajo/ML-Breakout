@@ -44,7 +44,6 @@ public class Ball : MonoBehaviour
     		heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
     		transform.position = heldBallPosition;
 
-    		
 
     		// release ball from user input
     		if (releaseButton)
@@ -58,14 +57,11 @@ public class Ball : MonoBehaviour
     	// otherwise ball is released and play is active
     	else
     	{
-    		// if ball has little to no y velocity, give it some
-    		float absVelocityY = Mathf.Abs(rb.velocity.y);
-
-    		if (absVelocityY < minBallVerticalVelocity)
+    		// correct ball launch angle if too horizontal
+    		if (BallAngleNeedFixing(launchAngle))
     		{
-    			ballDirection = new Vector3(rb.velocity.x, startingSpeed, rb.velocity.z);
-    			rb.velocity = ballDirection;
-    			Debug.Log("Y velocity too low, added some vertical oof!");
+    			launchAngle = FixBallAngle(launchAngle);
+    			LaunchBall(ballSpeed, launchAngle);
     		}
     	}
 
@@ -125,5 +121,46 @@ public class Ball : MonoBehaviour
     	float xVelocity = speed * Mathf.Cos(angle * Mathf.Deg2Rad);
     	float yVelocity = speed * Mathf.Sin(angle * Mathf.Deg2Rad);
     	rb.velocity = new Vector3(xVelocity, yVelocity, 0f);
+    }
+
+    // check if ball's velocity angle is too horizontal 
+    bool BallAngleNeedFixing(float angle)
+    {
+    	bool needFix = false;
+
+    	if  ((angle < 30) ||
+    		(angle > 150 && angle <= 180) ||
+    		(angle > 180 && angle <= 210) ||
+    		(angle > 330))
+    	{
+    		needFix = true;
+    	}
+    	
+    	return needFix;
+    }
+
+    // return fixed ball velocity if angle is not vertical enough
+    float FixBallAngle(float angle)
+    {
+    	float fixedAngle = 0;
+
+    	if (angle < 30)
+    	{
+    		fixedAngle = 30;
+    	}
+    	else if (angle > 150 && angle <= 180)
+    	{
+    		fixedAngle = 150;
+    	}
+    	else if (angle > 180 && angle <= 210)
+    	{
+   			fixedAngle = 210;
+   		}
+   		else if (angle > 330)
+   		{    		
+   			fixedAngle = 330;
+    	}
+
+    	return fixedAngle;
     }
 }
