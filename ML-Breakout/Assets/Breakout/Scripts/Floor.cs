@@ -11,7 +11,6 @@ public class Floor : MonoBehaviour
 		//decrement life from game manager
 		if (collision.gameObject.tag == "ball")
 		{
-			Debug.Log("Ball hits floor");
 			gameManager.LoseLife();
 		}
 	}

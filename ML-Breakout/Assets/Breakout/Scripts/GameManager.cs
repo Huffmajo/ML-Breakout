@@ -51,6 +51,12 @@ public class GameManager : MonoBehaviour
 		endGameUI.SetActive(false);
 	}
 
+	void Update()
+	{
+		//UpdateUI();
+		livesText.text = "LIVES: " + _lives;
+	}
+
 	// update brick UI
 	public void UpdateUI()
 	{
@@ -67,10 +73,13 @@ public class GameManager : MonoBehaviour
 	//gets called by floor when ball hits it
 	public void LoseLife()
 	{
+		// big oof
+        FindObjectOfType<AudioManager>().Play("Death");
+
 		DecrementLives();
 		RespawnBall();
 
-		if (_lives < 0)
+		if (_lives <= 0)
 		{
 			GameOver();
 		}
@@ -91,14 +100,15 @@ public class GameManager : MonoBehaviour
 
 	void GameOver()
 	{
-		Debug.Log("GAMEOVER");
-
 		// set UI to be active
 		endGameUI.SetActive(true);
 
+		// play sad trombone
+		//FindObjectOfType<AudioManager>().Stop("BGM");
+        FindObjectOfType<AudioManager>().Play("GameOver");
+
 		// update game over message
 		titleText.text = "GAME OVER";
-		Debug.Log(titleText.text);
 		// update results text
 		resultsText.text = bricksLeft + "/" + bricksTotal + " BRICKS LEFT";
 
@@ -115,6 +125,13 @@ public class GameManager : MonoBehaviour
 
 	void LevelComplete()
 	{
+		// set UI to be active
+		endGameUI.SetActive(true);
+
+		// play victory sound
+		//FindObjectOfType<AudioManager>().Stop("BGM");
+        FindObjectOfType<AudioManager>().Play("Victory");
+
 		// update game over message
 		titleText.text = "LEVEL COMPLETE";
 
@@ -124,9 +141,6 @@ public class GameManager : MonoBehaviour
 		//make paddle and ball disappear
 		ball.SetActive(false);
 		paddle.SetActive(false);
-
-		// set UI to be active
-		endGameUI.SetActive(true);
 
 		// disable next level button if no more levels
 		if (IsLastLevel())
@@ -151,12 +165,14 @@ public class GameManager : MonoBehaviour
 	public bool IsLastLevel()
 	{
 		int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
-		int totalNumLevels = SceneManager.sceneCountInBuildSettings;
+		int totalNumLevels = SceneManager.sceneCountInBuildSettings - 1;
 		bool isLast = true;
+
+		//Debug.Log("currentLevel: " + currentLevelIndex + " totalLevels: " + totalNumLevels);
 
 		if (currentLevelIndex < totalNumLevels)
 		{
-			isLast = false;;
+			isLast = false;
 		}
 
 		return isLast;

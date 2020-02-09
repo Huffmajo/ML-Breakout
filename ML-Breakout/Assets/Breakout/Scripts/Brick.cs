@@ -19,9 +19,6 @@ public class Brick : MonoBehaviour
 	//check for collisions and destroy brick
 	void OnCollisionEnter(Collision other)
 	{
-        // play break sound
-        FindObjectOfType<AudioManager>().Play("Pop");
-
 		Destroy(gameObject);
 	}
 }

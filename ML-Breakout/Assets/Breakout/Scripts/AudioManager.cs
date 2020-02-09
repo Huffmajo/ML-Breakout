@@ -54,6 +54,22 @@ public class AudioManager : MonoBehaviour
     	s.source.Play();
     }
 
+    public void Stop(string name)
+    {
+        // look for audio source by that name
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+
+        // if not found throw warning error
+        if (s == null)
+        {
+            Debug.LogWarning("Sound " + name + " not found");
+            return;
+        }
+
+        // otherwise play found sound
+        s.source.Stop();
+    }
+
     void Start()
     {
     	// play background music at start of game

@@ -40,6 +40,17 @@ public class Ball : MonoBehaviour
     	// get input for ball release
     	bool releaseButton = Input.GetButtonDown("Jump");
 
+    	// track velocity for interactions with bricks and paddle
+        ballVelocity = rb.velocity;
+		totalVelocity = Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.y);
+
+        // get angle of ball's vector, 0-359°
+        velocityAngle = Mathf.Atan2(ballVelocity.y, ballVelocity.x) * Mathf.Rad2Deg;
+        if (velocityAngle < 0)
+        {
+        	velocityAngle += 360;
+        }
+
     	// ball is held in front of paddle until released
     	if (heldByPaddle)
     	{
@@ -60,31 +71,21 @@ public class Ball : MonoBehaviour
     	else
     	{
     		// correct ball launch angle if too horizontal
-    		if (BallAngleNeedFixing(launchAngle))
+    		if (BallAngleNeedFixing(velocityAngle))
     		{
-    			launchAngle = FixBallAngle(launchAngle);
+    			launchAngle = FixBallAngle(velocityAngle);
     			LaunchBall(ballSpeed, launchAngle);
     		}
     	}
-
-        // track velocity for interactions with bricks and paddle
-        ballVelocity = rb.velocity;
-
-        // get combined velocity
-        totalVelocity = Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.y);
-
-        // get angle of ball's vector DELETE AFTER TESTING
-        velocityAngle = Mathf.Atan2(ballVelocity.y, ballVelocity.x) * Mathf.Rad2Deg;
     }
 
     // ball bounces toward side of paddle hit, bounces as usual in center of paddle
     void OnCollisionEnter(Collision col)
     {
-    	// play bounce sound
-    	FindObjectOfType<AudioManager>().Play("Bounce");
-
     	if (col.gameObject.tag == "paddle")
     	{
+    		FindObjectOfType<AudioManager>().Play("Bounce");
+
     		// get where ball hits paddle
     		ContactPoint contact = col.contacts[0];
     		Vector3 pos = contact.point;
@@ -97,7 +98,13 @@ public class Ball : MonoBehaviour
     	}
     	else if (col.gameObject.tag == "brick")
     	{
+	    	// play bounce sound
+    		FindObjectOfType<AudioManager>().Play("Pop");
     		gm.UpdateUI();
+    	}
+    	else if (col.gameObject.tag != "ground")
+    	{
+    		FindObjectOfType<AudioManager>().Play("Bounce");
     	}
     }
 

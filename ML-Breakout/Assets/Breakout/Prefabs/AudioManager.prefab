@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4050253165285602780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4050253165285602782}
+  - component: {fileID: 4050253165285602781}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4050253165285602782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4050253165285602780}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4050253165285602781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4050253165285602780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80409b5e749085418741b61e620f1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: BGM
+    clip: {fileID: 8300000, guid: 2bdf41b142aad3d41a49d0e5d51bc199, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    group: {fileID: 243287121024162970, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
+    source: {fileID: 0}
+  - name: Bounce
+    clip: {fileID: 8300000, guid: 2ecec41c0906ca744b966a9181e51019, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
+    source: {fileID: 0}
+  - name: Break
+    clip: {fileID: 8300000, guid: 36c43e6d342af2847b3fcc1deab05db4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
+    source: {fileID: 0}
+  - name: Pop
+    clip: {fileID: 8300000, guid: f6592a1cf6c28844395a3d153c25f681, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
+    source: {fileID: 0}
+  - name: Victory
+    clip: {fileID: 8300000, guid: 10c39c4dbbaaf8e4cbad9115bc12a6d0, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: 8ef8f99b6199a524faea2846147a5a5a, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
+    source: {fileID: 0}
+  - name: GameOver
+    clip: {fileID: 8300000, guid: 1cbe1470d86ad6046bf812107e9860e3, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
+    source: {fileID: 0}
