@@ -15,10 +15,10 @@ public class Ball : MonoBehaviour
 	public float velocityAngle;
 	public Vector3 ballImpactVector;
 	public float launchAngle;
+	public GameManager gm;
 
 	private Rigidbody rb;
 	private Vector3 heldBallPosition;
-	private float minBallVerticalVelocity = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +30,8 @@ public class Ball : MonoBehaviour
     	ballSpeed = startingSpeed;
 
     	ResetBall();
+
+    	//gm = GameObject.Find("GameManager");
     }
 
     // Update is called once per frame
@@ -92,6 +94,10 @@ public class Ball : MonoBehaviour
 
 	    	// launch ball at angle
     		LaunchBall(ballSpeed, launchAngle);
+    	}
+    	else if (col.gameObject.tag == "brick")
+    	{
+    		gm.UpdateUI();
     	}
     }
 

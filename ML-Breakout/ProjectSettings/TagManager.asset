@@ -35,6 +35,7 @@ TagManager:
   - paddle_left
   - paddle_right
   - paddle
+  - brick
   layers:
   - Default
   - TransparentFX
