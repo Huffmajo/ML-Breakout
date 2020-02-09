@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
 	public GameObject[] bricks;
 
 	public TextMeshProUGUI brickText;
-	public TextMeshProUGUI resultsText;
 	public TextMeshProUGUI titleText;
 	public TextMeshProUGUI livesText;
 
@@ -45,7 +44,6 @@ public class GameManager : MonoBehaviour
 		// setup brick count UI variables
 		bricksTotal = bricks.Length;
 		bricksLeft = bricks.Length;
-		Debug.Log("brickText: " + brickText.text);
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;
 		livesText.text = "LIVES: " + _lives;
 		endGameUI.SetActive(false);
@@ -55,6 +53,24 @@ public class GameManager : MonoBehaviour
 	{
 		//UpdateUI();
 		livesText.text = "LIVES: " + _lives;
+
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			if (endGameUI.activeSelf == true)
+			{
+				endGameUI.SetActive(false);
+			}
+			else
+			{
+				endGameUI.SetActive(true);
+			}
+		}
+
+		if (_lives <= 0 && gameOver == false)
+		{
+			endGameUI.SetActive(true);
+			gameOver = true;
+		}
 	}
 
 	// update brick UI
@@ -85,7 +101,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
-	void DecrementLives()
+	public void DecrementLives()
 	{
 		Debug.Log("Decrement life, lives: " + _lives);
 		_lives -= 1;
@@ -98,7 +114,7 @@ public class GameManager : MonoBehaviour
 		ballScript.ResetBall();
 	}
 
-	void GameOver()
+	public void GameOver()
 	{
 		// set UI to be active
 		endGameUI.SetActive(true);
@@ -109,8 +125,6 @@ public class GameManager : MonoBehaviour
 
 		// update game over message
 		titleText.text = "GAME OVER";
-		// update results text
-		resultsText.text = bricksLeft + "/" + bricksTotal + " BRICKS LEFT";
 
 		//make paddle and ball disappear
 		ball.SetActive(false);
@@ -134,9 +148,6 @@ public class GameManager : MonoBehaviour
 
 		// update game over message
 		titleText.text = "LEVEL COMPLETE";
-
-		// update results text
-		resultsText.text = "ALL BRICKS DESTROYED";
 
 		//make paddle and ball disappear
 		ball.SetActive(false);
