@@ -28,6 +28,6 @@ public class MainMenu : MonoBehaviour
 		Application.Quit();
 
 		// close down editor when running from editor
-		UnityEditor.EditorApplication.isPlaying = false;
+		//UnityEditor.EditorApplication.isPlaying = false;
 	}
 }
