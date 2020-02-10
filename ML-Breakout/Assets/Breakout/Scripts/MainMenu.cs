@@ -18,6 +18,10 @@ public class MainMenu : MonoBehaviour
 		SceneManager.LoadScene("Breakout Level 02");
 	}
 
+	public void level03()
+	{
+		SceneManager.LoadScene("Breakout Level 03");
+	}
 
 
 
