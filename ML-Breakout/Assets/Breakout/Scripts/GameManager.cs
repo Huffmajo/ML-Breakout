@@ -12,19 +12,23 @@ public class GameManager : MonoBehaviour
 	static Ball ballScript;
 	public static GameObject paddle;
 	public static bool gameOver = false;
+	public bool levelComplete = false;
 	public int bricksTotal;
 	public int bricksLeft;
 	public GameObject nextLevelButton;
 	public GameObject endGameUI;
 	public GameObject[] bricks;
+	public float currentTime;
 
 	public TextMeshProUGUI brickText;
 	public TextMeshProUGUI titleText;
 	public TextMeshProUGUI livesText;
+	public TextMeshProUGUI timerText;
 
 	// Start is called before the first frame update
 	void Start()
 	{
+		currentTime = 0f;
 		gameOver = false;
 		_lives = 3;
 		ball = GameObject.FindWithTag("ball");
@@ -47,6 +51,8 @@ public class GameManager : MonoBehaviour
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;
 		livesText.text = "LIVES: " + _lives;
 		endGameUI.SetActive(false);
+
+		timerText.text = "TIME: " + currentTime;
 	}
 
 	void Update()
@@ -70,7 +76,16 @@ public class GameManager : MonoBehaviour
 		{
 			endGameUI.SetActive(true);
 			gameOver = true;
+			currentTime = 0;
 		}
+
+		//Timer
+		if (gameOver == false && levelComplete == false)
+		{
+			currentTime += 1 * Time.deltaTime;
+			timerText.text = "TIME: " + currentTime.ToString("0");
+		}
+
 	}
 
 	// update brick UI
@@ -139,6 +154,8 @@ public class GameManager : MonoBehaviour
 
 	void LevelComplete()
 	{
+		levelComplete = true;
+
 		// set UI to be active
 		endGameUI.SetActive(true);
 
