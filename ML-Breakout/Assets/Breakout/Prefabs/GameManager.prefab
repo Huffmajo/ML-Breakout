@@ -1730,6 +1730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab5ae2e1b438ba04c8155a7eb3d5c832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelComplete: 0
   bricksTotal: 0
   bricksLeft: 0
   nextLevelButton: {fileID: 3818983425388277072}

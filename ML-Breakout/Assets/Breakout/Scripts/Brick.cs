@@ -4,21 +4,18 @@ using UnityEngine;
 
 public class Brick : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-		    
-    }
+	public int maxCollisions = 0;
+	private int collisionCount = 0;
 
 	//check for collisions and destroy brick
 	void OnCollisionEnter(Collision other)
 	{
-		Destroy(gameObject);
+		collisionCount++;
+		
+		if (collisionCount > maxCollisions)
+		{
+			Destroy(gameObject);
+		}
+		
 	}
 }

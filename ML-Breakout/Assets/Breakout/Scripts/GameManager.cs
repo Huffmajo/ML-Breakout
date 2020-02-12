@@ -91,7 +91,9 @@ public class GameManager : MonoBehaviour
 	// update brick UI
 	public void UpdateUI()
 	{
-		bricksLeft--;
+		//bricksLeft--;
+		bricks = GameObject.FindGameObjectsWithTag("brick");
+		bricksLeft = bricks.Length;
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;
 
 		// bring up 
