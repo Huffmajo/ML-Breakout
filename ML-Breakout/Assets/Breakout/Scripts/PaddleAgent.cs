@@ -30,10 +30,11 @@ public class PaddleAgent : Agent
     /// <returns>A vectorAction array of floats that will be passed into <see cref="AgentAction(float[])"/></returns>
     public override float[] Heuristic()
     {
+        float[] actions = new float[2]; 
         float releaseAction = 0f;
-        float leftOrRight = 0f;
+        float movementAction = 0f;
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButton("Fire"))
         {
             // release ball
             releaseAction = 1f;
@@ -41,15 +42,18 @@ public class PaddleAgent : Agent
         if (Input.GetAxis("Horizontal") > 0)
         {
             // move left
-            leftOrRight = 1f;
+            movementAction = 1f;
         }
         else if (Input.GetAxis("Horizontal") < 0)
         {
             // move right
-            leftOrRight = -1f;
+            movementAction = -1f;
         }
 
-        return  new float[] { releaseAction, leftOrRight };
+        actions[0] = releaseAction;
+        actions[1] = movementAction;
+
+        return actions;
     }
 
 
@@ -67,7 +71,7 @@ public class PaddleAgent : Agent
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
 
         // small reward loss over time
-        //AddReward(-1f / agentParameters.maxStep);
+        AddReward(-1f / agentParameters.maxStep);
     }
 
     public override void AgentReset()
@@ -89,10 +93,20 @@ public class PaddleAgent : Agent
         // direction to ball
         AddVectorObs((ball.transform.position - transform.position).normalized);
 
-        //get ball vectors
+        // ball movement direction
+        // may want to normalize with:
+        /*
+        Quaternion rotation = transform.rotation;
+        Vector3 normalized = rotation.eulerAngles / 180.0f - Vector3.one;  // [-1,1]
+        Vector3 normalized = rotation.eulerAngles / 360.0f;  // [0,1]
+        */
         AddVectorObs(ball.velocityAngle);
 
+        // if ball is held
+        AddVectorObs(ball.heldByPaddle);
+
         //get brick positions
+
 
         /*
         float rayDistance = 20f;
