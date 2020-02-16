@@ -5,8 +5,8 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
 
+	public bool training = false;
 	public float ballSpeed = 20f;
-	public float startingSpeed = 20f;
 	public Vector3 ballDirection;
 	public Vector3 ballVelocity;
 	public GameObject paddle;
@@ -25,9 +25,6 @@ public class Ball : MonoBehaviour
     {
     	// get ball rigidbody
     	rb = GetComponent<Rigidbody>();
-
-    	// ball speed is starting speed
-    	ballSpeed = startingSpeed;
 
     	ResetBall();
 
@@ -84,7 +81,10 @@ public class Ball : MonoBehaviour
     {
     	if (col.gameObject.tag == "paddle")
     	{
-    		FindObjectOfType<AudioManager>().Play("Bounce");
+    		if (!training)
+    		{
+    			FindObjectOfType<AudioManager>().Play("Bounce");
+    		}
 
     		// get where ball hits paddle
     		ContactPoint contact = col.contacts[0];
@@ -99,12 +99,18 @@ public class Ball : MonoBehaviour
     	else if (col.gameObject.tag == "brick")
     	{
 	    	// play bounce sound
-    		FindObjectOfType<AudioManager>().Play("Pop");
-    		gm.UpdateUI();
+	    	if (!training)
+    		{
+    			FindObjectOfType<AudioManager>().Play("Pop");
+    			gm.UpdateUI();
+    		}
     	}
     	else if (col.gameObject.tag != "ground")
     	{
-    		FindObjectOfType<AudioManager>().Play("Bounce");
+    		if (!training)
+    		{
+    			FindObjectOfType<AudioManager>().Play("Bounce");
+    		}
     	}
     }
 
