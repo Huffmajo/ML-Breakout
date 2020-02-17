@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 	public int bricksLeft;
 	public GameObject nextLevelButton;
 	public GameObject endGameUI;
+	public GameObject pauseGameUI;
 	public GameObject[] bricks;
 	public float currentTime;
 
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+
 		currentTime = 0f;
 		gameOver = false;
 		_lives = 3;
@@ -50,7 +52,13 @@ public class GameManager : MonoBehaviour
 		bricksLeft = bricks.Length;
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;
 		livesText.text = "LIVES: " + _lives;
+
+		endGameUI = GameObject.FindWithTag("EndGameUI");
+		pauseGameUI = GameObject.FindWithTag("PauseGameUI");
+
 		endGameUI.SetActive(false);
+		pauseGameUI.SetActive(false);
+
 
 		timerText.text = "TIME: " + currentTime;
 	}
@@ -62,13 +70,17 @@ public class GameManager : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			if (endGameUI.activeSelf == true)
+
+
+			if (pauseGameUI.activeSelf == true)
 			{
-				endGameUI.SetActive(false);
+				Time.timeScale = 1;
+				pauseGameUI.SetActive(false);
 			}
 			else
 			{
-				endGameUI.SetActive(true);
+				Time.timeScale = 0;
+				pauseGameUI.SetActive(true);
 			}
 		}
 
