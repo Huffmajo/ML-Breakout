@@ -36,6 +36,8 @@ TagManager:
   - paddle_right
   - paddle
   - brick
+  - EndGameUI
+  - PauseGameUI
   layers:
   - Default
   - TransparentFX

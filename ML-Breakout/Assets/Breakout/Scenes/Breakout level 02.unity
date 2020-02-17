@@ -5425,6 +5425,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2056019808}
     m_Modifications:
+    - target: {fileID: 400725140120620415, guid: 48f60ac4eafc4af48b96af0ebf175d98,
+        type: 3}
+      propertyPath: m_TagString
+      value: EndGameUI
+      objectReference: {fileID: 0}
     - target: {fileID: 2963436918686125447, guid: 48f60ac4eafc4af48b96af0ebf175d98,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5489,6 +5494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 23.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528405489227471844, guid: 48f60ac4eafc4af48b96af0ebf175d98,
+        type: 3}
+      propertyPath: m_TagString
+      value: PauseGameUI
       objectReference: {fileID: 0}
     - target: {fileID: 8730818964810599721, guid: 48f60ac4eafc4af48b96af0ebf175d98,
         type: 3}
