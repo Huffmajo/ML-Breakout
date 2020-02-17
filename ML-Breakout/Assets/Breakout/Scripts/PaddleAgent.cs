@@ -34,7 +34,7 @@ public class PaddleAgent : Agent
         float releaseAction = 0f;
         float movementAction = 0f;
 
-        if (Input.GetButton("Fire"))
+        if (Input.GetButtonDown("Jump"))
         {
             // release ball
             releaseAction = 1f;

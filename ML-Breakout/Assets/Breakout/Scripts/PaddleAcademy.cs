@@ -35,14 +35,5 @@ public class PaddleAcademy : Academy
         {
             ballStartSpeed = f;
         });
-
-
-    
     }
-
-
-
-
-
-
 }

@@ -47,13 +47,15 @@ public class BreakoutArea : Area
     //create reset area
     public override void ResetArea()
     {
-        // to do
-
-        //place paddle and ball, make sure to include paddle size and ball speed 
+        // place paddle and ball, make sure to include paddle size and ball speed 
         Ball.ResetBall();
         ResetPaddle();
 
-        //place bricks
+        // remove all bricks
+        RemoveAllBricks();
+
+        // place bricks
+        GenerateBricks();
     }
 
     // move paddle back to starting middle position
@@ -82,12 +84,18 @@ public class BreakoutArea : Area
 
 
     // add bricks into area at original placement
-    private void GenerateBricks(int count)
+    private void GenerateBricks()
     {
         for (int i = 0; i < brickPositions.Count; i++)
         {
             GameObject brickObject = Instantiate<GameObject>(brickPrefab.gameObject);
             brickObject.transform.position = brickPositions[i];
+
+            // set brick training variables
+            Brick brickScript = brickObject.GetComponent<Brick>();
+            brickScript.training = true;
+            brickScript.paddleAgent = paddleAgent;
+
             // may need to add brick row color here
         }
 
