@@ -72,7 +72,6 @@ public class GameManager : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 
-
 			if (pauseGameUI.activeSelf == true)
 			{
 				Time.timeScale = 1;
@@ -104,19 +103,7 @@ public class GameManager : MonoBehaviour
 	// update brick UI
 	public void UpdateUI()
 	{
-		//bricksLeft--;
-		//bricks = GameObject.FindGameObjectsWithTag("brick");
-		//bricks = new List<GameObject>();		
-		//bricks.AddRange(GameObject.FindGameObjectsWithTag("brick"));
-		/*foreach (GameObject brick in bricks) {
-			if (brick == null) 
-			{
-				bricks.Remove(brick);
-			}
-		}*/
 
-
-		//removes null values in the list
 		bricks.RemoveAll(item => item == null);
 		bricksLeft = bricks.Count;
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;

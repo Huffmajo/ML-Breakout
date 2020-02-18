@@ -12,9 +12,10 @@ public class Brick : MonoBehaviour
 	private int counter = 0;
 	public List<Color> colors;	//colors defined in inspector window for prefabs
 
-	//public GameManager gm;
-
-
+	void Start()
+	{
+		
+	}
 
 
 	//check for collisions and destroy brick

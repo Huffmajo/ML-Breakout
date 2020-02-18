@@ -139,6 +139,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1001 &112295321
 PrefabInstance:
@@ -511,6 +512,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1 &306417637
 GameObject:
@@ -953,6 +955,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors:
   - {r: 0.039215688, g: 0.32941177, b: 0.098039225, a: 0}
 --- !u!1001 &487397292
@@ -1411,6 +1414,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1001 &668735984
 PrefabInstance:
@@ -1742,6 +1746,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1 &776284596 stripped
 GameObject:
@@ -1770,6 +1775,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!4 &781109957 stripped
 Transform:
@@ -2200,6 +2206,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1001 &1140539892
 PrefabInstance:
@@ -2387,6 +2394,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1001 &1163004957
 PrefabInstance:
@@ -2639,6 +2647,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1 &1268930858
 GameObject:
@@ -2838,6 +2847,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 400725140120620415, guid: 48f60ac4eafc4af48b96af0ebf175d98,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2963436918686125447, guid: 48f60ac4eafc4af48b96af0ebf175d98,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2902,6 +2916,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 23.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528405489227471844, guid: 48f60ac4eafc4af48b96af0ebf175d98,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8730818964810599721, guid: 48f60ac4eafc4af48b96af0ebf175d98,
         type: 3}
@@ -3092,6 +3111,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1 &1398393389
 GameObject:
@@ -3234,6 +3254,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1001 &1469674831
 PrefabInstance:
@@ -3490,6 +3511,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1001 &1649936064
 PrefabInstance:
@@ -3747,6 +3769,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1 &1700679045
 GameObject:
@@ -4032,6 +4055,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1001 &1801625958
 PrefabInstance:
@@ -4229,6 +4253,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1001 &1841035938
 PrefabInstance:
@@ -4412,6 +4437,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1 &1871388840 stripped
 GameObject:
@@ -4440,6 +4466,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1001 &1910678915
 PrefabInstance:
@@ -4543,6 +4570,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1 &1954947444 stripped
 GameObject:
@@ -4571,6 +4599,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1 &2007256059 stripped
 GameObject:
@@ -4599,6 +4628,7 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
+  collisionCount: 0
   colors: []
 --- !u!1001 &2022258818
 PrefabInstance:
