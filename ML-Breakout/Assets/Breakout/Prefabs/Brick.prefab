@@ -104,3 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxCollisions: 0
+  training: 0
+  paddleAgent: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 4a3bfb5836d456e45a58fc4396b63774, type: 2}

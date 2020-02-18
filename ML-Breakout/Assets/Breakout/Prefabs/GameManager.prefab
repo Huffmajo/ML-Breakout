@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 7396978606221210814}
   m_Layer: 5
   m_Name: EndGameUI
-  m_TagString: Untagged
+  m_TagString: EndGameUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2333,7 +2333,7 @@ GameObject:
   - component: {fileID: 5524615432302902409}
   m_Layer: 5
   m_Name: PauseGameUI
-  m_TagString: Untagged
+  m_TagString: PauseGameUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2410,6 +2410,7 @@ MonoBehaviour:
   bricksLeft: 0
   nextLevelButton: {fileID: 3818983425388277072}
   endGameUI: {fileID: 7376344325984495972}
+  pauseGameUI: {fileID: 0}
   bricks: []
   currentTime: 0
   brickText: {fileID: 6439163577253050781}
