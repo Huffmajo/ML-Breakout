@@ -1716,7 +1716,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'LIVES: 0'
+  m_text: 'LIVES: 2'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63dd3eb213586a44a84d6ca04501ad9a, type: 2}
   m_sharedMaterial: {fileID: 21039112775108118, guid: 63dd3eb213586a44a84d6ca04501ad9a,
@@ -2372,7 +2372,7 @@ GameObject:
   - component: {fileID: 114149399011207424}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

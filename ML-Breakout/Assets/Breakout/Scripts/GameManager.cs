@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 	public GameObject nextLevelButton;
 	public GameObject endGameUI;
 	public GameObject pauseGameUI;
-	public GameObject[] bricks;
+	public List<GameObject> bricks;
 	public float currentTime;
 
 	public TextMeshProUGUI brickText;
@@ -45,11 +45,12 @@ public class GameManager : MonoBehaviour
 		}
 
 		// take note of all the bricks in the scene
-		bricks = GameObject.FindGameObjectsWithTag("brick");
+		
+		bricks.AddRange(GameObject.FindGameObjectsWithTag("brick"));
 
 		// setup brick count UI variables
-		bricksTotal = bricks.Length;
-		bricksLeft = bricks.Length;
+		bricksTotal = bricks.Count;
+		bricksLeft = bricks.Count;
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;
 		livesText.text = "LIVES: " + _lives;
 
@@ -104,8 +105,20 @@ public class GameManager : MonoBehaviour
 	public void UpdateUI()
 	{
 		//bricksLeft--;
-		bricks = GameObject.FindGameObjectsWithTag("brick");
-		bricksLeft = bricks.Length;
+		//bricks = GameObject.FindGameObjectsWithTag("brick");
+		//bricks = new List<GameObject>();		
+		//bricks.AddRange(GameObject.FindGameObjectsWithTag("brick"));
+		/*foreach (GameObject brick in bricks) {
+			if (brick == null) 
+			{
+				bricks.Remove(brick);
+			}
+		}*/
+
+
+		//removes null values in the list
+		bricks.RemoveAll(item => item == null);
+		bricksLeft = bricks.Count;
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;
 
 		// bring up 
