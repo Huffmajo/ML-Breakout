@@ -70,6 +70,15 @@ public class PaddleAgent : Agent
         // restrict paddle movement to positive and negative limits
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
 
+        // release ball from paddle
+        if (release == 1f && ball.heldByPaddle == true)
+        {
+            ball.heldByPaddle = false;
+
+            // start ball moving
+            ball.LaunchBall(ball.ballSpeed, ball.launchAngle);
+        }
+
         // small reward loss over time
         AddReward(-1f / agentParameters.maxStep);
     }
@@ -107,7 +116,6 @@ public class PaddleAgent : Agent
 
         //get brick positions
 
-
         /*
         float rayDistance = 20f;
 		float[] rayAngles = {30f, 60f, 90f, 120f, 150f};
@@ -116,9 +124,10 @@ public class PaddleAgent : Agent
         */
     }
 
+    // BUG: not adding reward
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.CompareTag("ball"))
+        if (collision.gameObject.tag == "ball")
         {
             AddReward(ballCollisionReward);
         }

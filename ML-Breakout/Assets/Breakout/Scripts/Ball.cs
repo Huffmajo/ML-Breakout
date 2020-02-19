@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-
 	public bool training = false;
 	public float ballSpeed = 20f;
 	public Vector3 ballDirection;
@@ -137,7 +136,7 @@ public class Ball : MonoBehaviour
     }
 
     // launches ball at specified speed and angle
-    void LaunchBall(float speed, float angle)
+    public void LaunchBall(float speed, float angle)
     {
     	float xVelocity = speed * Mathf.Cos(angle * Mathf.Deg2Rad);
     	float yVelocity = speed * Mathf.Sin(angle * Mathf.Deg2Rad);
