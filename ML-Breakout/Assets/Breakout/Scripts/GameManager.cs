@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
 		}
 
 		// take note of all the bricks in the scene
-		
+
 		bricks.AddRange(GameObject.FindGameObjectsWithTag("brick"));
 
 		// setup brick count UI variables

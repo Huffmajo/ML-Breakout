@@ -107,5 +107,6 @@ MonoBehaviour:
   maxCollisions: 0
   training: 0
   paddleAgent: {fileID: 0}
-  materials:
-  - {fileID: 2100000, guid: 4a3bfb5836d456e45a58fc4396b63774, type: 2}
+  collisionCount: 0
+  gm: {fileID: 114149399011207424, guid: 48f60ac4eafc4af48b96af0ebf175d98, type: 3}
+  colors: []

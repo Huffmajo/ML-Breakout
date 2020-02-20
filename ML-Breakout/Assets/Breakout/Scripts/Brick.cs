@@ -9,6 +9,7 @@ public class Brick : MonoBehaviour
 	public PaddleAgent paddleAgent;
 	public int collisionCount = 0;
 
+	public GameManager gm;
 	private int counter = 0;
 	public List<Color> colors;	//colors defined in inspector window for prefabs
 

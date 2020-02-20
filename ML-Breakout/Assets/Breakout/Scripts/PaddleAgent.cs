@@ -11,9 +11,9 @@ public class PaddleAgent : Agent
 
     public Ball ball;
 
-    public float ballCollisionReward = 1f;
+    public float ballCollisionReward = 5f;
 	public float brickBreakReward = 5f;
-	public float ballDropPenalty = -1f;
+	public float ballDropPenalty = -10f;
 	public float ballHeldPenalty = -1f;
     public float paddleSpeed = 20f;
     public float xPosLimit = 11f;
@@ -82,7 +82,22 @@ public class PaddleAgent : Agent
     {
 		// convert actions to axis values
 		float release = vectorAction[0];
-		float leftOrRight = vectorAction[1];
+		float leftOrRight = 0f;
+        
+        if (vectorAction[1] == 1f)
+        {
+            leftOrRight = -1f;
+        }
+        else if (vectorAction[1] == 2f)
+        {
+            leftOrRight = 1f;
+        }
+        
+        //vectorAction[1];
+
+
+
+
 		//int release = (int)vectorAction[0];
 		//int leftOrRight = (int)vectorAction[1];
 		//Debug.Log("left or right: " + leftOrRight);
