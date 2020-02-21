@@ -28,7 +28,6 @@ public class Ball : MonoBehaviour
 
     	ResetBall();
 
-    	//gm = GameObject.Find("GameManager");
     }
 
     // Update is called once per frame
@@ -102,8 +101,6 @@ public class Ball : MonoBehaviour
 	    	if (!training)
     		{
     			FindObjectOfType<AudioManager>().Play("Pop");
-    			
-				//gm.UpdateUI();
     		}
     	}
     	else if (col.gameObject.tag != "ground")

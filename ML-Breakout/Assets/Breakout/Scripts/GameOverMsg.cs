@@ -10,15 +10,21 @@ public class GameOverMsg : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		txt = gameObject.GetComponent<Text>();
+		  //txt = gameObject.GetComponent<Text>();
     }
 
     // Update is called once per frame
-    void Update()
+    void gameOverTxt()
     {
-		if (GameManager.gameOver == true)
-		{
-			txt.text = "GAME OVER";
-		}
+      //if (GameManager.gameOver == true)
+      //{
+      //txt.text = "GAME OVER";
+      //}
     }
+
+    void levelCompleteTxt()
+    {
+      //txt.text = "LEVEL COMPLETE";
+    }
+
 }

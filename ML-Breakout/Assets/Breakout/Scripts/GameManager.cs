@@ -7,11 +7,11 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-	public static int _lives = 3;
+	public static int _lives;
 	public static GameObject ball;
 	static Ball ballScript;
 	public static GameObject paddle;
-	public static bool gameOver = false;
+	public bool gameOver = false;
 	public bool levelComplete = false;
 	public int bricksTotal;
 	public int bricksLeft;
@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
 
 		currentTime = 0f;
 		gameOver = false;
+		levelComplete = false;
 		_lives = 3;
 		ball = GameObject.FindWithTag("ball");
 		paddle = GameObject.FindWithTag("paddle");
@@ -54,12 +55,8 @@ public class GameManager : MonoBehaviour
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;
 		livesText.text = "LIVES: " + _lives;
 
-		endGameUI = GameObject.FindWithTag("EndGameUI");
-		pauseGameUI = GameObject.FindWithTag("PauseGameUI");
-
-		endGameUI.SetActive(false);
-		pauseGameUI.SetActive(false);
-
+		
+		nextLevelButton.SetActive(false);
 
 		timerText.text = "TIME: " + currentTime;
 	}
@@ -86,7 +83,9 @@ public class GameManager : MonoBehaviour
 
 		if (_lives <= 0 && gameOver == false)
 		{
+
 			endGameUI.SetActive(true);
+			titleText.text = "GAME OVER";
 			gameOver = true;
 			currentTime = 0;
 		}
@@ -106,8 +105,12 @@ public class GameManager : MonoBehaviour
 
 		//bricks.RemoveAll(item => item == null);
 		bricksLeft--;// = bricks.Count;
+
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;
 
+
+
+				
 		// bring up 
 		if (bricksLeft <= 0)
 		{
@@ -151,9 +154,6 @@ public class GameManager : MonoBehaviour
 		// play sad trombone
 		//FindObjectOfType<AudioManager>().Stop("BGM");
         FindObjectOfType<AudioManager>().Play("GameOver");
-
-		// update game over message
-		titleText.text = "GAME OVER";
 
 		//make paddle and ball disappear
 		ball.SetActive(false);
