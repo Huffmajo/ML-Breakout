@@ -42,7 +42,4 @@ public class Brick : MonoBehaviour
 			paddleAgent.AddReward(1f);
 		}
 	}
-
-
-
 }

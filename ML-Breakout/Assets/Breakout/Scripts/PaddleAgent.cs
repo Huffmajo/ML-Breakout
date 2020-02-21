@@ -10,37 +10,15 @@ public class PaddleAgent : Agent
     private BreakoutArea breakoutArea;
 
     public Ball ball;
-
-    public float ballCollisionReward = 5f;
-	public float brickBreakReward = 5f;
-	public float ballDropPenalty = -10f;
-	public float ballHeldPenalty = -1f;
     public float paddleSpeed = 20f;
     public float xPosLimit = 11f;
     public float xNegLimit = -9f;
     public float horizontalInput;
 
-	//brick observation/rewards
-	public GameObject[] bricks;
-	public int bricksPrev;
-	public int bricksNext;
-
-	//dropping ball obs + rewards
-	float ballYPos;
-	float paddleYPos;
-
 	// Start is called before the first frame update
 	void Start()
     {
-        breakoutArea = GetComponentInParent<BreakoutArea>();
-		// take note of all the bricks in the scene
-		bricks = GameObject.FindGameObjectsWithTag("brick");
-		bricksPrev = bricks.Length;
-
-		//get initial y values of paddle and ball
-		paddleYPos = transform.position.y;
-		ballYPos = ball.transform.position.y;
-		
+        breakoutArea = GetComponentInParent<BreakoutArea>();		
 	}
 
     /// <summary>
@@ -62,13 +40,13 @@ public class PaddleAgent : Agent
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
-            // move left
+            // move right
             movementAction = 1f;
         }
         else if (Input.GetAxis("Horizontal") < 0)
         {
-            // move right
-            movementAction = -1f;
+            // move left
+            movementAction = 2f;
         }
 
         actions[0] = releaseAction;
@@ -86,18 +64,14 @@ public class PaddleAgent : Agent
         
         if (vectorAction[1] == 1f)
         {
-            leftOrRight = -1f;
+            leftOrRight = 1f;
         }
         else if (vectorAction[1] == 2f)
         {
-            leftOrRight = 1f;
+            leftOrRight = -1f;
         }
         
         //vectorAction[1];
-
-
-
-
 		//int release = (int)vectorAction[0];
 		//int leftOrRight = (int)vectorAction[1];
 		//Debug.Log("left or right: " + leftOrRight);
@@ -106,27 +80,12 @@ public class PaddleAgent : Agent
 		// convert axis values to movement
 		// move paddle based on input and paddleSpeed
 		transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
-		/*
-		if (leftOrRight == 0)
-		{
-			transform.position += new Vector3(1 * Time.deltaTime * paddleSpeed, 0f, 0f);
-		}
-		else if (leftOrRight == 1)
-		{
-			transform.position += new Vector3(-1 * Time.deltaTime * paddleSpeed, 0f, 0f);
-		}
-		else
-		{
-			transform.position += new Vector3(0 * Time.deltaTime * paddleSpeed, 0f, 0f);
-		}
-		*/
 
         // restrict paddle movement to positive and negative limits
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
 
         // release ball from paddle
         if (release == 1f && ball.heldByPaddle == true)
-		//if (release == 1 && ball.heldByPaddle)
         {
             ball.heldByPaddle = false;
 
@@ -136,46 +95,6 @@ public class PaddleAgent : Agent
 
         // small reward loss over time
         AddReward(-1f / agentParameters.maxStep);
-
-		//large reward for breaking a brick
-		//get number of bricks
-		//compare to previous number of bricks
-		//if number of bricks decreased add large reward
-		Array.Clear(bricks, 0, bricks.Length);
-		bricks = GameObject.FindGameObjectsWithTag("brick");
-		bricksNext = bricks.Length;
-		if (bricksNext < bricksPrev)
-		{
-			Debug.Log("prev: " + bricksPrev);
-			Debug.Log("next: " + bricksNext);
-			Debug.Log("brick break");
-			AddReward(brickBreakReward);
-		}
-		bricksPrev = bricksNext;
-
-		//penalty for dropping ball
-		//get y position of ball
-		//get y position of paddle
-		//if ball is below paddle, small penalty
-		//mark as done
-		
-		paddleYPos = transform.position.y;
-		ballYPos = ball.transform.position.y;
-		if (ballYPos < paddleYPos)
-		{
-			//AddReward(ballDropPenalty);
-
-			//mark agent as done and reset
-			Done();
-		}
-		
-
-		// penalty for holding ball
-		if (ball.heldByPaddle)
-		{
-			//AddReward(ballHeldPenalty);
-		}
-
 	}
 
     public override void AgentReset()
@@ -204,31 +123,20 @@ public class PaddleAgent : Agent
         Vector3 normalized = rotation.eulerAngles / 180.0f - Vector3.one;  // [-1,1]
         Vector3 normalized = rotation.eulerAngles / 360.0f;  // [0,1]
         */
-        AddVectorObs(ball.velocityAngle);
+        AddVectorObs(ball.velocityAngle/360.0f);
 
         // if ball is held
         AddVectorObs(ball.heldByPaddle);
-
-
-		//number of bricks
-		AddVectorObs(bricksPrev);
 		
-		//get brick positions
+        // number of bricks left
+        AddVectorObs(breakoutArea.bricks.Length);
 
+		//get brick positions
         /*
         float rayDistance = 20f;
 		float[] rayAngles = {30f, 60f, 90f, 120f, 150f};
 		string[] detectableObjects = {"ball", "brick", "wall"};
 		AddVectorObs(rayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
         */
-    }
-
-    // BUG: not adding reward
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "ball")
-        {
-            AddReward(ballCollisionReward);
-        }
     }
 }

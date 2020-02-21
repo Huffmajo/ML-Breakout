@@ -81,7 +81,11 @@ public class Ball : MonoBehaviour
     {
     	if (col.gameObject.tag == "paddle")
     	{
-    		if (!training)
+    		if (training)
+            {
+                paddle.GetComponent<PaddleAgent>().AddReward(5f);
+            }
+            else
     		{
     			FindObjectOfType<AudioManager>().Play("Bounce");
     		}
