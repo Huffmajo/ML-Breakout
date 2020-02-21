@@ -65,13 +65,6 @@ public class BreakoutArea : Area
         // maybe change paddleXscale here
     }
 
-/*
-    public void DeleteBrick(GameObject brick)
-    {
-        brickList.Remove(brick);
-        Destroy(brick);
-    }
-*/
 
     // clear all bricks in area
     private void RemoveAllBricks()
