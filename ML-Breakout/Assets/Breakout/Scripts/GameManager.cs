@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;
 		livesText.text = "LIVES: " + _lives;
 
-		
+
 		nextLevelButton.SetActive(false);
 
 		timerText.text = "TIME: " + currentTime;
@@ -159,11 +159,6 @@ public class GameManager : MonoBehaviour
 		ball.SetActive(false);
 		paddle.SetActive(false);
 
-		// disable next level button if no more levels
-		if (IsLastLevel())
-		{
-			nextLevelButton.SetActive(false);
-		}
 	}
 
 	void LevelComplete()
@@ -188,6 +183,8 @@ public class GameManager : MonoBehaviour
 		if (IsLastLevel())
 		{
 			nextLevelButton.SetActive(false);
+		} else {
+			nextLevelButton.SetActive(true);
 		}
 	}
 
