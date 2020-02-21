@@ -103,7 +103,7 @@ public class Ball : MonoBehaviour
     		{
     			FindObjectOfType<AudioManager>().Play("Pop");
     			
-				gm.UpdateUI();
+				//gm.UpdateUI();
     		}
     	}
     	else if (col.gameObject.tag != "ground")

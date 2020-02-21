@@ -104,8 +104,8 @@ public class GameManager : MonoBehaviour
 	public void UpdateUI()
 	{
 
-		bricks.RemoveAll(item => item == null);
-		bricksLeft = bricks.Count;
+		//bricks.RemoveAll(item => item == null);
+		bricksLeft--;// = bricks.Count;
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;
 
 		// bring up 

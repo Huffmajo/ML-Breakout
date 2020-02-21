@@ -2498,7 +2498,7 @@ PrefabInstance:
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -3937,7 +3937,7 @@ PrefabInstance:
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -4419,7 +4419,7 @@ PrefabInstance:
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -36050,7 +36050,7 @@ PrefabInstance:
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -37220,7 +37220,7 @@ PrefabInstance:
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -56633,7 +56633,7 @@ PrefabInstance:
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -74108,7 +74108,7 @@ PrefabInstance:
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -76087,7 +76087,7 @@ PrefabInstance:
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}

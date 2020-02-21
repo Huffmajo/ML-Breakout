@@ -26,8 +26,8 @@ public class Brick : MonoBehaviour
 		
 		if (collisionCount > maxCollisions)
 		{
+			gm.UpdateUI();
 			Destroy(gameObject);
-			//gm.UpdateUI();
 		}
 		else if (maxCollisions > 0 && counter < colors.Count-1)	//for tough bricks
 		{
