@@ -11,10 +11,11 @@ public class PaddleAgent : Agent
 
     public Ball ball;
 
-    public float ballCollisionReward = 5f;
+  public float ballCollisionReward = 10f;
 	public float brickBreakReward = 5f;
-	public float ballDropPenalty = -10f;
+	public float ballDropPenalty = -5f;
 	public float ballHeldPenalty = -1f;
+
     public float paddleSpeed = 20f;
     public float xPosLimit = 11f;
     public float xNegLimit = -9f;
@@ -81,6 +82,7 @@ public class PaddleAgent : Agent
     public override void AgentAction(float[] vectorAction)
     {
 		// convert actions to axis values
+    /*
 		float release = vectorAction[0];
 		float leftOrRight = 0f;
         
@@ -95,18 +97,14 @@ public class PaddleAgent : Agent
         
         //vectorAction[1];
 
+    */
 
 
-
-		//int release = (int)vectorAction[0];
-		//int leftOrRight = (int)vectorAction[1];
-		//Debug.Log("left or right: " + leftOrRight);
-		//Debug.Log("release: " + release);
-
+		int release = (int)vectorAction[0];
+		int leftOrRight = (int)vectorAction[1]
 		// convert axis values to movement
-		// move paddle based on input and paddleSpeed
-		transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
-		/*
+		//transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
+		
 		if (leftOrRight == 0)
 		{
 			transform.position += new Vector3(1 * Time.deltaTime * paddleSpeed, 0f, 0f);
@@ -119,7 +117,7 @@ public class PaddleAgent : Agent
 		{
 			transform.position += new Vector3(0 * Time.deltaTime * paddleSpeed, 0f, 0f);
 		}
-		*/
+		
 
         // restrict paddle movement to positive and negative limits
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
@@ -149,7 +147,7 @@ public class PaddleAgent : Agent
 			Debug.Log("prev: " + bricksPrev);
 			Debug.Log("next: " + bricksNext);
 			Debug.Log("brick break");
-			AddReward(brickBreakReward);
+			//AddReward(brickBreakReward);
 		}
 		bricksPrev = bricksNext;
 
