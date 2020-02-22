@@ -174,7 +174,7 @@ public class PaddleAgent : Agent
 		// penalty for holding ball
 		if (ball.heldByPaddle)
 		{
-			//AddReward(ballHeldPenalty);
+			AddReward(ballHeldPenalty);
 		}
 
 	}
