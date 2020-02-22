@@ -104,3 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxCollisions: 0
+  training: 0
+  paddleAgent: {fileID: 0}
+  collisionCount: 0
+  gm: {fileID: 114149399011207424, guid: 48f60ac4eafc4af48b96af0ebf175d98, type: 3}
+  colors: []

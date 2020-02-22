@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Ball : MonoBehaviour
 {
 	public bool training = false;
@@ -15,9 +16,9 @@ public class Ball : MonoBehaviour
 	public Vector3 ballImpactVector;
 	public float launchAngle;
 	public GameManager gm;
-
 	private Rigidbody rb;
 	private Vector3 heldBallPosition;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,6 @@ public class Ball : MonoBehaviour
 
     	ResetBall();
 
-    	//gm = GameObject.Find("GameManager");
     }
 
     // Update is called once per frame
@@ -101,7 +101,6 @@ public class Ball : MonoBehaviour
 	    	if (!training)
     		{
     			FindObjectOfType<AudioManager>().Play("Pop");
-    			gm.UpdateUI();
     		}
     	}
     	else if (col.gameObject.tag != "ground")

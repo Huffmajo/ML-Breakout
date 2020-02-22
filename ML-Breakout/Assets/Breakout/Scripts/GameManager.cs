@@ -7,17 +7,18 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-	public static int _lives = 3;
+	public static int _lives;
 	public static GameObject ball;
 	static Ball ballScript;
 	public static GameObject paddle;
-	public static bool gameOver = false;
+	public bool gameOver = false;
 	public bool levelComplete = false;
 	public int bricksTotal;
 	public int bricksLeft;
 	public GameObject nextLevelButton;
 	public GameObject endGameUI;
-	public GameObject[] bricks;
+	public GameObject pauseGameUI;
+	public List<GameObject> bricks;
 	public float currentTime;
 
 	public TextMeshProUGUI brickText;
@@ -28,8 +29,10 @@ public class GameManager : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+
 		currentTime = 0f;
 		gameOver = false;
+		levelComplete = false;
 		_lives = 3;
 		ball = GameObject.FindWithTag("ball");
 		paddle = GameObject.FindWithTag("paddle");
@@ -43,14 +46,17 @@ public class GameManager : MonoBehaviour
 		}
 
 		// take note of all the bricks in the scene
-		bricks = GameObject.FindGameObjectsWithTag("brick");
+
+		bricks.AddRange(GameObject.FindGameObjectsWithTag("brick"));
 
 		// setup brick count UI variables
-		bricksTotal = bricks.Length;
-		bricksLeft = bricks.Length;
+		bricksTotal = bricks.Count;
+		bricksLeft = bricks.Count;
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;
 		livesText.text = "LIVES: " + _lives;
-		endGameUI.SetActive(false);
+
+
+		nextLevelButton.SetActive(false);
 
 		timerText.text = "TIME: " + currentTime;
 	}
@@ -62,19 +68,24 @@ public class GameManager : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			if (endGameUI.activeSelf == true)
+
+			if (pauseGameUI.activeSelf == true)
 			{
-				endGameUI.SetActive(false);
+				Time.timeScale = 1;
+				pauseGameUI.SetActive(false);
 			}
 			else
 			{
-				endGameUI.SetActive(true);
+				Time.timeScale = 0;
+				pauseGameUI.SetActive(true);
 			}
 		}
 
 		if (_lives <= 0 && gameOver == false)
 		{
+
 			endGameUI.SetActive(true);
+			titleText.text = "GAME OVER";
 			gameOver = true;
 			currentTime = 0;
 		}
@@ -91,11 +102,15 @@ public class GameManager : MonoBehaviour
 	// update brick UI
 	public void UpdateUI()
 	{
-		//bricksLeft--;
-		bricks = GameObject.FindGameObjectsWithTag("brick");
-		bricksLeft = bricks.Length;
+
+		//bricks.RemoveAll(item => item == null);
+		bricksLeft--;// = bricks.Count;
+
 		brickText.text = "BRICKS LEFT\n" + bricksLeft + "/" + bricksTotal;
 
+
+
+				
 		// bring up 
 		if (bricksLeft <= 0)
 		{
@@ -140,18 +155,10 @@ public class GameManager : MonoBehaviour
 		//FindObjectOfType<AudioManager>().Stop("BGM");
         FindObjectOfType<AudioManager>().Play("GameOver");
 
-		// update game over message
-		titleText.text = "GAME OVER";
-
 		//make paddle and ball disappear
 		ball.SetActive(false);
 		paddle.SetActive(false);
 
-		// disable next level button if no more levels
-		if (IsLastLevel())
-		{
-			nextLevelButton.SetActive(false);
-		}
 	}
 
 	void LevelComplete()
@@ -176,6 +183,8 @@ public class GameManager : MonoBehaviour
 		if (IsLastLevel())
 		{
 			nextLevelButton.SetActive(false);
+		} else {
+			nextLevelButton.SetActive(true);
 		}
 	}
 

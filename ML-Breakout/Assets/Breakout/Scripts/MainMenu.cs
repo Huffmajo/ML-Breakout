@@ -24,6 +24,13 @@ public class MainMenu : MonoBehaviour
 	}
 
 
+	public void level04()
+	{
+		SceneManager.LoadScene("Breakout Level 04");
+	}
+
+
+
 
 	// exits game
 	public void Quit()

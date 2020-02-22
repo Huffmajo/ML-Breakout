@@ -7,7 +7,17 @@ public class Brick : MonoBehaviour
 	public int maxCollisions = 0;
 	public bool training;
 	public PaddleAgent paddleAgent;
-	private int collisionCount = 0;
+	public int collisionCount = 0;
+
+	public GameManager gm;
+	private int counter = 0;
+	public List<Color> colors;	//colors defined in inspector window for prefabs
+
+	void Start()
+	{
+		
+	}
+
 
 	//check for collisions and destroy brick
 	void OnCollisionEnter(Collision other)
@@ -16,7 +26,15 @@ public class Brick : MonoBehaviour
 		
 		if (collisionCount > maxCollisions)
 		{
+			gm.UpdateUI();
 			Destroy(gameObject);
+		}
+		else if (maxCollisions > 0 && counter < colors.Count-1)	//for tough bricks
+		{
+			counter++;
+			
+			var brickRenderer = gameObject.GetComponent<Renderer>();
+			brickRenderer.material.SetColor("_Color", colors[counter]);
 		}
 
 		if (training)
@@ -24,4 +42,7 @@ public class Brick : MonoBehaviour
 			paddleAgent.AddReward(1f);
 		}
 	}
+
+
+
 }

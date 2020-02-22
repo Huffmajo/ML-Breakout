@@ -11,7 +11,7 @@ public class PaddleAgent : Agent
 
     public Ball ball;
 
-    public float ballCollisionReward = 10f;
+  public float ballCollisionReward = 10f;
 	public float brickBreakReward = 5f;
 	public float ballDropPenalty = -5f;
 	public float ballHeldPenalty = -1f;
@@ -82,15 +82,27 @@ public class PaddleAgent : Agent
     public override void AgentAction(float[] vectorAction)
     {
 		// convert actions to axis values
+    /*
 		float release = vectorAction[0];
-		float leftOrRight = vectorAction[1];
-		//int release = (int)vectorAction[0];
-		//int leftOrRight = (int)vectorAction[1];
-		//Debug.Log("left or right: " + leftOrRight);
-		//Debug.Log("release: " + release);
+		float leftOrRight = 0f;
+        
+        if (vectorAction[1] == 1f)
+        {
+            leftOrRight = -1f;
+        }
+        else if (vectorAction[1] == 2f)
+        {
+            leftOrRight = 1f;
+        }
+        
+        //vectorAction[1];
 
+    */
+
+
+		int release = (int)vectorAction[0];
+		int leftOrRight = (int)vectorAction[1]
 		// convert axis values to movement
-		// move paddle based on input and paddleSpeed
 		//transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
 		
 		if (leftOrRight == 0)

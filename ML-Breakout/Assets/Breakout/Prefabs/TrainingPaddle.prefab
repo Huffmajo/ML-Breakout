@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    vectorObservationSize: 1
+    vectorObservationSize: 12
     numStackedVectorObservations: 1
     vectorActionSize: 01000000
     vectorActionDescriptions: []
@@ -168,10 +168,18 @@ MonoBehaviour:
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 1
+  ball: {fileID: 0}
   ballCollisionReward: 1
+  brickBreakReward: 5
+  ballDropPenalty: -10
+  ballHeldPenalty: -1
   paddleSpeed: 20
   xPosLimit: 9.5
   xNegLimit: -9.5
+  horizontalInput: 0
+  bricks: []
+  bricksPrev: 0
+  bricksNext: 0
 --- !u!1 &1929878509311735605
 GameObject:
   m_ObjectHideFlags: 0

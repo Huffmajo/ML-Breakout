@@ -306,7 +306,7 @@ TrainingPaddle:
     buffer_size: 10240
     hidden_units: 256
     beta: 1.0e-2
-    max_steps: 1.0e7
+    max_steps: 1.0e6
 
 My Behavior:
     use_curiosity: true
