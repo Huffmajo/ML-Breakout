@@ -2070,22 +2070,27 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballCollisionReward
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballDropPenalty
-      value: -10
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: brickBreakReward
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballHeldPenalty
       value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: paddleXScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -3082,22 +3087,27 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballCollisionReward
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballDropPenalty
-      value: -10
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: brickBreakReward
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballHeldPenalty
       value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: paddleXScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -3473,22 +3483,27 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballCollisionReward
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballDropPenalty
-      value: -10
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: brickBreakReward
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballHeldPenalty
       value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: paddleXScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -3942,7 +3957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleAgent: {fileID: 605440011}
-  Ball: {fileID: 882413386}
+  ball: {fileID: 882413386}
   currentReward: {fileID: 1016119772}
   paddleAcademy: {fileID: 1128045250}
   brickPrefab: {fileID: 8440416340178034039, guid: a97449194bf81964e82bdaa852f9c9b5,
@@ -11546,7 +11561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleAgent: {fileID: 1887286304}
-  Ball: {fileID: 1136087476}
+  ball: {fileID: 1136087476}
   currentReward: {fileID: 403557664}
   paddleAcademy: {fileID: 1018425949}
   brickPrefab: {fileID: 8440416340178034039, guid: a97449194bf81964e82bdaa852f9c9b5,
@@ -13740,7 +13755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleAgent: {fileID: 1191083759}
-  Ball: {fileID: 1950380610}
+  ball: {fileID: 1950380610}
   currentReward: {fileID: 798269009}
   paddleAcademy: {fileID: 1978872982}
   brickPrefab: {fileID: 8440416340178034039, guid: a97449194bf81964e82bdaa852f9c9b5,
@@ -21664,7 +21679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleAgent: {fileID: 991548854}
-  Ball: {fileID: 297746738}
+  ball: {fileID: 297746738}
   currentReward: {fileID: 712015160}
   paddleAcademy: {fileID: 760429063}
   brickPrefab: {fileID: 8440416340178034039, guid: a97449194bf81964e82bdaa852f9c9b5,
@@ -22871,7 +22886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleAgent: {fileID: 1071361509}
-  Ball: {fileID: 848751852}
+  ball: {fileID: 848751852}
   currentReward: {fileID: 181504382}
   paddleAcademy: {fileID: 811988562}
   brickPrefab: {fileID: 8440416340178034039, guid: a97449194bf81964e82bdaa852f9c9b5,
@@ -28461,22 +28476,27 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballCollisionReward
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballDropPenalty
-      value: -10
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: brickBreakReward
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballHeldPenalty
       value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: paddleXScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -29396,22 +29416,27 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballCollisionReward
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballDropPenalty
-      value: -10
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: brickBreakReward
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballHeldPenalty
       value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: paddleXScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -36984,7 +37009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleAgent: {fileID: 66552963}
-  Ball: {fileID: 1479693084}
+  ball: {fileID: 1479693084}
   currentReward: {fileID: 1968340960}
   paddleAcademy: {fileID: 155607275}
   brickPrefab: {fileID: 8440416340178034039, guid: a97449194bf81964e82bdaa852f9c9b5,
@@ -44590,22 +44615,27 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballCollisionReward
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballDropPenalty
-      value: -10
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: brickBreakReward
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballHeldPenalty
       value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: paddleXScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -47659,7 +47689,7 @@ GameObject:
   - component: {fileID: 1700679046}
   m_Layer: 0
   m_Name: Bricks
-  m_TagString: Untagged
+  m_TagString: BrickList
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50072,7 +50102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleAgent: {fileID: 875567393}
-  Ball: {fileID: 1345154844}
+  ball: {fileID: 1345154844}
   currentReward: {fileID: 947103048}
   paddleAcademy: {fileID: 476358510}
   brickPrefab: {fileID: 8440416340178034039, guid: a97449194bf81964e82bdaa852f9c9b5,
@@ -51963,7 +51993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleAgent: {fileID: 1483410012056948113}
-  Ball: {fileID: 151080546}
+  ball: {fileID: 151080546}
   currentReward: {fileID: 1740867010}
   paddleAcademy: {fileID: 3944363477901948312}
   brickPrefab: {fileID: 8440416340178034039, guid: a97449194bf81964e82bdaa852f9c9b5,
@@ -58398,22 +58428,27 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballCollisionReward
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballDropPenalty
-      value: -10
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: brickBreakReward
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballHeldPenalty
       value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: paddleXScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -59946,6 +59981,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: xPosLimit
@@ -59974,22 +60014,27 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballCollisionReward
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballDropPenalty
-      value: -10
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: brickBreakReward
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: ballHeldPenalty
       value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: paddleXScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}

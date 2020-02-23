@@ -8,34 +8,68 @@ public class BreakoutArea : Area
 {
 
     public PaddleAgent paddleAgent;
-    public Ball Ball;
+    public Ball ball;
     public TextMeshPro currentReward;
     public PaddleAcademy paddleAcademy;
     public GameObject brickPrefab;
 
+    
     [HideInInspector]
     public float paddleXScale = 1f;
     [HideInInspector]
     public float ballSpeed = 20f;
 
+    private Vector3 scaleChange;
+
     public GameObject[] bricks;
     public List<Vector3> brickPositions;
     private List<GameObject> brickList;
     private Vector3 paddleStartingPos;
+    private Transform gobricks;
 
     void Start()
     {
         // get all bricks 
-        bricks = GameObject.FindGameObjectsWithTag("brick");
+        //bricks = GameObject.FindGameObjectsWithTag("brick");
+        var parentObjects = gameObject.GetComponentsInChildren<Transform>();
+        
+
+        foreach (Transform child in parentObjects)
+        {
+            if (child.name == "bricks")
+            {
+                Transform gobricks = child;
+            }
+        }
 
         // get starting position of paddle agent
         paddleStartingPos = paddleAgent.transform.position;
 
         // populate list with brick starting locations
-        foreach (GameObject brick in bricks)
+        foreach (Transform child in gobricks)
         {
-            brickPositions.Add(brick.transform.position);
+
+//ERROR HERE, NULL ref exception. object ref not set to an instance of an object
+
+
+
+            if (child.tag == "brick")
+            {
+                brickPositions.Add(child.transform.position);
+                brickList.Add(child.gameObject);
+                //Debug.Log(child.name);
+            }
+
         }
+
+
+
+        ball.ballSpeed =paddleAcademy.ballSpeed;
+
+        scaleChange = new Vector3(paddleAcademy.paddleXScale, 1, 1);
+        paddleAgent.transform.localScale = scaleChange;
+
+
     }
 
         // Update is called once per frame
@@ -48,7 +82,7 @@ public class BreakoutArea : Area
     public override void ResetArea()
     {
         // place paddle and ball, make sure to include paddle size and ball speed 
-        Ball.ResetBall();
+        ball.ResetBall();
         ResetPaddle();
 
         // remove all bricks
@@ -62,23 +96,29 @@ public class BreakoutArea : Area
     private void ResetPaddle()
     {
         paddleAgent.transform.position = paddleStartingPos;
-        // maybe change paddleXscale here
     }
 
 
     // clear all bricks in area
     private void RemoveAllBricks()
     {
-        foreach (GameObject brick in bricks)
+        
+//********************* Error here! Object ref not set
+
+        foreach (GameObject brick in brickList)
         {
             Destroy(brick);
         }
+        brickList.Clear();
+    
     }
 
 
     // add bricks into area at original placement
     private void GenerateBricks()
     {
+
+
         for (int i = 0; i < brickPositions.Count; i++)
         {
             GameObject brickObject = Instantiate<GameObject>(brickPrefab.gameObject);
@@ -88,11 +128,14 @@ public class BreakoutArea : Area
             Brick brickScript = brickObject.GetComponent<Brick>();
             brickScript.training = true;
             brickScript.paddleAgent = paddleAgent;
-
+            
+            
+            brickList.Add(brickObject.gameObject);
             // may need to add brick row color here
         }
 
         // get all bricks 
-        bricks = GameObject.FindGameObjectsWithTag("brick");
+        //bricks = GameObject.FindGameObjectsWithTag("brick");
+        //brickList repopulated in previous for loop
     }
 }
