@@ -83,7 +83,7 @@ public class Ball : MonoBehaviour
     	{
     		if (training)
             {
-                paddle.GetComponent<PaddleAgent>().AddReward(5f);
+                paddle.GetComponent<PaddleAgent>().AddReward(1f);
             }
             else
     		{

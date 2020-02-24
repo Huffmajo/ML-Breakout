@@ -9529,7 +9529,7 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: agentParameters.maxStep
-      value: 7000
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -9580,6 +9580,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_BehaviorName
+      value: TrainingPaddle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4281c959c852fc84a92fb2f26ab22bc8, type: 3}

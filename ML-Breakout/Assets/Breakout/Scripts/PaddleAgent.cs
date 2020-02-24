@@ -105,10 +105,10 @@ public class PaddleAgent : Agent
     public override void CollectObservations()
     {
         // paddle position
-        AddVectorObs(transform.position);
+        AddVectorObs(transform.position.normalized);
 
         //get ball position
-        AddVectorObs(ball.transform.position);
+        AddVectorObs(ball.transform.position.normalized);
 
         // distance to ball
         AddVectorObs(Vector3.Distance(ball.transform.position, transform.position));

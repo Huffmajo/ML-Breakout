@@ -16,7 +16,7 @@ public class Floor : MonoBehaviour
 		{
 			if (training)
 			{
-				paddleAgent.AddReward(-10f);
+				paddleAgent.AddReward(-5f);
 				ball.ResetBall();
 			}
 			else
