@@ -12,7 +12,7 @@ public class BreakoutArea : Area
     public TextMeshPro currentReward;
     public PaddleAcademy paddleAcademy;
     public GameObject brickPrefab;
-
+    public GameObject brickListContainer;
     
     [HideInInspector]
     public float paddleXScale = 1f;
@@ -24,46 +24,44 @@ public class BreakoutArea : Area
     public GameObject[] bricks;
     public List<Vector3> brickPositions;
     private List<GameObject> brickList;
+    private List<Color> brickColors;
     private Vector3 paddleStartingPos;
-    private Transform gobricks;
+
 
     void Start()
     {
         // get all bricks 
-        //bricks = GameObject.FindGameObjectsWithTag("brick");
-        var parentObjects = gameObject.GetComponentsInChildren<Transform>();
+        Transform brickListContainer = null;
         
+        brickList = new List<GameObject>();
+        brickColors = new List<Color>();
+        brickPositions = new List<Vector3>();
+                
+        //bricks = GameObject.FindGameObjectsWithTag("brick");
+        Transform[] parentObjects = gameObject.GetComponentsInChildren<Transform>();
 
         foreach (Transform child in parentObjects)
         {
-            if (child.name == "bricks")
+            if (child.tag == "BrickList")
             {
-                Transform gobricks = child;
+                brickListContainer = child;
             }
         }
-
-        // get starting position of paddle agent
-        paddleStartingPos = paddleAgent.transform.position;
 
         // populate list with brick starting locations
-        foreach (Transform child in gobricks)
+        if (brickListContainer != null)
         {
-
-//ERROR HERE, NULL ref exception. object ref not set to an instance of an object
-
-
-
-            if (child.tag == "brick")
+            foreach (Transform child in brickListContainer)
             {
-                brickPositions.Add(child.transform.position);
+                brickPositions.Add(child.position);
                 brickList.Add(child.gameObject);
-                //Debug.Log(child.name);
+                brickColors.Add(child.GetComponent<Renderer>().material.GetColor("_Color"));
             }
-
         }
 
-
-
+        
+        // get starting position of paddle agent
+        paddleStartingPos = paddleAgent.transform.position;
         ball.ballSpeed =paddleAcademy.ballSpeed;
 
         scaleChange = new Vector3(paddleAcademy.paddleXScale, 1, 1);
@@ -102,15 +100,11 @@ public class BreakoutArea : Area
     // clear all bricks in area
     private void RemoveAllBricks()
     {
-        
-//********************* Error here! Object ref not set
-
         foreach (GameObject brick in brickList)
         {
             Destroy(brick);
         }
         brickList.Clear();
-    
     }
 
 
@@ -123,7 +117,7 @@ public class BreakoutArea : Area
         {
             GameObject brickObject = Instantiate<GameObject>(brickPrefab.gameObject);
             brickObject.transform.position = brickPositions[i];
-
+            brickObject.GetComponent<Renderer>().material.color = brickColors[i];
             // set brick training variables
             Brick brickScript = brickObject.GetComponent<Brick>();
             brickScript.training = true;
@@ -131,6 +125,12 @@ public class BreakoutArea : Area
             
             
             brickList.Add(brickObject.gameObject);
+
+            
+            brickObject.transform.parent = brickListContainer.transform;
+
+
+
             // may need to add brick row color here
         }
 

@@ -41,16 +41,13 @@ public class PaddleAgent : Agent
 		// take note of all the bricks in the scene
 
         brickPositions = breakoutArea.brickPositions;
-
         
-		//bricks = GameObject.FindGameObjectsWithTag("brick");
 		
         bricksPrev = breakoutArea.bricks.Length;
 
 		//get initial y values of paddle and ball
 		paddleYPos = transform.position.y;
 		ballYPos = ball.transform.position.y;
-		
 	}
 
     /// <summary>
@@ -102,8 +99,6 @@ public class PaddleAgent : Agent
         {
             leftOrRight = 1f;
         }
-        
-        //vectorAction[1];
 
 
 

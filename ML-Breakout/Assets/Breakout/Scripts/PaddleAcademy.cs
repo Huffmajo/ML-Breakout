@@ -13,10 +13,10 @@ public class PaddleAcademy : Academy
 
     public override void InitializeAcademy()
     {
-        paddleXScale = 2f;
+        //paddleXScale = 2f;
         //transform.scale.y(paddleLength);
     
-        ballSpeed = 15f;
+        //ballSpeed = 15f;
 
 
         FloatProperties.RegisterCallback("paddleXScale", f =>
