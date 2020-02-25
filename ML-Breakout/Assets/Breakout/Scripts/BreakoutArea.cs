@@ -23,7 +23,7 @@ public class BreakoutArea : Area
 
     public GameObject[] bricks;
     public List<Vector3> brickPositions;
-    private List<GameObject> brickList;
+    public List<GameObject> brickList;
     private List<Color> brickColors;
     private Vector3 paddleStartingPos;
 
@@ -53,12 +53,11 @@ public class BreakoutArea : Area
         {
             foreach (Transform child in brickListContainer)
             {
-                brickPositions.Add(child.position);
                 brickList.Add(child.gameObject);
+                brickPositions.Add(child.position);
                 brickColors.Add(child.GetComponent<Renderer>().material.GetColor("_Color"));
             }
         }
-
         
         // get starting position of paddle agent
         paddleStartingPos = paddleAgent.transform.position;
@@ -66,8 +65,6 @@ public class BreakoutArea : Area
 
         scaleChange = new Vector3(paddleAcademy.paddleXScale, 1, 1);
         paddleAgent.transform.localScale = scaleChange;
-
-
     }
 
         // Update is called once per frame
@@ -107,35 +104,27 @@ public class BreakoutArea : Area
         brickList.Clear();
     }
 
-
-    // add bricks into area at original placement
     private void GenerateBricks()
     {
 
-
         for (int i = 0; i < brickPositions.Count; i++)
         {
+            // create brick and set position and original color
             GameObject brickObject = Instantiate<GameObject>(brickPrefab.gameObject);
             brickObject.transform.position = brickPositions[i];
             brickObject.GetComponent<Renderer>().material.color = brickColors[i];
+            
             // set brick training variables
             Brick brickScript = brickObject.GetComponent<Brick>();
             brickScript.training = true;
             brickScript.paddleAgent = paddleAgent;
             
-            
+            //adds back into brickList for reference
             brickList.Add(brickObject.gameObject);
 
-            
+            //puts new brick under the brickListContainer GameObject
             brickObject.transform.parent = brickListContainer.transform;
 
-
-
-            // may need to add brick row color here
         }
-
-        // get all bricks 
-        //bricks = GameObject.FindGameObjectsWithTag("brick");
-        //brickList repopulated in previous for loop
     }
 }

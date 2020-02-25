@@ -10,7 +10,7 @@ public class PaddleAgent : Agent
     private BreakoutArea breakoutArea;
     
     public List<Vector3> brickPositions;
-	public GameObject[] bricks;
+	public List<GameObject> bricks;
     public Ball ball;
 
     public float paddleXScale;
@@ -41,9 +41,9 @@ public class PaddleAgent : Agent
 		// take note of all the bricks in the scene
 
         brickPositions = breakoutArea.brickPositions;
-        
+        bricks = breakoutArea.brickList;
 		
-        bricksPrev = breakoutArea.bricks.Length;
+        bricksPrev = breakoutArea.brickList.Count;
 
 		//get initial y values of paddle and ball
 		paddleYPos = transform.position.y;
@@ -147,15 +147,24 @@ public class PaddleAgent : Agent
 		//compare to previous number of bricks
 		//if number of bricks decreased add large reward
 		
-        Array.Clear(bricks, 0, bricks.Length);
-		bricks = breakoutArea.bricks;
-		bricksNext = bricks.Length;
+        bricks.Clear();
+		bricks = breakoutArea.brickList;
+		bricksNext = bricks.Count;
 		if (bricksNext < bricksPrev)
 		{
-			Debug.Log("prev: " + bricksPrev);
-			Debug.Log("next: " + bricksNext);
-			Debug.Log("brick break");
-			//AddReward(brickBreakReward);
+			if (bricksPrev == 84 && bricksNext == 0)
+            {
+                Debug.Log("All Bricks Broken!");            
+                //AddReward(completionAward);
+            }
+            else
+            {                
+                Debug.Log("brick break order error");
+                Debug.Log("prev: " + bricksPrev);
+                Debug.Log("next: " + bricksNext);
+            }
+            
+
 		}
 		bricksPrev = bricksNext;
 
@@ -219,6 +228,9 @@ public class PaddleAgent : Agent
 		//number of bricks
 		AddVectorObs(bricksPrev);
 		
+
+
+
 		//get brick positions
             //change line below to accept the brickPositions
             //AddVectorObs(brickPositions);
