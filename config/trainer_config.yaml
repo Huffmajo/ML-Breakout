@@ -308,10 +308,10 @@ PenguinLearning:
 
 TrainingPaddle:
     use_curiosity: true
-    summary_freq: 10000
+    summary_freq: 1000
     time_horizon: 128
     batch_size: 128
     buffer_size: 2048
     hidden_units: 256
     beta: 1.0e-2
-    max_steps: 1.0e6
+    max_steps: 1.0e5

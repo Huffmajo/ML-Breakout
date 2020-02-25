@@ -71,11 +71,6 @@ public class PaddleAgent : Agent
             leftOrRight = -1f;
         }
         
-        //vectorAction[1];
-		//int release = (int)vectorAction[0];
-		//int leftOrRight = (int)vectorAction[1];
-		//Debug.Log("left or right: " + leftOrRight);
-		//Debug.Log("release: " + release);
 
 		// convert axis values to movement
 		// move paddle based on input and paddleSpeed
@@ -93,8 +88,16 @@ public class PaddleAgent : Agent
             ball.LaunchBall(ball.ballSpeed, ball.launchAngle);
         }
 
-        // small reward loss over time
-        AddReward(-1f / agentParameters.maxStep);
+        // small punishment for holding ball
+        if (ball.heldByPaddle)
+        {
+            AddReward(-1f / agentParameters.maxStep);
+        }
+        // small reward for staying still
+        else if (leftOrRight == 0)
+        {
+            AddReward(5f / agentParameters.maxStep);
+        }
 	}
 
     public override void AgentReset()
@@ -105,16 +108,17 @@ public class PaddleAgent : Agent
     public override void CollectObservations()
     {
         // paddle position
-        AddVectorObs(transform.position.normalized);
+        AddVectorObs(transform.position.x);
 
         //get ball position
-        AddVectorObs(ball.transform.position.normalized);
+        AddVectorObs(ball.transform.position.x);
+        AddVectorObs(ball.transform.position.y);
 
         // distance to ball
-        AddVectorObs(Vector3.Distance(ball.transform.position, transform.position));
+        //AddVectorObs(Vector3.Distance(ball.transform.position, transform.position));
 
         // direction to ball
-        AddVectorObs((ball.transform.position - transform.position).normalized);
+        //AddVectorObs((ball.transform.position - transform.position).normalized);
 
         // ball movement direction
         // may want to normalize with:
@@ -123,20 +127,14 @@ public class PaddleAgent : Agent
         Vector3 normalized = rotation.eulerAngles / 180.0f - Vector3.one;  // [-1,1]
         Vector3 normalized = rotation.eulerAngles / 360.0f;  // [0,1]
         */
-        AddVectorObs(ball.velocityAngle/360.0f);
+        //AddVectorObs(ball.velocityAngle/360.0f);
+        AddVectorObs(ball.rb.velocity.normalized);
 
         // if ball is held
         AddVectorObs(ball.heldByPaddle);
 		
         // number of bricks left
-        AddVectorObs(breakoutArea.bricks.Length);
-
-		//get brick positions
-        /*
-        float rayDistance = 20f;
-		float[] rayAngles = {30f, 60f, 90f, 120f, 150f};
-		string[] detectableObjects = {"ball", "brick", "wall"};
-		AddVectorObs(rayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
-        */
+        //AddVectorObs(breakoutArea.bricks.Length);
+		
     }
 }

@@ -16,7 +16,7 @@ public class Ball : MonoBehaviour
 	public Vector3 ballImpactVector;
 	public float launchAngle;
 	public GameManager gm;
-	private Rigidbody rb;
+	public Rigidbody rb;
 	private Vector3 heldBallPosition;
 
 
@@ -84,6 +84,7 @@ public class Ball : MonoBehaviour
     		if (training)
             {
                 paddle.GetComponent<PaddleAgent>().AddReward(1f);
+                //paddle.GetComponent<PaddleAgent>().Done();
             }
             else
     		{
@@ -122,7 +123,8 @@ public class Ball : MonoBehaviour
     // resets local variables and location of the ball
     public void ResetBall()
     {
-    	launchAngle = 45f;
+        launchAngle = 45f;
+    	//launchAngle = Random.Range(45f, 135f);
 
         // ball is docked to paddle
         heldByPaddle = true;
