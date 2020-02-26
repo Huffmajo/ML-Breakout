@@ -90,7 +90,7 @@ public class PaddleAgent : Agent
     public override void AgentAction(float[] vectorAction)
     {
 		// convert actions to axis values
-    /*
+    
 		float release = vectorAction[0];
 		float leftOrRight = 0f;
         
@@ -102,31 +102,31 @@ public class PaddleAgent : Agent
         {
             leftOrRight = 1f;
         }
+		transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
 
-    */
 
+		/*
+			int release = (int)vectorAction[0];
+			int leftOrRight = (int)vectorAction[1];
+			// convert axis values to movement
+			//transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
 
-		int release = (int)vectorAction[0];
-        int leftOrRight = (int)vectorAction[1];
-		// convert axis values to movement
-		//transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
-		
-		if (leftOrRight == 0)
-		{
-			transform.position += new Vector3(1 * Time.deltaTime * paddleSpeed, 0f, 0f);
-		}
-		else if (leftOrRight == 1)
-		{
-			transform.position += new Vector3(-1 * Time.deltaTime * paddleSpeed, 0f, 0f);
-		}
-		else
-		{
-			transform.position += new Vector3(0 * Time.deltaTime * paddleSpeed, 0f, 0f);
-		}
-		
+			if (leftOrRight == 0)
+			{
+				transform.position += new Vector3(1 * Time.deltaTime * paddleSpeed, 0f, 0f);
+			}
+			else if (leftOrRight == 1)
+			{
+				transform.position += new Vector3(-1 * Time.deltaTime * paddleSpeed, 0f, 0f);
+			}
+			else
+			{
+				transform.position += new Vector3(0 * Time.deltaTime * paddleSpeed, 0f, 0f);
+			}
+			*/
 
-        // restrict paddle movement to positive and negative limits
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
+		// restrict paddle movement to positive and negative limits
+		transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
 
         // release ball from paddle
         if (release == 1f && ball.heldByPaddle == true)
