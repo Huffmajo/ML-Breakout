@@ -8,34 +8,63 @@ public class BreakoutArea : Area
 {
 
     public PaddleAgent paddleAgent;
-    public Ball Ball;
+    public Ball ball;
     public TextMeshPro currentReward;
     public PaddleAcademy paddleAcademy;
     public GameObject brickPrefab;
-
+    public GameObject brickListContainer;
+    
     [HideInInspector]
     public float paddleXScale = 1f;
     [HideInInspector]
     public float ballSpeed = 20f;
 
+    private Vector3 scaleChange;
+
     public GameObject[] bricks;
     public List<Vector3> brickPositions;
-    private List<GameObject> brickList;
+    public List<GameObject> brickList;
+    private List<Color> brickColors;
     private Vector3 paddleStartingPos;
+
 
     void Start()
     {
         // get all bricks 
-        bricks = GameObject.FindGameObjectsWithTag("brick");
+        Transform brickListContainer = null;
+        
+        brickList = new List<GameObject>();
+        brickColors = new List<Color>();
+        brickPositions = new List<Vector3>();
+                
+        //bricks = GameObject.FindGameObjectsWithTag("brick");
+        Transform[] parentObjects = gameObject.GetComponentsInChildren<Transform>();
 
-        // get starting position of paddle agent
-        paddleStartingPos = paddleAgent.transform.position;
+        foreach (Transform child in parentObjects)
+        {
+            if (child.tag == "BrickList")
+            {
+                brickListContainer = child;
+            }
+        }
 
         // populate list with brick starting locations
-        foreach (GameObject brick in bricks)
+        if (brickListContainer != null)
         {
-            brickPositions.Add(brick.transform.position);
+            foreach (Transform child in brickListContainer)
+            {
+                brickList.Add(child.gameObject);
+                brickPositions.Add(child.position);
+                brickColors.Add(child.GetComponent<Renderer>().material.GetColor("_Color"));
+            }
         }
+        
+        // get starting position of paddle agent
+        paddleStartingPos = paddleAgent.transform.position;
+        ball.ballSpeed =paddleAcademy.ballSpeed;
+
+        scaleChange = new Vector3(paddleAcademy.paddleXScale, 1, 1);
+        paddleAgent.transform.localScale = scaleChange;
     }
 
         // Update is called once per frame
@@ -48,7 +77,7 @@ public class BreakoutArea : Area
     public override void ResetArea()
     {
         // place paddle and ball, make sure to include paddle size and ball speed 
-        Ball.ResetBall();
+        ball.ResetBall();
         ResetPaddle();
 
         // remove all bricks
@@ -62,37 +91,40 @@ public class BreakoutArea : Area
     private void ResetPaddle()
     {
         paddleAgent.transform.position = paddleStartingPos;
-        // maybe change paddleXscale here
     }
 
 
     // clear all bricks in area
     private void RemoveAllBricks()
     {
-        foreach (GameObject brick in bricks)
+        foreach (GameObject brick in brickList)
         {
             Destroy(brick);
         }
+        brickList.Clear();
     }
 
-
-    // add bricks into area at original placement
     private void GenerateBricks()
     {
+
         for (int i = 0; i < brickPositions.Count; i++)
         {
+            // create brick and set position and original color
             GameObject brickObject = Instantiate<GameObject>(brickPrefab.gameObject);
             brickObject.transform.position = brickPositions[i];
-
+            brickObject.GetComponent<Renderer>().material.color = brickColors[i];
+            
             // set brick training variables
             Brick brickScript = brickObject.GetComponent<Brick>();
             brickScript.training = true;
             brickScript.paddleAgent = paddleAgent;
+            
+            //adds back into brickList for reference
+            brickList.Add(brickObject.gameObject);
 
-            // may need to add brick row color here
+            //puts new brick under the brickListContainer GameObject
+            brickObject.transform.parent = brickListContainer.transform;
+
         }
-
-        // get all bricks 
-        bricks = GameObject.FindGameObjectsWithTag("brick");
     }
 }

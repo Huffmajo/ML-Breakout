@@ -19,6 +19,7 @@ public class Brick : MonoBehaviour
 	}
 
 
+
 	//check for collisions and destroy brick
 	void OnCollisionEnter(Collision other)
 	{
@@ -26,7 +27,10 @@ public class Brick : MonoBehaviour
 		
 		if (collisionCount > maxCollisions)
 		{
-			gm.UpdateUI();
+			if (!training)
+			{
+				gm.UpdateUI();
+			}
 			Destroy(gameObject);
 		}
 		else if (maxCollisions > 0 && counter < colors.Count-1)	//for tough bricks
@@ -42,7 +46,4 @@ public class Brick : MonoBehaviour
 			paddleAgent.AddReward(1f);
 		}
 	}
-
-
-
 }

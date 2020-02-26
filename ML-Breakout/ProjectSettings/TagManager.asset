@@ -39,6 +39,7 @@ TagManager:
   - EndGameUI
   - PauseGameUI
   - GameManager
+  - BrickList
   layers:
   - Default
   - TransparentFX

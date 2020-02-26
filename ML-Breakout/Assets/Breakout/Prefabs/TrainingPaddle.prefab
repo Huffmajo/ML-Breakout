@@ -140,12 +140,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    vectorObservationSize: 12
+    vectorObservationSize: 13
     numStackedVectorObservations: 1
     vectorActionSize: 01000000
     vectorActionDescriptions: []
     vectorActionSpaceType: 0
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 11400000, guid: c18cd6509fd24a74b9c4b91a1889f516, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: My Behavior
@@ -168,18 +168,20 @@ MonoBehaviour:
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 1
+  brickPositions: []
   ball: {fileID: 0}
-  ballCollisionReward: 1
-  brickBreakReward: 5
-  ballDropPenalty: -10
+  paddleXScale: 1
+  ballCollisionReward: 3
+  brickBreakReward: 2
+  ballDropPenalty: -3
   ballHeldPenalty: -1
   paddleSpeed: 20
   xPosLimit: 9.5
   xNegLimit: -9.5
   horizontalInput: 0
   bricks: []
-  bricksPrev: 0
-  bricksNext: 0
+  bricksPrev: -1
+  bricksNext: -1
 --- !u!1 &1929878509311735605
 GameObject:
   m_ObjectHideFlags: 0

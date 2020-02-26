@@ -1,0 +1,10 @@
+{
+    "measure": "reward",
+    "thresholds": [ 10, 100, 500, 1000, 2000, 3000, 4000 ],
+    "min_lesson_length": 80,
+    "signal_smoothing": true,
+    "parameters": {
+        "paddleXScale": [ 1.2, 1.1, 1.0, 1.0, 1.0, 0.9, 0.8, 0.7 ],
+        "ballSpeed": [ 17.5, 20.0, 20.0, 22.5, 25.0, 27.5, 30.0, 32.5 ]
+    }
+}
