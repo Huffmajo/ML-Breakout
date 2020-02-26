@@ -8077,7 +8077,7 @@ MonoBehaviour:
   paddleAgent: {fileID: 1483410012056948113}
   Ball: {fileID: 151080546}
   currentReward: {fileID: 1740867010}
-  paddleAcademy: {fileID: 3944363477901948312}
+  paddleAcademy: {fileID: 0}
   brickPrefab: {fileID: 8440416340178034039, guid: a97449194bf81964e82bdaa852f9c9b5,
     type: 3}
   paddleXScale: 0
@@ -9668,6 +9668,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PaddleAcademy
       objectReference: {fileID: 0}
+    - target: {fileID: 2267024628085459620, guid: a345017c631701d4e91185312201b79e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a345017c631701d4e91185312201b79e, type: 3}
 --- !u!4 &3944363477901948311 stripped
@@ -9676,18 +9681,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3944363477901948310}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3944363477901948312 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2118655329556827502, guid: a345017c631701d4e91185312201b79e,
-    type: 3}
-  m_PrefabInstance: {fileID: 3944363477901948310}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 520ea39ccc83d234ea55ca70c6d26ad9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5084540575307762630
 PrefabInstance:
   m_ObjectHideFlags: 0

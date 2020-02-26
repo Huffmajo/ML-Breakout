@@ -114,19 +114,6 @@ public class PaddleAgent : Agent
         AddVectorObs(ball.transform.position.x);
         AddVectorObs(ball.transform.position.y);
 
-        // distance to ball
-        //AddVectorObs(Vector3.Distance(ball.transform.position, transform.position));
-
-        // direction to ball
-        //AddVectorObs((ball.transform.position - transform.position).normalized);
-
-        // ball movement direction
-        // may want to normalize with:
-        /*
-        Quaternion rotation = transform.rotation;
-        Vector3 normalized = rotation.eulerAngles / 180.0f - Vector3.one;  // [-1,1]
-        Vector3 normalized = rotation.eulerAngles / 360.0f;  // [0,1]
-        */
         //AddVectorObs(ball.velocityAngle/360.0f);
         AddVectorObs(ball.rb.velocity.normalized);
 
