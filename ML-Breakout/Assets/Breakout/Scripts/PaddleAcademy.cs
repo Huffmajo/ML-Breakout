@@ -15,6 +15,11 @@ public class PaddleAcademy : Academy
     {
 
 
+        paddleXScale = 1f;
+        ballSpeed = 20f;
+
+
+
         FloatProperties.RegisterCallback("paddleXScale", f =>
         {
             paddleXScale = f;
