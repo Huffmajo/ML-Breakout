@@ -13,7 +13,8 @@ public class PaddleAcademy : Academy
 
     public override void InitializeAcademy()
     {
-
+		paddleXScale = 1f;
+		ballSpeed = 20f;
 
         FloatProperties.RegisterCallback("paddleXScale", f =>
         {
