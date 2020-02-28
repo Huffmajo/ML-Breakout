@@ -556,7 +556,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'BRICKS LEFT
 
-    -1118/0'
+    -1141/0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63dd3eb213586a44a84d6ca04501ad9a, type: 2}
   m_sharedMaterial: {fileID: 21039112775108118, guid: 63dd3eb213586a44a84d6ca04501ad9a,
@@ -1718,7 +1718,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'LIVES: -4'
+  m_text: 'LIVES: 1'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63dd3eb213586a44a84d6ca04501ad9a, type: 2}
   m_sharedMaterial: {fileID: 21039112775108118, guid: 63dd3eb213586a44a84d6ca04501ad9a,
@@ -2410,7 +2410,7 @@ MonoBehaviour:
   gameOver: 0
   levelComplete: 1
   bricksTotal: 0
-  bricksLeft: -1118
+  bricksLeft: -1141
   nextLevelButton: {fileID: 3818983425388277072}
   endGameUI: {fileID: 400725140120620415}
   pauseGameUI: {fileID: 8528405489227471844}
