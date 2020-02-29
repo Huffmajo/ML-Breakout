@@ -11,7 +11,7 @@ public class PaddleAgent : Agent
     
     public List<Vector3> brickPositions;
 	public List<GameObject> bricks;
-    public Ball ball;
+    public AIBall ball;
 
 
     public float paddleXScale;

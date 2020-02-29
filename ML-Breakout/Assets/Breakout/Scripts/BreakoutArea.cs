@@ -27,7 +27,6 @@ public class BreakoutArea : Area
     private List<Color> brickColors;
     private Vector3 paddleStartingPos;
 
-
     void Start()
     {
         // get all bricks 
@@ -93,7 +92,6 @@ public class BreakoutArea : Area
         paddleAgent.transform.position = paddleStartingPos;
     }
 
-
     // clear all bricks in area
     private void RemoveAllBricks()
     {
@@ -106,7 +104,6 @@ public class BreakoutArea : Area
 
     private void GenerateBricks()
     {
-
         for (int i = 0; i < brickPositions.Count; i++)
         {
             // create brick and set position and original color
@@ -124,7 +121,6 @@ public class BreakoutArea : Area
 
             //puts new brick under the brickListContainer GameObject
             brickObject.transform.parent = brickListContainer.transform;
-
         }
     }
 }

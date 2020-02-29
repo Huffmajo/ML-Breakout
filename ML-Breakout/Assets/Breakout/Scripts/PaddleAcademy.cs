@@ -9,12 +9,8 @@ public class PaddleAcademy : Academy
     public float paddleXScale { get; private set; }
     public float ballSpeed { get; private set; }
 
-
-
     public override void InitializeAcademy()
     {
-
-
         FloatProperties.RegisterCallback("paddleXScale", f =>
         {
             paddleXScale = f;
@@ -25,6 +21,5 @@ public class PaddleAcademy : Academy
         {
             ballSpeed = f;
         });
-        
     }
 }

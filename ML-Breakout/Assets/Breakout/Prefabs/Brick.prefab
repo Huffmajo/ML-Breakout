@@ -106,7 +106,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxCollisions: 0
   training: 0
-  paddleAgent: {fileID: 0}
+  paddleAgent: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+    type: 3}
   collisionCount: 0
   gm: {fileID: 114149399011207424, guid: 48f60ac4eafc4af48b96af0ebf175d98, type: 3}
+  playerGM: {fileID: 0}
+  aiGM: {fileID: 0}
   colors: []

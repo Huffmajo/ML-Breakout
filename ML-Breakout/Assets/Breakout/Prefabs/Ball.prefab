@@ -121,14 +121,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c01240cccd17f4995e234dde2cd6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  training: 0
   ballSpeed: 20
-  startingSpeed: 20
   ballDirection: {x: 0, y: 0, z: 0}
   ballVelocity: {x: 0, y: 0, z: 0}
-  paddle: {fileID: 0}
+  paddle: {fileID: 1060610135555581763, guid: 3b73166e3595f4d48972c5838a409b1b, type: 3}
   totalVelocity: 0
   heldByPaddle: 0
   velocityAngle: 0
   ballImpactVector: {x: 0, y: 0, z: 0}
   launchAngle: 0
-  gm: {fileID: 0}
+  gm: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664, type: 3}

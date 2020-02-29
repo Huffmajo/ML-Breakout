@@ -10,6 +10,8 @@ public class Brick : MonoBehaviour
 	public int collisionCount = 0;
 
 	public GameManager gm;
+	public PlayerGM playerGM;
+	public AIGM aiGM;
 	private int counter = 0;
 	public List<Color> colors;	//colors defined in inspector window for prefabs
 
@@ -17,8 +19,6 @@ public class Brick : MonoBehaviour
 	{
 		
 	}
-
-
 
 	//check for collisions and destroy brick
 	void OnCollisionEnter(Collision other)
@@ -29,7 +29,18 @@ public class Brick : MonoBehaviour
 		{
 			if (!training)
 			{
-				gm.UpdateUI();
+				if (other.gameObject.tag == "ball")
+				{
+					playerGM.DecrementBrick();
+				}
+				else if (other.gameObject.tag == "AIBall")
+				{
+					aiGM.DecrementBrick();
+				}
+				else
+				{
+					gm.UpdateUI();
+				}
 			}
 			Destroy(gameObject);
 		}

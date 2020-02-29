@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 5792591820138656454}
   m_Layer: 0
   m_Name: TrainingPaddle
-  m_TagString: paddle
+  m_TagString: AIPaddle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,7 +169,8 @@ MonoBehaviour:
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 1
   brickPositions: []
-  ball: {fileID: 0}
+  bricks: []
+  ball: {fileID: 1420296028221105089, guid: 77b1f398c9499cd4f9bf451bce21f597, type: 3}
   paddleXScale: 1
   ballCollisionReward: 3
   brickBreakReward: 2
@@ -179,7 +180,6 @@ MonoBehaviour:
   xPosLimit: 9.5
   xNegLimit: -9.5
   horizontalInput: 0
-  bricks: []
   bricksPrev: -1
   bricksNext: -1
 --- !u!1 &1929878509311735605

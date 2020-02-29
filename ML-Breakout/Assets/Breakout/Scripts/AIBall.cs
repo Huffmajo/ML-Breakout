@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class Ball : MonoBehaviour
+public class AIBall : MonoBehaviour
 {
-	public bool training = false;
 	public float ballSpeed = 20f;
 	public Vector3 ballDirection;
 	public Vector3 ballVelocity;
@@ -15,7 +13,6 @@ public class Ball : MonoBehaviour
 	public float velocityAngle;
 	public Vector3 ballImpactVector;
 	public float launchAngle;
-	public PlayerGM gm;
 	private Rigidbody rb;
 	private Vector3 heldBallPosition;
 
@@ -80,10 +77,8 @@ public class Ball : MonoBehaviour
     {
     	if (col.gameObject.tag == "paddle")
     	{
-    		if (!training)
-    		{
-    			FindObjectOfType<AudioManager>().Play("Bounce");
-    		}
+
+    		FindObjectOfType<AudioManager>().Play("Bounce");
 
     		// get where ball hits paddle
     		ContactPoint contact = col.contacts[0];
@@ -98,17 +93,12 @@ public class Ball : MonoBehaviour
     	else if (col.gameObject.tag == "brick")
     	{
 	    	// play bounce sound
-	    	if (!training)
-    		{
-    			FindObjectOfType<AudioManager>().Play("Pop");
-    		}
+    		FindObjectOfType<AudioManager>().Play("Pop");
+
     	}
     	else if (col.gameObject.tag != "ground")
     	{
-    		if (!training)
-    		{
-    			FindObjectOfType<AudioManager>().Play("Bounce");
-    		}
+    		FindObjectOfType<AudioManager>().Play("Bounce");
     	}
     }
 

@@ -5,6 +5,8 @@ using UnityEngine;
 public class Floor : MonoBehaviour
 {
 	public GameManager gameManager;
+	public PlayerGM playerGM;
+	public AIGM aiGM;
 	public PaddleAgent paddleAgent;
 	public Ball ball;
 	public bool training;
@@ -21,8 +23,12 @@ public class Floor : MonoBehaviour
 			}
 			else
 			{
-				gameManager.LoseLife();
+				playerGM.LoseLife();
 			}
+		}
+		else if (collision.gameObject.tag == "AIBall")
+		{
+			aiGM.LoseLife();
 		}
 	}
 }
