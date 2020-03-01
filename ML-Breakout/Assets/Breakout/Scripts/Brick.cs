@@ -31,10 +31,12 @@ public class Brick : MonoBehaviour
 			{
 				if (other.gameObject.tag == "ball")
 				{
+					// not working for some reason
 					playerGM.DecrementBrick();
 				}
 				else if (other.gameObject.tag == "AIBall")
 				{
+					// not working for some reason
 					aiGM.DecrementBrick();
 				}
 				else

@@ -130,3 +130,4 @@ MonoBehaviour:
   velocityAngle: 0
   ballImpactVector: {x: 0, y: 0, z: 0}
   launchAngle: 45
+  gm: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}

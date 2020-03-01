@@ -102,6 +102,9 @@ public class Ball : MonoBehaviour
     		{
     			FindObjectOfType<AudioManager>().Play("Pop");
     		}
+
+            // tell gm to decrease brick count
+            gm.DecrementBrick();
     	}
     	else if (col.gameObject.tag != "ground")
     	{

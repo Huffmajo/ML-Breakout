@@ -11932,6 +11932,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainingPaddle
       objectReference: {fileID: 0}
+    - target: {fileID: 1437936438001625077, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12199,6 +12204,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Paddle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060610135555581763, guid: 3b73166e3595f4d48972c5838a409b1b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6804579742750925069, guid: 3b73166e3595f4d48972c5838a409b1b,
         type: 3}
@@ -19402,6 +19412,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 526386256933971423, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24dde7feade7fe8428deb6e199bb18ce, type: 3}
 --- !u!1001 &1808923151
@@ -22994,7 +23009,7 @@ PrefabInstance:
     - target: {fileID: 1420296028221105089, guid: 77b1f398c9499cd4f9bf451bce21f597,
         type: 3}
       propertyPath: heldByPaddle
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1420296028221105089, guid: 77b1f398c9499cd4f9bf451bce21f597,
         type: 3}
@@ -23076,6 +23091,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AIBall
       objectReference: {fileID: 0}
+    - target: {fileID: 6213371815023333775, guid: 77b1f398c9499cd4f9bf451bce21f597,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77b1f398c9499cd4f9bf451bce21f597, type: 3}
 --- !u!1001 &4297607081674881442
@@ -23095,6 +23115,21 @@ PrefabInstance:
       propertyPath: aiGM
       value: 
       objectReference: {fileID: 1830298132}
+    - target: {fileID: 4297607080372379528, guid: 0e1bfbaa749b2ac4b814ac158c675c37,
+        type: 3}
+      propertyPath: playerBricksLeft
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297607080372379528, guid: 0e1bfbaa749b2ac4b814ac158c675c37,
+        type: 3}
+      propertyPath: aiBricksLeft
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297607080372379528, guid: 0e1bfbaa749b2ac4b814ac158c675c37,
+        type: 3}
+      propertyPath: bricksTotal
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4297607080372379529, guid: 0e1bfbaa749b2ac4b814ac158c675c37,
         type: 3}
       propertyPath: m_LocalPosition.x

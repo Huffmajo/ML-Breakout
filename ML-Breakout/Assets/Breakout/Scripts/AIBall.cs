@@ -13,6 +13,7 @@ public class AIBall : MonoBehaviour
 	public float velocityAngle;
 	public Vector3 ballImpactVector;
 	public float launchAngle;
+    public AIGM gm;
 	private Rigidbody rb;
 	private Vector3 heldBallPosition;
 
@@ -95,11 +96,18 @@ public class AIBall : MonoBehaviour
 	    	// play bounce sound
     		FindObjectOfType<AudioManager>().Play("Pop");
 
+            // tell gm to decrease brick count
+            gm.DecrementBrick();
     	}
     	else if (col.gameObject.tag != "ground")
     	{
     		FindObjectOfType<AudioManager>().Play("Bounce");
     	}
+        else if (col.gameObject.tag == "ground")
+        {
+            gm.LoseLife();
+            Debug.Log("AIBall hits ground");
+        }
     }
 
     // resets local variables and location of the ball

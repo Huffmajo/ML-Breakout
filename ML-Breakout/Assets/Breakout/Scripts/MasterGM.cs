@@ -39,7 +39,6 @@ public class MasterGM : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-
 		currentTime = 0f;
 		gameOver = false;
 		levelComplete = false;
@@ -58,10 +57,12 @@ public class MasterGM : MonoBehaviour
 		aiPaddle.SetActive(true);
 */
 
+
+
 		// setup UI variables
 		playerLives = playerGM.lives;
 		aiLives = aiGM.lives;
-		bricksTotal = playerGM.bricksLeft;
+		bricksTotal = GameObject.FindGameObjectsWithTag("brick").Length / 2;
 		playerBricksLeft = playerGM.bricksLeft;
 		aiBricksLeft = aiGM.bricksLeft;
 		
@@ -79,7 +80,7 @@ public class MasterGM : MonoBehaviour
 	{
 		// check for end game conditions
 		// game is over
-		// *******levelComplete == true JUST FOR DEBUG*******
+		// *******levelComplete == true*********JUST FOR DEBUG*******
 		if (IsGameOver() && gameOver == false && levelComplete == true)
 		{
 			finalTime = currentTime;
@@ -139,7 +140,6 @@ public class MasterGM : MonoBehaviour
 	{
 		playerLives = playerGM.lives;
 		aiLives = aiGM.lives;
-		bricksTotal = playerGM.bricksLeft;
 		playerBricksLeft = playerGM.bricksLeft;
 		aiBricksLeft = aiGM.bricksLeft;
 		currentTime += 1 * Time.deltaTime;

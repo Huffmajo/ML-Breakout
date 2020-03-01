@@ -29,6 +29,7 @@ public class Floor : MonoBehaviour
 		else if (collision.gameObject.tag == "AIBall")
 		{
 			aiGM.LoseLife();
+			aiGM.lives--;
 		}
 	}
 }
