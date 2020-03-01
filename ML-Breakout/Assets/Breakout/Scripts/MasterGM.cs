@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System;
 
 public class MasterGM : MonoBehaviour
 {
@@ -56,16 +57,20 @@ public class MasterGM : MonoBehaviour
 		paddle.SetActive(true);
 		aiPaddle.SetActive(true);
 */
-
-
-
 		// setup UI variables
-		playerLives = playerGM.lives;
-		aiLives = aiGM.lives;
+		playerLives = 3;
+		aiLives = 3;
 		bricksTotal = GameObject.FindGameObjectsWithTag("brick").Length / 2;
-		playerBricksLeft = playerGM.bricksLeft;
-		aiBricksLeft = aiGM.bricksLeft;
-		
+		playerBricksLeft = bricksTotal;
+		aiBricksLeft = bricksTotal;
+/*
+		Debug.Log("pLives: " + playerLives);
+		Debug.Log("aiLives: " + aiLives);
+		Debug.Log("pBricks: " + playerBricksLeft);
+		Debug.Log("aiBricks: " + aiBricksLeft);
+		Debug.Log("totalBricks: " + bricksTotal);
+*/
+
 		// setup initial UI values
 		playerBricksLeftText.text = "BRICKS LEFT: " + playerBricksLeft + "/" + bricksTotal;
 		playerLivesText.text = "LIVES: " + playerLives;
@@ -79,18 +84,10 @@ public class MasterGM : MonoBehaviour
 	void Update()
 	{
 		// check for end game conditions
-		// game is over
-		// *******levelComplete == true*********JUST FOR DEBUG*******
-		if (IsGameOver() && gameOver == false && levelComplete == true)
+		if (IsGameOver() && gameOver == false)
 		{
 			finalTime = currentTime;
 			gameOver = true;
-
-			// disable paddles and balls
-			ball.SetActive(false);
-			paddle.SetActive(false);
-			aiBall.SetActive(false);
-			aiPaddle.SetActive(false);
 
 			// find winner
 			int winner = VictorIs();
@@ -152,7 +149,9 @@ public class MasterGM : MonoBehaviour
 		playerLivesText.text = "LIVES: " + playerLives;
 		aiBricksLeftText.text = "BRICKS LEFT: " + aiBricksLeft + "/" + bricksTotal;
 		aiLivesText.text = "LIVES: " + aiLives;
-		timerText.text = "TIME\n" + currentTime.ToString("0");
+//		timerText.text = "TIME\n" + currentTime.ToString("0");
+		var formattedTime = TimeSpan.FromSeconds(currentTime);
+		timerText.text = string.Format("TIME\n{0:0}:{1:00}", formattedTime.Minutes, formattedTime.Seconds);
 	}
 
 	// returns true if endgame conditions are met
@@ -177,20 +176,52 @@ public class MasterGM : MonoBehaviour
 	{
 		int victor = 0;
 
-		if (playerBricksLeft < aiBricksLeft || aiLives <= 0)
+		// if both players lose last life at same frame, victor is side with fewer remaining bricks
+		if (playerLives <= 0 && aiLives <= 0)
+		{
+			if (playerBricksLeft == aiBricksLeft)
+			{
+				// rare draw scenario
+				victor = 0;
+			}
+			else if (playerBricksLeft < aiBricksLeft)
+			{
+				victor = 1;
+			}
+			else
+			{
+				victor = 2;
+			}
+		}
+		// otherwise victor is who ever didn't lose last life
+		else if (aiLives <= 0)
 		{
 			victor = 1;
 		}
-		else if (playerBricksLeft > aiBricksLeft || playerLives <= 0)
+		else if (playerLives <= 0)
 		{
 			victor = 2;
 		}
-
+		// otherwise victor is whom ever removed all their bricks
+		else if (playerBricksLeft == 0)
+		{
+			victor = 1;
+		}
+		else if (aiBricksLeft == 0)
+		{
+			victor = 2;
+		}
 		return victor;
 	}
 
 	public void PlayerLoses()
 	{
+		// disable paddles and balls
+		ball.SetActive(false);
+		paddle.SetActive(false);
+		aiBall.SetActive(false);
+		aiPaddle.SetActive(false);
+
 		// set UI to be active
 		endGameUI.SetActive(true);
 
@@ -203,6 +234,12 @@ public class MasterGM : MonoBehaviour
 
 	void PlayerWins()
 	{
+		// disable paddles and balls
+		ball.SetActive(false);
+		paddle.SetActive(false);
+		aiBall.SetActive(false);
+		aiPaddle.SetActive(false);
+
 		// set UI to be active
 		endGameUI.SetActive(true);
 

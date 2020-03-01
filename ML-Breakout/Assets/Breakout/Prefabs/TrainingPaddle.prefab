@@ -142,7 +142,7 @@ MonoBehaviour:
   m_BrainParameters:
     vectorObservationSize: 13
     numStackedVectorObservations: 1
-    vectorActionSize: 01000000
+    vectorActionSize: 0200000003000000
     vectorActionDescriptions: []
     vectorActionSpaceType: 0
   m_Model: {fileID: 11400000, guid: c18cd6509fd24a74b9c4b91a1889f516, type: 3}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agentParameters:
-    maxStep: 0
+    maxStep: 5000
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 1
@@ -178,8 +178,8 @@ MonoBehaviour:
   ballDropPenalty: -3
   ballHeldPenalty: -1
   paddleSpeed: 20
-  xPosLimit: 9.5
-  xNegLimit: -9.5
+  xPosLimit: 33
+  xNegLimit: 13
   horizontalInput: 0
   bricksPrev: -1
   bricksNext: -1
