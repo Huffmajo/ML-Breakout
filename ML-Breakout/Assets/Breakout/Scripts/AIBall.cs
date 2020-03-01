@@ -113,7 +113,7 @@ public class AIBall : MonoBehaviour
         transform.position = heldBallPosition;
 
         // ball has no velocity
-    	rb.velocity = Vector3.zero;
+    	//rb.velocity = Vector3.zero;
     }
 
     // returns launch angle based on where the paddle is impacted

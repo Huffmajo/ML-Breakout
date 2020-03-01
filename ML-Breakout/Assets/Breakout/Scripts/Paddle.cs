@@ -6,8 +6,8 @@ public class Paddle : MonoBehaviour
 {
 
     public float paddleSpeed = 20f;
-    public float xPosLimit = 9.5f;
-    public float xNegLimit = -9.5f;
+    public float xPosLimit;
+    public float xNegLimit;
     public float horizontalInput;
 
     // Start is called before the first frame update

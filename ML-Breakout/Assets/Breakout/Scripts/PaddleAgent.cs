@@ -8,7 +8,7 @@ public class PaddleAgent : Agent
 {
 
     private BreakoutArea breakoutArea;
-    
+    public bool training;
     public List<Vector3> brickPositions;
 	public List<GameObject> bricks;
     public AIBall ball;
@@ -23,8 +23,8 @@ public class PaddleAgent : Agent
 
 
     public float paddleSpeed = 20f;
-    public float xPosLimit = 11f;
-    public float xNegLimit = -9f;
+    public float xPosLimit;
+    public float xNegLimit;
     public float horizontalInput;
 
 	//brick observation/rewards
@@ -39,13 +39,15 @@ public class PaddleAgent : Agent
 	// Start is called before the first frame update
 	void Start()
     {
-        breakoutArea = GetComponentInParent<BreakoutArea>();
-		// take note of all the bricks in the scene
-
-        brickPositions = breakoutArea.brickPositions;
-        bricks = breakoutArea.brickList;
-		
-        bricksPrev = breakoutArea.brickList.Count;
+        if (training)
+        {
+            breakoutArea = GetComponentInParent<BreakoutArea>();
+            // take note of all the bricks in the scene
+            brickPositions = breakoutArea.brickPositions;
+            bricks = breakoutArea.brickList;
+            bricksPrev = breakoutArea.brickList.Count;
+        }
+        
 
 		//get initial y values of paddle and ball
 		paddleYPos = transform.position.y;
@@ -109,8 +111,8 @@ public class PaddleAgent : Agent
 		int release = (int)vectorAction[0];
         int leftOrRight = (int)vectorAction[1];
 		// convert axis values to movement
-		//transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
-		
+		transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
+/*
 		if (leftOrRight == 0)
 		{
 			transform.position += new Vector3(1 * Time.deltaTime * paddleSpeed, 0f, 0f);
@@ -123,7 +125,7 @@ public class PaddleAgent : Agent
 		{
 			transform.position += new Vector3(0 * Time.deltaTime * paddleSpeed, 0f, 0f);
 		}
-		
+*/		
 
         // restrict paddle movement to positive and negative limits
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
@@ -146,27 +148,28 @@ public class PaddleAgent : Agent
 		//compare to previous number of bricks
 		//if number of bricks decreased add large reward
 		
-        bricks.Clear();
-		bricks = breakoutArea.brickList;
-		bricksNext = bricks.Count;
-		if (bricksNext < bricksPrev)
-		{
-			if (bricksPrev == 84 && bricksNext == 0)
+        if (training)
+        {
+            bricks.Clear();
+            bricks = breakoutArea.brickList;
+            bricksNext = bricks.Count;
+            if (bricksNext < bricksPrev)
             {
-                Debug.Log("All Bricks Broken!");            
-                //AddReward(completionAward);
+                if (bricksPrev == 84 && bricksNext == 0)
+                {
+                    Debug.Log("All Bricks Broken!");            
+                    //AddReward(completionAward);
+                }
+                else
+                {                
+                    Debug.Log("brick break order error");
+                    Debug.Log("prev: " + bricksPrev);
+                    Debug.Log("next: " + bricksNext);
+                }
             }
-            else
-            {                
-                Debug.Log("brick break order error");
-                Debug.Log("prev: " + bricksPrev);
-                Debug.Log("next: " + bricksNext);
-            }
-            
-
-		}
-		bricksPrev = bricksNext;
-
+            bricksPrev = bricksNext;
+        }
+        
 		//penalty for dropping ball
 		//get y position of ball
 		//get y position of paddle
@@ -194,7 +197,10 @@ public class PaddleAgent : Agent
 
     public override void AgentReset()
     {
-        breakoutArea.ResetArea();
+        if (training)
+        {
+            breakoutArea.ResetArea();    
+        }
     }
 
     public override void CollectObservations()
@@ -223,24 +229,9 @@ public class PaddleAgent : Agent
         // if ball is held
         AddVectorObs(ball.heldByPaddle);
 
-
 		//number of bricks
 		AddVectorObs(bricksPrev);
-		
-
-
-
-		//get brick positions
-            //change line below to accept the brickPositions
-            //AddVectorObs(brickPositions);
-
-
-        /*
-        float rayDistance = 20f;
-		float[] rayAngles = {30f, 60f, 90f, 120f, 150f};
-		string[] detectableObjects = {"ball", "brick", "wall"};
-		AddVectorObs(rayPerception.Perceive(rayDistance, rayAngles, detectableObjects, 0f, 0f));
-        */
+	
     }
 
     // BUG: not adding reward

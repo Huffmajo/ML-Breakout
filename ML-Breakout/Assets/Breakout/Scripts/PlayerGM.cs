@@ -10,7 +10,6 @@ public class PlayerGM : MonoBehaviour
 	public int lives;
 	public int bricksLeft;
 
-	public GameObject[] bricks;
 	public List<GameObject> brickList;
 	public Transform brickListContainer;
 

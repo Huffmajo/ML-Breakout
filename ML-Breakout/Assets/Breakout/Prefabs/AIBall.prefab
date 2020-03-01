@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6213371815023333770
 Transform:
   m_ObjectHideFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6213371815023333775}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.291122, y: -11.069999, z: 0}
+  m_LocalPosition: {x: 0.10887718, y: -11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -126,7 +126,7 @@ MonoBehaviour:
   ballVelocity: {x: 0, y: 0, z: 0}
   paddle: {fileID: 1437936438001625077, guid: 4281c959c852fc84a92fb2f26ab22bc8, type: 3}
   totalVelocity: 0
-  heldByPaddle: 0
+  heldByPaddle: 1
   velocityAngle: 0
   ballImpactVector: {x: 0, y: 0, z: 0}
-  launchAngle: 0
+  launchAngle: 45

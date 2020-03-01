@@ -109,7 +109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1739627893379913042
 Transform:
   m_ObjectHideFlags: 0
@@ -168,6 +168,7 @@ MonoBehaviour:
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 1
+  training: 0
   brickPositions: []
   bricks: []
   ball: {fileID: 1420296028221105089, guid: 77b1f398c9499cd4f9bf451bce21f597, type: 3}

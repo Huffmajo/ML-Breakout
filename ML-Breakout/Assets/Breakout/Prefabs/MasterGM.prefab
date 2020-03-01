@@ -1432,7 +1432,7 @@ GameObject:
   - component: {fileID: 4297607080372379529}
   - component: {fileID: 4297607080372379528}
   m_Layer: 0
-  m_Name: MasterGM 1
+  m_Name: MasterGM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1465,6 +1465,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0560dad21017b4a4591f744d0563eb68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLives: 0
+  aiLives: 0
+  ball: {fileID: 526386256933971423, guid: 24dde7feade7fe8428deb6e199bb18ce, type: 3}
+  aiBall: {fileID: 6213371815023333775, guid: 77b1f398c9499cd4f9bf451bce21f597, type: 3}
+  ballScript: {fileID: 0}
+  aiBallScript: {fileID: 0}
+  paddle: {fileID: 1060610135555581763, guid: 3b73166e3595f4d48972c5838a409b1b, type: 3}
+  aiPaddle: {fileID: 1437936438001625077, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+    type: 3}
   gameOver: 0
   levelComplete: 0
   bricksTotal: 0

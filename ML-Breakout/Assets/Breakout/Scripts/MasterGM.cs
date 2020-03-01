@@ -7,16 +7,16 @@ using TMPro;
 
 public class MasterGM : MonoBehaviour
 {
-    public static int playerLives;
-    public static int aiLives;
-	public static GameObject ball;
-	public static GameObject aiBall;
-	static Ball ballScript;
-	static AIBall aiBallScript;
-	public static GameObject paddle;
-	public static GameObject aiPaddle;
-	public bool gameOver = false;
-	public bool levelComplete = false;
+    public int playerLives;
+    public int aiLives;
+	public GameObject ball;
+	public GameObject aiBall;
+	public Ball ballScript;
+	public AIBall aiBallScript;
+	public GameObject paddle;
+	public GameObject aiPaddle;
+	public bool gameOver;
+	public bool levelComplete;
 	public int bricksTotal;
 	public int playerBricksLeft;
 	public int aiBricksLeft;
@@ -43,16 +43,20 @@ public class MasterGM : MonoBehaviour
 		currentTime = 0f;
 		gameOver = false;
 		levelComplete = false;
+/*
 		ball = GameObject.FindWithTag("ball");
 		aiBall = GameObject.FindWithTag("AIBall");
 		paddle = GameObject.FindWithTag("paddle");
 		aiPaddle = GameObject.FindWithTag("AIPaddle");
+*/
 		ballScript = ball.GetComponent<Ball>();
 		aiBallScript = aiBall.GetComponent<AIBall>();
+/*
 		ball.SetActive(true);
 		aiBall.SetActive(true);
 		paddle.SetActive(true);
 		aiPaddle.SetActive(true);
+*/
 
 		// setup UI variables
 		playerLives = playerGM.lives;
@@ -75,7 +79,8 @@ public class MasterGM : MonoBehaviour
 	{
 		// check for end game conditions
 		// game is over
-		if (IsGameOver() && gameOver == false)
+		// *******levelComplete == true JUST FOR DEBUG*******
+		if (IsGameOver() && gameOver == false && levelComplete == true)
 		{
 			finalTime = currentTime;
 			gameOver = true;
@@ -91,11 +96,13 @@ public class MasterGM : MonoBehaviour
 			if (winner == 1)
 			{
 				// player won
+				Debug.Log("Player wins");
 				PlayerWins();
 			}
 			else if (winner == 2)
 			{
 				// ai won
+				Debug.Log("Player loses");
 				PlayerLoses();
 			}
 			else
@@ -145,7 +152,7 @@ public class MasterGM : MonoBehaviour
 		playerLivesText.text = "LIVES: " + playerLives;
 		aiBricksLeftText.text = "BRICKS LEFT: " + aiBricksLeft + "/" + bricksTotal;
 		aiLivesText.text = "LIVES: " + aiLives;
-		timerText.text = "TIME\n" + currentTime;
+		timerText.text = "TIME\n" + currentTime.ToString("0");
 	}
 
 	// returns true if endgame conditions are met
@@ -196,8 +203,6 @@ public class MasterGM : MonoBehaviour
 
 	void PlayerWins()
 	{
-		levelComplete = true;
-
 		// set UI to be active
 		endGameUI.SetActive(true);
 

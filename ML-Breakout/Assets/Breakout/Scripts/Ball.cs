@@ -110,6 +110,10 @@ public class Ball : MonoBehaviour
     			FindObjectOfType<AudioManager>().Play("Bounce");
     		}
     	}
+        else if (col.gameObject.tag == "ground")
+        {
+            gm.LoseLife();
+        }
     }
 
     // resets local variables and location of the ball
@@ -123,7 +127,7 @@ public class Ball : MonoBehaviour
         transform.position = heldBallPosition;
 
         // ball has no velocity
-    	rb.velocity = Vector3.zero;
+    	//rb.velocity = Vector3.zero;
     }
 
     // returns launch angle based on where the paddle is impacted
