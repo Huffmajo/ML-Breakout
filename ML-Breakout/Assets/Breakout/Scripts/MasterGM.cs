@@ -94,19 +94,17 @@ public class MasterGM : MonoBehaviour
 			if (winner == 1)
 			{
 				// player won
-				Debug.Log("Player wins");
 				PlayerWins();
 			}
 			else if (winner == 2)
 			{
 				// ai won
-				Debug.Log("Player loses");
+
 				PlayerLoses();
 			}
 			else
 			{
 				// draw
-				Debug.Log("Rare draw condition");
 				PlayerWins();
 			}
 		}

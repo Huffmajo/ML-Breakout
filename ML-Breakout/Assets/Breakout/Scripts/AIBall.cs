@@ -106,7 +106,6 @@ public class AIBall : MonoBehaviour
         else if (col.gameObject.tag == "ground")
         {
             gm.LoseLife();
-            Debug.Log("AIBall hits ground");
         }
     }
 

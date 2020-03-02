@@ -26,11 +26,6 @@ public class Floor : MonoBehaviour
 				playerGM.LoseLife();
 			}
 		}
-		else if (collision.gameObject.tag == "AIBall")
-		{
-			aiGM.LoseLife();
-			aiGM.lives--;
-		}
 	}
 }
 

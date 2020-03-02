@@ -47,8 +47,6 @@ public class PaddleAgent : Agent
             bricks = breakoutArea.brickList;
             bricksPrev = breakoutArea.brickList.Count;
         }
-        
-
 		//get initial y values of paddle and ball
 		paddleYPos = transform.position.y;
 		ballYPos = ball.transform.position.y;
@@ -111,8 +109,8 @@ public class PaddleAgent : Agent
 		int release = (int)vectorAction[0];
         int leftOrRight = (int)vectorAction[1];
 		// convert axis values to movement
-		transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
-/*
+//		transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
+
 		if (leftOrRight == 0)
 		{
 			transform.position += new Vector3(1 * Time.deltaTime * paddleSpeed, 0f, 0f);
@@ -125,7 +123,7 @@ public class PaddleAgent : Agent
 		{
 			transform.position += new Vector3(0 * Time.deltaTime * paddleSpeed, 0f, 0f);
 		}
-*/		
+	
 
         // restrict paddle movement to positive and negative limits
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
