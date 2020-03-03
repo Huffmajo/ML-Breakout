@@ -18,6 +18,8 @@ public class Ball : MonoBehaviour
 	public PlayerGM gm;
 	private Rigidbody rb;
 	private Vector3 heldBallPosition;
+	public AIBall aIBall;
+	private bool firstLaunch;
 
 
     // Start is called before the first frame update
@@ -25,7 +27,7 @@ public class Ball : MonoBehaviour
     {
     	// get ball rigidbody
     	rb = GetComponent<Rigidbody>();
-
+		firstLaunch = true;
     	ResetBall();
 
     }
@@ -103,9 +105,11 @@ public class Ball : MonoBehaviour
     			FindObjectOfType<AudioManager>().Play("Pop");
     		}
 
+			
             // tell gm to decrease brick count
-            gm.DecrementBrick();
-    	}
+            //gm.DecrementBrick(col.gameObject.GetComponent<Brick>().points);
+    	
+		}
     	else if (col.gameObject.tag != "ground")
     	{
     		if (!training)
@@ -142,6 +146,13 @@ public class Ball : MonoBehaviour
     // launches ball at specified speed and angle
     public void LaunchBall(float speed, float angle)
     {
+		if (firstLaunch)
+		{
+			Time.timeScale = 1;
+			aIBall.canLaunch = true;
+			firstLaunch = false;
+		}
+
     	float xVelocity = speed * Mathf.Cos(angle * Mathf.Deg2Rad);
     	float yVelocity = speed * Mathf.Sin(angle * Mathf.Deg2Rad);
     	rb.velocity = new Vector3(xVelocity, yVelocity, 0f);

@@ -14,6 +14,7 @@ public class PlayerGM : MonoBehaviour
 	public Transform brickListContainer;
 
 	private Vector3 paddleStartingPos;
+	public int playerScore;
 
     void Start()
     {
@@ -46,14 +47,21 @@ public class PlayerGM : MonoBehaviour
 
         // set number of bricks remaining
         bricksLeft = brickList.Count;
+		playerScore = 0;
     }
 
     // called when player ball collides with a brick
-    public void DecrementBrick()
+    public void DecrementBrick(int brickPoints)
+    {
+    	bricksLeft--;
+		playerScore += brickPoints;
+    }
+
+/*	public void DecrementBrick()
     {
     	bricksLeft--;
     }
-
+*/
     // decrements lives and resets ball
 	public void LoseLife()
 	{

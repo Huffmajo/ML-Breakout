@@ -15,6 +15,8 @@ public class AIGM : MonoBehaviour
 
 	private Vector3 paddleStartingPos;
 
+	public int aiScore;
+
     void Start()
     {
     	// set player lives
@@ -46,14 +48,23 @@ public class AIGM : MonoBehaviour
 
         // set number of bricks remaining
         bricksLeft = brickList.Count;
+
+		aiScore = 0;
     }
 
     // called when player ball collides with a brick
-    public void DecrementBrick()
+    public void DecrementBrick(int brickPoints)
+    {
+		Debug.Log("brickPoints: " + brickPoints);
+    	bricksLeft--;
+		aiScore += brickPoints;
+    }
+/*
+	public void DecrementBrick()
     {
     	bricksLeft--;
     }
-
+*/
     // decrements lives and resets ball
 	public void LoseLife()
 	{

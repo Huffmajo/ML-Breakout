@@ -17,12 +17,23 @@ public class AIBall : MonoBehaviour
 	private Rigidbody rb;
 	private Vector3 heldBallPosition;
 
+	public bool canLaunch;
+
 
     // Start is called before the first frame update
     void Start()
     {
     	// get ball rigidbody
     	rb = GetComponent<Rigidbody>();
+
+		if (paddle.gameObject.GetComponent<PaddleAgent>().training)
+		{
+			canLaunch = true;
+		}
+		else
+		{
+			canLaunch = false;
+		}
 
     	ResetBall();
 
@@ -55,11 +66,14 @@ public class AIBall : MonoBehaviour
     		// release ball from user input
     		if (releaseButton)
     		{
-    			heldByPaddle = false;
+				if (canLaunch)
+				{
+    				heldByPaddle = false;
 
-	    		// start ball moving
-    	    	LaunchBall(ballSpeed, launchAngle);
-    		}
+	    			// start ball moving
+    	    		LaunchBall(ballSpeed, launchAngle);
+				}
+			}
     	}
     	// otherwise ball is released and play is active
     	else
@@ -97,7 +111,7 @@ public class AIBall : MonoBehaviour
     		FindObjectOfType<AudioManager>().Play("Pop");
 
             // tell gm to decrease brick count
-            gm.DecrementBrick();
+            //gm.DecrementBrick(col.gameObject.GetComponent<Brick>().points);
     	}
     	else if (col.gameObject.tag != "ground")
     	{

@@ -44,6 +44,7 @@ public class MasterGM : MonoBehaviour
 	public TextMeshProUGUI playerLivesText;
 	public TextMeshProUGUI aiLivesText;
 	public TextMeshProUGUI timerText;
+	public TextMeshProUGUI scoreText;
 
 	// Start is called before the first frame update
 	void Start()
@@ -54,6 +55,7 @@ public class MasterGM : MonoBehaviour
 
 		getAllObjects();
 		initializeUI();
+		Time.timeScale = 0;
 /*
 		ball = GameObject.FindWithTag("ball");
 		aiBall = GameObject.FindWithTag("AIBall");
@@ -116,12 +118,13 @@ public class MasterGM : MonoBehaviour
 
 	void Update()
 	{
+		scoreText.text = "Score" + '\n' + playerGM.playerScore + "	" + aiGM.aiScore;
 		// check for end game conditions
 		if (IsGameOver() && gameOver == false)	//is gameOver boolean redundant?
 		{
 			finalTime = currentTime;
 			gameOver = true;
-
+			Time.timeScale = 0;
 
 			//disables ball/paddles and endables EndGameUI
 			endGameCleanup();
@@ -168,8 +171,6 @@ public class MasterGM : MonoBehaviour
 			}
 		}
 	}
-
-
 
 
     void setPlayerStats()
