@@ -125,9 +125,6 @@ public class Ball : MonoBehaviour
         heldByPaddle = true;
         heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
         transform.position = heldBallPosition;
-
-        // ball has no velocity
-    	//rb.velocity = Vector3.zero;
     }
 
     // returns launch angle based on where the paddle is impacted

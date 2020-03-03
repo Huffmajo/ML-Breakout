@@ -178,8 +178,6 @@ public class PaddleAgent : Agent
 		ballYPos = ball.transform.position.y;
 		if (ballYPos < paddleYPos)
 		{
-			//AddReward(ballDropPenalty);
-
 			//mark agent as done and reset
 			Done();
 		}
@@ -216,12 +214,6 @@ public class PaddleAgent : Agent
         AddVectorObs((ball.transform.position - transform.position).normalized);
 
         // ball movement direction
-        // may want to normalize with:
-        /*
-        Quaternion rotation = transform.rotation;
-        Vector3 normalized = rotation.eulerAngles / 180.0f - Vector3.one;  // [-1,1]
-        Vector3 normalized = rotation.eulerAngles / 360.0f;  // [0,1]
-        */
         AddVectorObs(ball.velocityAngle);
 
         // if ball is held
