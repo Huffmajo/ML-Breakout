@@ -95,9 +95,6 @@ public class AIBall : MonoBehaviour
     	{
 	    	// play bounce sound
     		FindObjectOfType<AudioManager>().Play("Pop");
-
-            // tell gm to decrease brick count
-            gm.DecrementBrick();
     	}
     	else if (col.gameObject.tag != "ground")
     	{

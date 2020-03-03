@@ -108,7 +108,7 @@ public class MasterGM : MonoBehaviour
 				PlayerWins();
 			}
 		}
-		else
+		else if (!gameOver)
 		{
 			// update UI information
 			GetUpdatesFromSubGMs();
