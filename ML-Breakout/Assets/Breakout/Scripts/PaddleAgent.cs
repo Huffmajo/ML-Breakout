@@ -89,6 +89,8 @@ public class PaddleAgent : Agent
 
     public override void AgentAction(float[] vectorAction)
     {
+        //ball.canLaunch is set to true when paddle is training
+        //otherwise it starts false and becomes true when player first launches their ball
         if (ball.canLaunch)
             {
             // convert actions to axis values

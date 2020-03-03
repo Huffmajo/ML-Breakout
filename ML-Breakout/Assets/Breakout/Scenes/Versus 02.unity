@@ -18881,6 +18881,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4297607080145867385, guid: 0e1bfbaa749b2ac4b814ac158c675c37,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297607080145867385, guid: 0e1bfbaa749b2ac4b814ac158c675c37,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -11
+      objectReference: {fileID: 0}
     - target: {fileID: 4297607080166614017, guid: 0e1bfbaa749b2ac4b814ac158c675c37,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -19006,6 +19016,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4297607080470971780, guid: 0e1bfbaa749b2ac4b814ac158c675c37,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 197
+      objectReference: {fileID: 0}
     - target: {fileID: 4297607080470971781, guid: 0e1bfbaa749b2ac4b814ac158c675c37,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -19015,6 +19030,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GoToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297607080587532712, guid: 0e1bfbaa749b2ac4b814ac158c675c37,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -249
       objectReference: {fileID: 0}
     - target: {fileID: 4297607080587532713, guid: 0e1bfbaa749b2ac4b814ac158c675c37,
         type: 3}
