@@ -22,7 +22,6 @@ public class MasterGM : MonoBehaviour
 	private int playerBricksLeft;
 	private int aiBricksLeft;
 
-
 	public GameObject nextLevelButton;
 	public GameObject endGameUI;
 	public GameObject pauseGameUI;
@@ -93,6 +92,7 @@ public class MasterGM : MonoBehaviour
 		paddle = playerGM.playerPaddle.gameObject;
 		playerLives = playerGM.lives;
 		playerBricksLeft = playerGM.bricksLeft;
+		
 		bricksTotal = playerBricksLeft;
 
 		//ai side
@@ -124,6 +124,7 @@ public class MasterGM : MonoBehaviour
 		{
 			finalTime = currentTime;
 			gameOver = true;
+			
 			Time.timeScale = 0;
 
 			//disables ball/paddles and endables EndGameUI

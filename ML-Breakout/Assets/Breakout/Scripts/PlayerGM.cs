@@ -57,11 +57,6 @@ public class PlayerGM : MonoBehaviour
 		playerScore += brickPoints;
     }
 
-/*	public void DecrementBrick()
-    {
-    	bricksLeft--;
-    }
-*/
     // decrements lives and resets ball
 	public void LoseLife()
 	{

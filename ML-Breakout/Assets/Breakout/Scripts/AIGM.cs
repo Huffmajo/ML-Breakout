@@ -55,16 +55,10 @@ public class AIGM : MonoBehaviour
     // called when player ball collides with a brick
     public void DecrementBrick(int brickPoints)
     {
-		Debug.Log("brickPoints: " + brickPoints);
     	bricksLeft--;
 		aiScore += brickPoints;
     }
-/*
-	public void DecrementBrick()
-    {
-    	bricksLeft--;
-    }
-*/
+
     // decrements lives and resets ball
 	public void LoseLife()
 	{
