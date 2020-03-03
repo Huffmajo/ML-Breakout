@@ -13,7 +13,7 @@ public class PaddleAgent : Agent
 	public List<GameObject> bricks;
     public AIBall ball;
 
-
+    public bool canLaunch;
     public float paddleXScale;
 
     public float ballCollisionReward = 10f;
@@ -47,10 +47,16 @@ public class PaddleAgent : Agent
             bricks = breakoutArea.brickList;
             bricksPrev = breakoutArea.brickList.Count;
         }
+        else
+        {
+            //waits for human to launch first
+            canLaunch = false;
+        }
 		//get initial y values of paddle and ball
 		paddleYPos = transform.position.y;
 		ballYPos = ball.transform.position.y;
-	}
+
+ 	}
 
     /// <summary>
     /// Read inputs from the keyboard and convert them to a list of actions.
@@ -104,9 +110,12 @@ public class PaddleAgent : Agent
         }
 
     */
+        int release = 0;
+        if (canLaunch)
+        {
+            release = (int)vectorAction[0];
 
-
-		int release = (int)vectorAction[0];
+        }
         int leftOrRight = (int)vectorAction[1];
 		// convert axis values to movement
 //		transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);

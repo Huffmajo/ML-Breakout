@@ -8,24 +8,29 @@ using System;
 
 public class MasterGM : MonoBehaviour
 {
-    public int playerLives;
-    public int aiLives;
-	public GameObject ball;
-	public GameObject aiBall;
-	public Ball ballScript;
-	public AIBall aiBallScript;
-	public GameObject paddle;
-	public GameObject aiPaddle;
-	public bool gameOver;
-	public bool levelComplete;
-	public int bricksTotal;
-	public int playerBricksLeft;
-	public int aiBricksLeft;
+    private int playerLives;
+    private int aiLives;
+	private GameObject ball;
+	private GameObject aiBall;
+	private Ball ballScript;
+	private AIBall aiBallScript;
+	private GameObject paddle;
+	private GameObject aiPaddle;
+	private bool gameOver;
+	private bool levelComplete;
+	private int bricksTotal;
+	private int playerBricksLeft;
+	private int aiBricksLeft;
+
+
 	public GameObject nextLevelButton;
 	public GameObject endGameUI;
 	public GameObject pauseGameUI;
 	public float currentTime;
 	public float finalTime;
+
+	private float playerCompleteTime;
+	private float aiCompleteTime;
 
 	public PlayerGM playerGM;
 	public AIGM aiGM;
@@ -33,6 +38,9 @@ public class MasterGM : MonoBehaviour
 	public TextMeshProUGUI playerBricksLeftText;
 	public TextMeshProUGUI aiBricksLeftText;
 	public TextMeshProUGUI titleText;
+	public TextMeshProUGUI playerStats;
+	public TextMeshProUGUI aiStats;
+	
 	public TextMeshProUGUI playerLivesText;
 	public TextMeshProUGUI aiLivesText;
 	public TextMeshProUGUI timerText;
@@ -43,34 +51,58 @@ public class MasterGM : MonoBehaviour
 		currentTime = 0f;
 		gameOver = false;
 		levelComplete = false;
+
+		getAllObjects();
+		initializeUI();
 /*
 		ball = GameObject.FindWithTag("ball");
 		aiBall = GameObject.FindWithTag("AIBall");
 		paddle = GameObject.FindWithTag("paddle");
 		aiPaddle = GameObject.FindWithTag("AIPaddle");
-*/
+
 		ballScript = ball.GetComponent<Ball>();
 		aiBallScript = aiBall.GetComponent<AIBall>();
-/*
+
 		ball.SetActive(true);
 		aiBall.SetActive(true);
 		paddle.SetActive(true);
 		aiPaddle.SetActive(true);
-*/
+
 		// setup UI variables
 		playerLives = 3;
 		aiLives = 3;
 		bricksTotal = GameObject.FindGameObjectsWithTag("brick").Length / 2;
 		playerBricksLeft = bricksTotal;
 		aiBricksLeft = bricksTotal;
-/*
+
 		Debug.Log("pLives: " + playerLives);
 		Debug.Log("aiLives: " + aiLives);
 		Debug.Log("pBricks: " + playerBricksLeft);
 		Debug.Log("aiBricks: " + aiBricksLeft);
 		Debug.Log("totalBricks: " + bricksTotal);
 */
+	}
 
+	void getAllObjects() 
+	{
+		//player side
+		ball = playerGM.ball.gameObject;
+		ballScript = ball.GetComponent<Ball>();
+		paddle = playerGM.playerPaddle.gameObject;
+		playerLives = playerGM.lives;
+		playerBricksLeft = playerGM.bricksLeft;
+		bricksTotal = playerBricksLeft;
+
+		//ai side
+		aiBall = aiGM.aiBall.gameObject;
+		aiBallScript = aiBall.GetComponent<AIBall>();
+		aiPaddle = aiGM.aiPaddle.gameObject;
+		aiLives = aiGM.lives;
+		aiBricksLeft = aiGM.bricksLeft;
+	}
+
+
+	void initializeUI() {
 		// setup initial UI values
 		playerBricksLeftText.text = "BRICKS LEFT: " + playerBricksLeft + "/" + bricksTotal;
 		playerLivesText.text = "LIVES: " + playerLives;
@@ -81,13 +113,20 @@ public class MasterGM : MonoBehaviour
 		nextLevelButton.SetActive(false);
 	}
 
+
 	void Update()
 	{
 		// check for end game conditions
-		if (IsGameOver() && gameOver == false)
+		if (IsGameOver() && gameOver == false)	//is gameOver boolean redundant?
 		{
 			finalTime = currentTime;
 			gameOver = true;
+
+
+			//disables ball/paddles and endables EndGameUI
+			endGameCleanup();
+			setPlayerStats();
+			setAiStats();
 
 			// find winner
 			int winner = VictorIs();
@@ -99,7 +138,6 @@ public class MasterGM : MonoBehaviour
 			else if (winner == 2)
 			{
 				// ai won
-
 				PlayerLoses();
 			}
 			else
@@ -131,7 +169,20 @@ public class MasterGM : MonoBehaviour
 		}
 	}
 
-	void GetUpdatesFromSubGMs()
+
+
+
+    void setPlayerStats()
+    {
+        playerStats.text = "Lives:	" + playerLives + '\n' + "Bricks:	" + playerBricksLeft + "/" + bricksTotal;
+    }
+
+	void setAiStats()
+	{
+		aiStats.text = "Lives:	" + aiLives + '\n' + "Bricks:	" + aiBricksLeft + "/" + bricksTotal;
+	}
+
+    void GetUpdatesFromSubGMs()
 	{
 		playerLives = playerGM.lives;
 		aiLives = aiGM.lives;
@@ -212,8 +263,9 @@ public class MasterGM : MonoBehaviour
 		return victor;
 	}
 
-	public void PlayerLoses()
-	{
+	//removes game pieces, and enables endGameUI 
+	void endGameCleanup() {
+		
 		// disable paddles and balls
 		ball.SetActive(false);
 		paddle.SetActive(false);
@@ -222,7 +274,11 @@ public class MasterGM : MonoBehaviour
 
 		// set UI to be active
 		endGameUI.SetActive(true);
+	}
 
+
+	public void PlayerLoses()
+	{
 		// play sad trombone
         FindObjectOfType<AudioManager>().Play("GameOver");
 
@@ -232,15 +288,6 @@ public class MasterGM : MonoBehaviour
 
 	void PlayerWins()
 	{
-		// disable paddles and balls
-		ball.SetActive(false);
-		paddle.SetActive(false);
-		aiBall.SetActive(false);
-		aiPaddle.SetActive(false);
-
-		// set UI to be active
-		endGameUI.SetActive(true);
-
 		// play victory sound
 		//FindObjectOfType<AudioManager>().Stop("BGM");
         FindObjectOfType<AudioManager>().Play("Victory");
@@ -258,6 +305,8 @@ public class MasterGM : MonoBehaviour
 			nextLevelButton.SetActive(true);
 		}
 	}
+
+
 
 	// reload current level
 	public void RestartLevel()
