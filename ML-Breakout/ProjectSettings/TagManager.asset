@@ -40,6 +40,8 @@ TagManager:
   - PauseGameUI
   - GameManager
   - BrickList
+  - AIBall
+  - AIPaddle
   layers:
   - Default
   - TransparentFX

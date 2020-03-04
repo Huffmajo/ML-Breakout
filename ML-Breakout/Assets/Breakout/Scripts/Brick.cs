@@ -10,15 +10,43 @@ public class Brick : MonoBehaviour
 	public int collisionCount = 0;
 
 	public GameManager gm;
+	public PlayerGM playerGM;
+	public AIGM aiGM;
 	private int counter = 0;
+	public int points;
 	public List<Color> colors;	//colors defined in inspector window for prefabs
+
+	public Color thisColor;
 
 	void Start()
 	{
-		
+		//Jeff: I attempted to base the points on colors, I gave up
+		//and just assigned it in the inspector
+
+		// var brickRenderer = gameObject.GetComponent<Renderer>();
+		// thisColor = brickRenderer.material.GetColor("_Color");
+
+		// Color red = new Color(248, 18, 18, 255);
+		// Color orange = new Color(255, 132, 0, 255);
+		// Color yellow = new Color(255, 251, 0, 255);
+		// Color green = new Color(0, 147, 31, 255);
+		// Color blue = new Color(7, 0, 255, 255);
+		// Color indigo = new Color(136, 0, 255, 255);
+		// Color violet = new Color(252, 0, 255, 255);
+
+		// if (thisColor == red || thisColor == orange)
+		// {
+		// 	points = 1;
+		// } 
+		// else if (thisColor == yellow || thisColor == green) 
+		// {
+		// 	points = 4;
+		// }
+		// else if (thisColor == indigo || thisColor == violet)
+		// {
+		// 	points = 7;
+		// } 
 	}
-
-
 
 	//check for collisions and destroy brick
 	void OnCollisionEnter(Collision other)
@@ -29,7 +57,20 @@ public class Brick : MonoBehaviour
 		{
 			if (!training)
 			{
-				gm.UpdateUI();
+				if (other.gameObject.tag == "ball")
+				{
+					// not working for some reason
+					playerGM.DecrementBrick(points);
+				}
+				else if (other.gameObject.tag == "AIBall")
+				{
+					// not working for some reason
+					aiGM.DecrementBrick(points);
+				}
+				else
+				{
+					gm.UpdateUI();
+				}
 			}
 			Destroy(gameObject);
 		}

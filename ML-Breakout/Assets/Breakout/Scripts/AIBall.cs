@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class Ball : MonoBehaviour
+public class AIBall : MonoBehaviour
 {
-	public bool training = false;
 	public float ballSpeed = 20f;
 	public Vector3 ballDirection;
 	public Vector3 ballVelocity;
@@ -15,18 +13,16 @@ public class Ball : MonoBehaviour
 	public float velocityAngle;
 	public Vector3 ballImpactVector;
 	public float launchAngle;
-	public PlayerGM gm;
+    public AIGM gm;
 	private Rigidbody rb;
 	private Vector3 heldBallPosition;
-	private bool firstLaunch;
-
 
     // Start is called before the first frame update
     void Start()
     {
     	// get ball rigidbody
     	rb = GetComponent<Rigidbody>();
-		firstLaunch = true;
+
     	ResetBall();
 
     }
@@ -58,11 +54,13 @@ public class Ball : MonoBehaviour
     		// release ball from user input
     		if (releaseButton)
     		{
-    			heldByPaddle = false;
 
-	    		// start ball moving
-    	    	LaunchBall(ballSpeed, launchAngle);
-    		}
+				heldByPaddle = false;
+
+				// start ball moving
+				LaunchBall(ballSpeed, launchAngle);
+
+			}
     	}
     	// otherwise ball is released and play is active
     	else
@@ -81,10 +79,8 @@ public class Ball : MonoBehaviour
     {
     	if (col.gameObject.tag == "paddle")
     	{
-    		if (!training)
-    		{
-    			FindObjectOfType<AudioManager>().Play("Bounce");
-    		}
+
+    		FindObjectOfType<AudioManager>().Play("Bounce");
 
     		// get where ball hits paddle
     		ContactPoint contact = col.contacts[0];
@@ -99,22 +95,14 @@ public class Ball : MonoBehaviour
     	else if (col.gameObject.tag == "brick")
     	{
 	    	// play bounce sound
-	    	if (!training)
-    		{
-    			FindObjectOfType<AudioManager>().Play("Pop");
-    		}
+    		FindObjectOfType<AudioManager>().Play("Pop");
 
-			
             // tell gm to decrease brick count
             //gm.DecrementBrick(col.gameObject.GetComponent<Brick>().points);
-    	
-		}
+    	}
     	else if (col.gameObject.tag != "ground")
     	{
-    		if (!training)
-    		{
-    			FindObjectOfType<AudioManager>().Play("Bounce");
-    		}
+    		FindObjectOfType<AudioManager>().Play("Bounce");
     	}
         else if (col.gameObject.tag == "ground")
         {
@@ -145,12 +133,6 @@ public class Ball : MonoBehaviour
     // launches ball at specified speed and angle
     public void LaunchBall(float speed, float angle)
     {
-		if (firstLaunch)
-		{
-			Time.timeScale = 1;
-			firstLaunch = false;
-		}
-
     	float xVelocity = speed * Mathf.Cos(angle * Mathf.Deg2Rad);
     	float yVelocity = speed * Mathf.Sin(angle * Mathf.Deg2Rad);
     	rb.velocity = new Vector3(xVelocity, yVelocity, 0f);

@@ -73,22 +73,22 @@ MonoBehaviour:
     group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
     source: {fileID: 0}
   - name: Victory
-    clip: {fileID: 8300000, guid: 10c39c4dbbaaf8e4cbad9115bc12a6d0, type: 3}
-    volume: 0.6
+    clip: {fileID: 8300000, guid: fa30e756db0437e49ace3c6f24b1c3a0, type: 3}
+    volume: 1
     pitch: 1
     loop: 0
     group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
     source: {fileID: 0}
   - name: Death
-    clip: {fileID: 8300000, guid: 8ef8f99b6199a524faea2846147a5a5a, type: 3}
-    volume: 0.8
+    clip: {fileID: 8300000, guid: c86229ddaac928345be19632b84ef504, type: 3}
+    volume: 1
     pitch: 1
     loop: 0
     group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}
     source: {fileID: 0}
   - name: GameOver
-    clip: {fileID: 8300000, guid: 1cbe1470d86ad6046bf812107e9860e3, type: 3}
-    volume: 0.8
+    clip: {fileID: 8300000, guid: 936181ccc6b5a1b4f831df559af690fd, type: 3}
+    volume: 1
     pitch: 1
     loop: 0
     group: {fileID: 243136590673698230, guid: 3c6bd1019cfc4a54f9f59416af62d26f, type: 2}

@@ -214,6 +214,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 114149399011207424, guid: 48f60ac4eafc4af48b96af0ebf175d98,
     type: 3}
+  playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
+    type: 3}
+  aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
+  paddleAgent: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+    type: 3}
+  ball: {fileID: 526386256933971417, guid: 24dde7feade7fe8428deb6e199bb18ce, type: 3}
+  training: 0
 --- !u!1 &5084540574971725243
 GameObject:
   m_ObjectHideFlags: 0
