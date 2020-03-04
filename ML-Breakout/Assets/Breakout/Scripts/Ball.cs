@@ -18,7 +18,6 @@ public class Ball : MonoBehaviour
 	public PlayerGM gm;
 	private Rigidbody rb;
 	private Vector3 heldBallPosition;
-	public AIBall aIBall;
 	private bool firstLaunch;
 
 
@@ -149,7 +148,6 @@ public class Ball : MonoBehaviour
 		if (firstLaunch)
 		{
 			Time.timeScale = 1;
-			aIBall.canLaunch = true;
 			firstLaunch = false;
 		}
 

@@ -28,8 +28,6 @@ public class MasterGM : MonoBehaviour
 	public float currentTime;
 	public float finalTime;
 
-	private float playerCompleteTime;
-	private float aiCompleteTime;
 
 	public PlayerGM playerGM;
 	public AIGM aiGM;
