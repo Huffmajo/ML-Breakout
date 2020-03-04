@@ -32,8 +32,6 @@ public class MasterGM : MonoBehaviour
 	public PlayerGM playerGM;
 	public AIGM aiGM;
 
-	public TextMeshProUGUI playerBricksLeftText;
-	public TextMeshProUGUI aiBricksLeftText;
 	public TextMeshProUGUI titleText;
 	public TextMeshProUGUI playerStats;
 	public TextMeshProUGUI aiStats;
@@ -53,33 +51,6 @@ public class MasterGM : MonoBehaviour
 		getAllObjects();
 		initializeUI();
 		Time.timeScale = 0;
-/*
-		ball = GameObject.FindWithTag("ball");
-		aiBall = GameObject.FindWithTag("AIBall");
-		paddle = GameObject.FindWithTag("paddle");
-		aiPaddle = GameObject.FindWithTag("AIPaddle");
-
-		ballScript = ball.GetComponent<Ball>();
-		aiBallScript = aiBall.GetComponent<AIBall>();
-
-		ball.SetActive(true);
-		aiBall.SetActive(true);
-		paddle.SetActive(true);
-		aiPaddle.SetActive(true);
-
-		// setup UI variables
-		playerLives = 3;
-		aiLives = 3;
-		bricksTotal = GameObject.FindGameObjectsWithTag("brick").Length / 2;
-		playerBricksLeft = bricksTotal;
-		aiBricksLeft = bricksTotal;
-
-		Debug.Log("pLives: " + playerLives);
-		Debug.Log("aiLives: " + aiLives);
-		Debug.Log("pBricks: " + playerBricksLeft);
-		Debug.Log("aiBricks: " + aiBricksLeft);
-		Debug.Log("totalBricks: " + bricksTotal);
-*/
 	}
 
 	void getAllObjects() 
@@ -104,9 +75,7 @@ public class MasterGM : MonoBehaviour
 
 	void initializeUI() {
 		// setup initial UI values
-		playerBricksLeftText.text = "BRICKS LEFT: " + playerBricksLeft + "/" + bricksTotal;
 		playerLivesText.text = "LIVES: " + playerLives;
-		aiBricksLeftText.text = "BRICKS LEFT: " + aiBricksLeft + "/" + bricksTotal;
 		aiLivesText.text = "LIVES: " + aiLives;
 		timerText.text = "TIME: " + currentTime;
 
@@ -148,25 +117,25 @@ public class MasterGM : MonoBehaviour
 				PlayerWins();
 			}
 		}
-		else
+		else if (!gameOver)
 		{
 			// update UI information
 			GetUpdatesFromSubGMs();
 			UpdateUI();
-		}
 
-		// halt game with pause key
-		if (Input.GetKeyDown(KeyCode.Escape))
-		{
-			if (pauseGameUI.activeSelf == true)
+			// halt game with pause key
+			if (Input.GetKeyDown(KeyCode.Escape))
 			{
-				Time.timeScale = 1;
-				pauseGameUI.SetActive(false);
-			}
-			else
-			{
-				Time.timeScale = 0;
-				pauseGameUI.SetActive(true);
+				if (pauseGameUI.activeSelf == true)
+				{
+					Time.timeScale = 1;
+					pauseGameUI.SetActive(false);
+				}
+				else
+				{
+					Time.timeScale = 0;
+					pauseGameUI.SetActive(true);
+				}
 			}
 		}
 	}
@@ -194,11 +163,8 @@ public class MasterGM : MonoBehaviour
 	// update brick UI
 	public void UpdateUI()
 	{
-		playerBricksLeftText.text = "BRICKS LEFT: " + playerBricksLeft + "/" + bricksTotal;
 		playerLivesText.text = "LIVES: " + playerLives;
-		aiBricksLeftText.text = "BRICKS LEFT: " + aiBricksLeft + "/" + bricksTotal;
 		aiLivesText.text = "LIVES: " + aiLives;
-//		timerText.text = "TIME\n" + currentTime.ToString("0");
 		var formattedTime = TimeSpan.FromSeconds(currentTime);
 		timerText.text = string.Format("TIME\n{0:0}:{1:00}", formattedTime.Minutes, formattedTime.Seconds);
 	}
