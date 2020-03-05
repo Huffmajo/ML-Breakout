@@ -3590,14 +3590,14 @@ MonoBehaviour:
 
     Spacebar starts the game and launches the ball.
 
-    "A" and "S" or left and right arrows move paddle.
+    "A" and "S" or left and right arrows move the paddle.
 
 
     Goal
 
-    Bounce your ball off the paddle to break your bricks before your AI opponent.
+    Bounce your ball off of the paddle to break your bricks before your AI opponent.
 
-    If you miss the ball you lose a life. Lose all 3 lives and you are out.'
+    If you miss the ball, you lose a life. Lose all 3 lives, and you are out.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63dd3eb213586a44a84d6ca04501ad9a, type: 2}
   m_sharedMaterial: {fileID: 21039112775108118, guid: 63dd3eb213586a44a84d6ca04501ad9a,
