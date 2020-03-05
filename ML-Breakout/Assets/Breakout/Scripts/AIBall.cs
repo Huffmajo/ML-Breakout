@@ -47,9 +47,11 @@ public class AIBall : MonoBehaviour
     	// ball is held in front of paddle until released
     	if (heldByPaddle)
     	{
+            // trail while held by paddle
+            GetComponent<TrailRenderer>().Clear();
+            
     		heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
     		transform.position = heldBallPosition;
-
 
     		// release ball from user input
     		if (releaseButton)
@@ -120,8 +122,8 @@ public class AIBall : MonoBehaviour
         heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
         transform.position = heldBallPosition;
 
-        // ball has no velocity
-    	//rb.velocity = Vector3.zero;
+        // remove trail
+        GetComponent<TrailRenderer>().Clear();
     }
 
     // returns launch angle based on where the paddle is impacted
