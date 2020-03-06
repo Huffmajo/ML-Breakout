@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 80188115}
   - component: {fileID: 80188114}
   m_Layer: 5
-  m_Name: PlayerLivesCount
+  m_Name: Lives
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -437,7 +437,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -297.9, y: -378.5}
+  m_AnchoredPosition: {x: -24.9, y: -235.69}
   m_SizeDelta: {x: -95.1, y: 43.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &80188114
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'LIVES: -4'
+  m_text: "Lives\n0\t0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63dd3eb213586a44a84d6ca04501ad9a, type: 2}
   m_sharedMaterial: {fileID: 21039112775108118, guid: 63dd3eb213586a44a84d6ca04501ad9a,
@@ -488,8 +488,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 6
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -531,10 +531,10 @@ MonoBehaviour:
     textComponent: {fileID: 80188114}
     characterCount: 9
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -9165,6 +9165,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6288931620477958284, guid: 77b1f398c9499cd4f9bf451bce21f597,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77b1f398c9499cd4f9bf451bce21f597, type: 3}
 --- !u!4 &1004873554 stripped
@@ -10919,7 +10924,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ball
       value: 
-      objectReference: {fileID: 1038856267}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e27bec92605756b44877538838cacf24, type: 3}
 --- !u!4 &1151675458 stripped
@@ -12401,7 +12406,7 @@ MonoBehaviour:
   titleText: {fileID: 652840136}
   playerStats: {fileID: 916325610}
   aiStats: {fileID: 351236108}
-  playerLivesText: {fileID: 80188114}
+  livesText: {fileID: 80188114}
   aiLivesText: {fileID: 1681222701}
   timerText: {fileID: 1525144996}
   scoreText: {fileID: 1699230698}
@@ -13874,6 +13879,12 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 242929521}
+    - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 11400000, guid: c18cd6509fd24a74b9c4b91a1889f516,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4281c959c852fc84a92fb2f26ab22bc8, type: 3}
 --- !u!4 &1487586487 stripped
@@ -14258,7 +14269,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: 320.00003}
+  m_AnchoredPosition: {x: 17, y: 342.7}
   m_SizeDelta: {x: -88.1, y: 43.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1525144996
@@ -16118,7 +16129,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 163.17004, y: -10}
+  m_AnchoredPosition: {x: 163.17004, y: 7.8}
   m_SizeDelta: {x: 454.49, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1699230698

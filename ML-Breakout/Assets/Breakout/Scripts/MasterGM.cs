@@ -36,7 +36,7 @@ public class MasterGM : MonoBehaviour
 	public TextMeshProUGUI playerStats;
 	public TextMeshProUGUI aiStats;
 	
-	public TextMeshProUGUI playerLivesText;
+	public TextMeshProUGUI livesText;
 	public TextMeshProUGUI aiLivesText;
 	public TextMeshProUGUI timerText;
 	public TextMeshProUGUI scoreText;
@@ -75,8 +75,8 @@ public class MasterGM : MonoBehaviour
 
 	void initializeUI() {
 		// setup initial UI values
-		playerLivesText.text = "LIVES: " + playerLives;
-		aiLivesText.text = "LIVES: " + aiLives;
+		scoreText.text = "Score" + '\n' + playerGM.playerScore + "	" + aiGM.aiScore;
+		livesText.text = "Lives\n" + playerGM.lives + "	" + aiGM.lives;
 		timerText.text = "TIME: " + currentTime;
 
 		nextLevelButton.SetActive(false);
@@ -85,7 +85,6 @@ public class MasterGM : MonoBehaviour
 
 	void Update()
 	{
-		scoreText.text = "Score" + '\n' + playerGM.playerScore + "	" + aiGM.aiScore;
 		// check for end game conditions
 		if (IsGameOver() && gameOver == false)	//is gameOver boolean redundant?
 		{
@@ -163,10 +162,10 @@ public class MasterGM : MonoBehaviour
 	// update brick UI
 	public void UpdateUI()
 	{
-		playerLivesText.text = "LIVES: " + playerLives;
-		aiLivesText.text = "LIVES: " + aiLives;
 		var formattedTime = TimeSpan.FromSeconds(currentTime);
 		timerText.text = string.Format("TIME\n{0:0}:{1:00}", formattedTime.Minutes, formattedTime.Seconds);
+		scoreText.text = "Score" + '\n' + playerGM.playerScore + "	" + aiGM.aiScore;
+		livesText.text = "Lives\n" + playerGM.lives + "	" + aiGM.lives;
 	}
 
 	// returns true if endgame conditions are met

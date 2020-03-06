@@ -19,6 +19,7 @@ public class Ball : MonoBehaviour
 	private Rigidbody rb;
 	private Vector3 heldBallPosition;
 	public bool firstLaunch;
+    private ParticleSystem ps;
 
 
     // Start is called before the first frame update
@@ -26,9 +27,9 @@ public class Ball : MonoBehaviour
     {
     	// get ball rigidbody
     	rb = GetComponent<Rigidbody>();
-		firstLaunch = true;
+        ps = gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>();
+        firstLaunch = true;
     	ResetBall();
-
     }
 
     // Update is called once per frame
@@ -120,6 +121,13 @@ public class Ball : MonoBehaviour
     	}
         else if (col.gameObject.tag == "ground")
         {
+            // emit particles on death
+            gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Play();
+            var emitParams = new ParticleSystem.EmitParams();
+            emitParams.startColor = Color.red;
+            emitParams.startSize = 0.5f;
+            gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 30);
+            
             gm.LoseLife();
         }
     }
@@ -136,6 +144,9 @@ public class Ball : MonoBehaviour
 
         // remove trail
         GetComponent<TrailRenderer>().Clear();
+
+        // stop emitting particles
+        gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Stop();
     }
 
     // returns launch angle based on where the paddle is impacted
