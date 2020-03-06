@@ -28,6 +28,7 @@ public class Ball : MonoBehaviour
     	// get ball rigidbody
     	rb = GetComponent<Rigidbody>();
         ps = gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>();
+        ps.Stop();
         firstLaunch = true;
     	ResetBall();
     }
@@ -105,12 +106,14 @@ public class Ball : MonoBehaviour
 	    	if (!training)
     		{
     			FindObjectOfType<AudioManager>().Play("Pop");
-    		}
 
-			
-            // tell gm to decrease brick count
-            //gm.DecrementBrick(col.gameObject.GetComponent<Brick>().points);
-    	
+                // emit particles when hitting brick
+                var emitParams = new ParticleSystem.EmitParams();
+                emitParams.startColor = col.gameObject.GetComponent<Renderer>().material.color;
+                emitParams.startSize = 0.25f;
+                emitParams.velocity = col.gameObject.transform.position - transform.position;
+                gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 10);
+    		} 	
 		}
     	else if (col.gameObject.tag != "ground")
     	{
@@ -122,12 +125,11 @@ public class Ball : MonoBehaviour
         else if (col.gameObject.tag == "ground")
         {
             // emit particles on death
-            gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Play();
             var emitParams = new ParticleSystem.EmitParams();
             emitParams.startColor = Color.red;
             emitParams.startSize = 0.5f;
             gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 30);
-            
+
             gm.LoseLife();
         }
     }
@@ -144,9 +146,6 @@ public class Ball : MonoBehaviour
 
         // remove trail
         GetComponent<TrailRenderer>().Clear();
-
-        // stop emitting particles
-        gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Stop();
     }
 
     // returns launch angle based on where the paddle is impacted

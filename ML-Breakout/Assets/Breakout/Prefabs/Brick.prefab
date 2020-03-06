@@ -113,4 +113,6 @@ MonoBehaviour:
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
+  points: 0
   colors: []
+  thisColor: {r: 0, g: 0, b: 0, a: 0}

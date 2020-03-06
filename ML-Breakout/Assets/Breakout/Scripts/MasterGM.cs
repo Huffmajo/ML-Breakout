@@ -35,11 +35,10 @@ public class MasterGM : MonoBehaviour
 	public TextMeshProUGUI titleText;
 	public TextMeshProUGUI playerStats;
 	public TextMeshProUGUI aiStats;
-	
 	public TextMeshProUGUI livesText;
-	public TextMeshProUGUI aiLivesText;
 	public TextMeshProUGUI timerText;
 	public TextMeshProUGUI scoreText;
+	public Image crown;
 
 	// Start is called before the first frame update
 	void Start()
@@ -249,6 +248,9 @@ public class MasterGM : MonoBehaviour
 
         // update game over message
 		titleText.text = "AI WINS";
+
+		// set crown image above "A.I."
+		crown.transform.localPosition = new Vector3(370.0f, 90.0f, 0f);
 	}
 
 	void PlayerWins()
@@ -259,6 +261,9 @@ public class MasterGM : MonoBehaviour
 
 		// update game over message
 		titleText.text = "PLAYER WINS";
+
+		// set crown image above "Player"
+		crown.transform.localPosition = new Vector3(-360.0f, 90.0f, 0f);
 
 		// disable next level button if no more levels
 		if (IsLastLevel())

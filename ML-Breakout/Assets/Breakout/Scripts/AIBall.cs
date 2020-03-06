@@ -24,6 +24,7 @@ public class AIBall : MonoBehaviour
     	// get ball rigidbody
     	rb = GetComponent<Rigidbody>();
         ps = gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>();
+        ps.Stop();
     	ResetBall();
 
     }
@@ -100,8 +101,12 @@ public class AIBall : MonoBehaviour
 	    	// play bounce sound
     		FindObjectOfType<AudioManager>().Play("Pop");
 
-            // tell gm to decrease brick count
-            //gm.DecrementBrick(col.gameObject.GetComponent<Brick>().points);
+            // emit particles when hitting brick
+            var emitParams = new ParticleSystem.EmitParams();
+            emitParams.startColor = col.gameObject.GetComponent<Renderer>().material.color;
+            emitParams.startSize = 0.25f;
+            emitParams.velocity = col.gameObject.transform.position - transform.position;
+            gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 10);
     	}
     	else if (col.gameObject.tag != "ground")
     	{
@@ -110,7 +115,6 @@ public class AIBall : MonoBehaviour
         else if (col.gameObject.tag == "ground")
         {
             // emit particles on death
-            gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Play();
             var emitParams = new ParticleSystem.EmitParams();
             emitParams.startColor = Color.cyan;
             emitParams.startSize = 0.5f;
@@ -132,9 +136,6 @@ public class AIBall : MonoBehaviour
 
         // remove trail
         GetComponent<TrailRenderer>().Clear();
-
-        // stop emitting particles
-        gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Stop();
     }
 
     // returns launch angle based on where the paddle is impacted
