@@ -42,6 +42,7 @@ public class MasterGM : MonoBehaviour
 	public TextMeshProUGUI aiLivesText;
 	public TextMeshProUGUI timerText;
 	public TextMeshProUGUI scoreText;
+	public bool gameStarted;
 
 	// Start is called before the first frame update
 	void Start()
@@ -53,6 +54,7 @@ public class MasterGM : MonoBehaviour
 		getAllObjects();
 		initializeUI();
 		Time.timeScale = 0;
+		gameStarted = false;
 /*
 		ball = GameObject.FindWithTag("ball");
 		aiBall = GameObject.FindWithTag("AIBall");
@@ -158,9 +160,14 @@ public class MasterGM : MonoBehaviour
 		// halt game with pause key
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
+//			float currentTimeScale = Time.timeScale;
 			if (pauseGameUI.activeSelf == true)
 			{
-				Time.timeScale = 1;
+				//if time was not stopped already
+				if (gameStarted)
+				{
+					Time.timeScale = 1;
+				}
 				pauseGameUI.SetActive(false);
 			}
 			else

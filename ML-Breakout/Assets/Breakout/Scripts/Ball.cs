@@ -159,6 +159,7 @@ public class Ball : MonoBehaviour
 		{
 			Time.timeScale = 1;
 			firstLaunch = false;
+			gm.masterGM.gameStarted = true;
 		}
 
     	float xVelocity = speed * Mathf.Cos(angle * Mathf.Deg2Rad);

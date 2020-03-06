@@ -18870,6 +18870,11 @@ PrefabInstance:
       propertyPath: brickListContainer
       value: 
       objectReference: {fileID: 1700679046}
+    - target: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
+        type: 3}
+      propertyPath: masterGM
+      value: 
+      objectReference: {fileID: 1847355018}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c27d891c58d3754db7260f6b6eed664, type: 3}
 --- !u!114 &671064149828231803 stripped
