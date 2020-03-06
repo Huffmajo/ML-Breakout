@@ -16,7 +16,7 @@ public class Brick : MonoBehaviour
 	public int points;
 	public List<Color> colors;	//colors defined in inspector window for prefabs
 
-	public Color thisColor;
+	public BreakoutArea breakoutArea;
 
 	void Start()
 	{
@@ -51,6 +51,11 @@ public class Brick : MonoBehaviour
 	//check for collisions and destroy brick
 	void OnCollisionEnter(Collision other)
 	{
+		if (training)
+		{
+			paddleAgent.AddReward(1f);
+		}			
+		
 		collisionCount++;
 		
 		if (collisionCount > maxCollisions)
@@ -72,7 +77,13 @@ public class Brick : MonoBehaviour
 					gm.UpdateUI();
 				}
 			}
-			Destroy(gameObject);
+			else
+			{
+				breakoutArea.decrementBrick();
+			}
+
+			gameObject.SetActive(false);
+//			Destroy(gameObject);
 		}
 		else if (maxCollisions > 0 && counter < colors.Count-1)	//for tough bricks
 		{
@@ -82,9 +93,6 @@ public class Brick : MonoBehaviour
 			brickRenderer.material.SetColor("_Color", colors[counter]);
 		}
 
-		if (training)
-		{
-			paddleAgent.AddReward(1f);
-		}
+
 	}
 }
