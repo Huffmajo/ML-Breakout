@@ -16,6 +16,8 @@ public class Ball : MonoBehaviour
 	public Vector3 ballImpactVector;
 	public float launchAngle;
 	public PlayerGM gm;
+	public AIGM aiGM;
+	public bool AIBall;
 	private Rigidbody rb;
 	private Vector3 heldBallPosition;
 	private bool firstLaunch;
@@ -26,7 +28,11 @@ public class Ball : MonoBehaviour
     {
     	// get ball rigidbody
     	rb = GetComponent<Rigidbody>();
-		firstLaunch = true;
+		if (training){
+			firstLaunch = false;
+		} else {
+			firstLaunch = true;
+		}
     	ResetBall();
 
     }
@@ -103,8 +109,7 @@ public class Ball : MonoBehaviour
     		{
     			FindObjectOfType<AudioManager>().Play("Pop");
     		}
-
-			
+		
             // tell gm to decrease brick count
             //gm.DecrementBrick(col.gameObject.GetComponent<Brick>().points);
     	
@@ -118,7 +123,12 @@ public class Ball : MonoBehaviour
     	}
         else if (col.gameObject.tag == "ground")
         {
-            gm.LoseLife();
+			if (AIBall){
+				aiGM.LoseLife();
+			} 
+			else{
+				gm.LoseLife();
+			}
         }
     }
 
@@ -145,7 +155,7 @@ public class Ball : MonoBehaviour
     // launches ball at specified speed and angle
     public void LaunchBall(float speed, float angle)
     {
-		if (firstLaunch)
+		if (firstLaunch && !AIBall)
 		{
 			Time.timeScale = 1;
 			firstLaunch = false;

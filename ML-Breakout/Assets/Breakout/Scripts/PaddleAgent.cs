@@ -11,7 +11,8 @@ public class PaddleAgent : Agent
     public bool training;
     public List<Vector3> brickPositions;
 	public List<GameObject> bricks;
-    public AIBall ball;
+    public Ball ball;
+
     public float paddleXScale;
 
     public float ballCollisionReward = 10f;
