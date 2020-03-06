@@ -1987,6 +1987,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainingPaddle
       objectReference: {fileID: 0}
+    - target: {fileID: 1437936438001625077, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2056,7 +2061,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ball
       value: 
-      objectReference: {fileID: 848751852}
+      objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: agentParameters.maxStep
@@ -2090,6 +2095,11 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: paddleXScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: training
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
@@ -3004,6 +3014,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainingPaddle
       objectReference: {fileID: 0}
+    - target: {fileID: 1437936438001625077, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3073,7 +3088,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ball
       value: 
-      objectReference: {fileID: 1345154844}
+      objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: agentParameters.maxStep
@@ -3107,6 +3122,11 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: paddleXScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: training
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
@@ -3400,6 +3420,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainingPaddle
       objectReference: {fileID: 0}
+    - target: {fileID: 1437936438001625077, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3469,7 +3494,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ball
       value: 
-      objectReference: {fileID: 1950380610}
+      objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: agentParameters.maxStep
@@ -3503,6 +3528,11 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: paddleXScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: training
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
@@ -8479,6 +8509,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 526386256933971423, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24dde7feade7fe8428deb6e199bb18ce, type: 3}
 --- !u!4 &303788908 stripped
@@ -8887,6 +8922,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 526386256933971423, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24dde7feade7fe8428deb6e199bb18ce, type: 3}
 --- !u!1001 &319611386
@@ -8980,6 +9020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 526386256933971423, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24dde7feade7fe8428deb6e199bb18ce, type: 3}
@@ -12300,6 +12345,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 526386256933971423, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24dde7feade7fe8428deb6e199bb18ce, type: 3}
@@ -16314,6 +16364,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 526386256933971423, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24dde7feade7fe8428deb6e199bb18ce, type: 3}
@@ -27706,6 +27761,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 526386256933971423, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24dde7feade7fe8428deb6e199bb18ce, type: 3}
 --- !u!4 &1016017598 stripped
@@ -28170,6 +28230,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainingPaddle
       objectReference: {fileID: 0}
+    - target: {fileID: 1437936438001625077, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28239,7 +28304,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ball
       value: 
-      objectReference: {fileID: 297746738}
+      objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: agentParameters.maxStep
@@ -28273,6 +28338,11 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: paddleXScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: training
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
@@ -29110,6 +29180,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainingPaddle
       objectReference: {fileID: 0}
+    - target: {fileID: 1437936438001625077, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29179,7 +29254,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ball
       value: 
-      objectReference: {fileID: 1136087476}
+      objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: agentParameters.maxStep
@@ -29213,6 +29288,11 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: paddleXScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: training
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
@@ -32877,6 +32957,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 526386256933971423, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24dde7feade7fe8428deb6e199bb18ce, type: 3}
@@ -44085,6 +44170,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainingPaddle
       objectReference: {fileID: 0}
+    - target: {fileID: 1437936438001625077, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44154,7 +44244,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ball
       value: 
-      objectReference: {fileID: 1479693084}
+      objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: agentParameters.maxStep
@@ -44188,6 +44278,11 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: paddleXScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: training
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
@@ -50107,6 +50202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 526386256933971423, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24dde7feade7fe8428deb6e199bb18ce, type: 3}
@@ -57744,6 +57844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainingPaddle
       objectReference: {fileID: 0}
+    - target: {fileID: 1437936438001625077, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57813,7 +57918,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ball
       value: 
-      objectReference: {fileID: 882413386}
+      objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: agentParameters.maxStep
@@ -57847,6 +57952,11 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: paddleXScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: training
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
@@ -59325,6 +59435,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainingPaddle
       objectReference: {fileID: 0}
+    - target: {fileID: 1437936438001625077, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59399,7 +59514,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ball
       value: 
-      objectReference: {fileID: 151080546}
+      objectReference: {fileID: 0}
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: agentParameters.maxStep
@@ -59433,6 +59548,11 @@ PrefabInstance:
     - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: paddleXScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792591820138656454, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: training
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
