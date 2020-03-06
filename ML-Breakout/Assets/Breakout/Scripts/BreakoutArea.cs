@@ -123,6 +123,9 @@ public class BreakoutArea : Area
             //paddle big reward for finishing level
             ResetArea();
         }
+
+
+
     }
 
     // remove all bricks
@@ -143,6 +146,14 @@ public class BreakoutArea : Area
         foreach (GameObject brick in brickList)
         {
             brick.SetActive(true);
+           
+            Brick brickScript = brick.GetComponent<Brick>();
+            if (brickScript.maxCollisions > 0)
+            {
+                brickScript.counter = 0;
+                var brickRenderer = brick.GetComponent<Renderer>();
+                brickRenderer.material.SetColor("_Color", brickScript.colors[brickScript.counter]);
+            }
         }
         activeBricks = totalBricks;
     }

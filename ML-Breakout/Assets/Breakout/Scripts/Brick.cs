@@ -12,7 +12,7 @@ public class Brick : MonoBehaviour
 	public GameManager gm;
 	public PlayerGM playerGM;
 	public AIGM aiGM;
-	private int counter = 0;
+	public int counter = 0;
 	public int points;
 	public List<Color> colors;	//colors defined in inspector window for prefabs
 
@@ -91,6 +91,10 @@ public class Brick : MonoBehaviour
 			
 			var brickRenderer = gameObject.GetComponent<Renderer>();
 			brickRenderer.material.SetColor("_Color", colors[counter]);
+		}
+		else
+		{
+			Debug.Log("MaxCollision > 0 but counter !< colors.Count-1");
 		}
 
 
