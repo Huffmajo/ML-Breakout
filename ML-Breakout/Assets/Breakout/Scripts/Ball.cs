@@ -18,7 +18,8 @@ public class Ball : MonoBehaviour
 	public PlayerGM gm;
 	private Rigidbody rb;
 	private Vector3 heldBallPosition;
-	private bool firstLaunch;
+	public bool firstLaunch;
+    private ParticleSystem ps;
 
 
     // Start is called before the first frame update
@@ -26,9 +27,10 @@ public class Ball : MonoBehaviour
     {
     	// get ball rigidbody
     	rb = GetComponent<Rigidbody>();
-		firstLaunch = true;
+        ps = gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>();
+        ps.Stop();
+        firstLaunch = true;
     	ResetBall();
-
     }
 
     // Update is called once per frame
@@ -51,9 +53,11 @@ public class Ball : MonoBehaviour
     	// ball is held in front of paddle until released
     	if (heldByPaddle)
     	{
+            // trail while held by paddle
+            GetComponent<TrailRenderer>().Clear();
+
     		heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
     		transform.position = heldBallPosition;
-
 
     		// release ball from user input
     		if (releaseButton)
@@ -102,12 +106,14 @@ public class Ball : MonoBehaviour
 	    	if (!training)
     		{
     			FindObjectOfType<AudioManager>().Play("Pop");
-    		}
 
-			
-            // tell gm to decrease brick count
-            //gm.DecrementBrick(col.gameObject.GetComponent<Brick>().points);
-    	
+                // emit particles when hitting brick
+                var emitParams = new ParticleSystem.EmitParams();
+                emitParams.startColor = col.gameObject.GetComponent<Renderer>().material.color;
+                emitParams.startSize = 0.25f;
+                emitParams.velocity = col.gameObject.transform.position - transform.position;
+                gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 10);
+    		} 	
 		}
     	else if (col.gameObject.tag != "ground")
     	{
@@ -118,6 +124,12 @@ public class Ball : MonoBehaviour
     	}
         else if (col.gameObject.tag == "ground")
         {
+            // emit particles on death
+            var emitParams = new ParticleSystem.EmitParams();
+            emitParams.startColor = Color.red;
+            emitParams.startSize = 0.5f;
+            gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 30);
+
             gm.LoseLife();
         }
     }
@@ -132,8 +144,8 @@ public class Ball : MonoBehaviour
         heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
         transform.position = heldBallPosition;
 
-        // ball has no velocity
-    	//rb.velocity = Vector3.zero;
+        // remove trail
+        GetComponent<TrailRenderer>().Clear();
     }
 
     // returns launch angle based on where the paddle is impacted
