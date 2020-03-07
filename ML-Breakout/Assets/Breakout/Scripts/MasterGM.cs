@@ -13,7 +13,7 @@ public class MasterGM : MonoBehaviour
 	private GameObject ball;
 	private GameObject aiBall;
 	private Ball ballScript;
-	private AIBall aiBallScript;
+	private Ball aiBallScript;
 	private GameObject paddle;
 	private GameObject aiPaddle;
 	private bool gameOver;
@@ -70,7 +70,7 @@ public class MasterGM : MonoBehaviour
 
 		//ai side
 		aiBall = aiGM.aiBall.gameObject;
-		aiBallScript = aiBall.GetComponent<AIBall>();
+		aiBallScript = aiBall.GetComponent<Ball>();
 		aiPaddle = aiGM.aiPaddle.gameObject;
 		aiLives = aiGM.lives;
 		aiBricksLeft = aiGM.bricksLeft;

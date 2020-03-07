@@ -134,6 +134,8 @@ MonoBehaviour:
   ballImpactVector: {x: 0, y: 0, z: 0}
   launchAngle: 45
   gm: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664, type: 3}
+  aiGM: {fileID: 0}
+  AIBall: 0
   firstLaunch: 0
 --- !u!96 &7315302289889887298
 TrailRenderer:
