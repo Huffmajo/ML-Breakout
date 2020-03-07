@@ -38,7 +38,10 @@ public class MasterGM : MonoBehaviour
 	public TextMeshProUGUI livesText;
 	public TextMeshProUGUI timerText;
 	public TextMeshProUGUI scoreText;
+
 	public Image crown;
+	public bool gameStarted;
+
 
 	// Start is called before the first frame update
 	void Start()
@@ -50,6 +53,8 @@ public class MasterGM : MonoBehaviour
 		getAllObjects();
 		initializeUI();
 		Time.timeScale = 0;
+
+		gameStarted = false;
 	}
 
 	void getAllObjects() 

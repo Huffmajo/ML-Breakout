@@ -5,7 +5,7 @@ using UnityEngine;
 public class AIGM : MonoBehaviour
 {
 	public PaddleAgent aiPaddle;
-	public AIBall aiBall;
+	public Ball aiBall;
 
 	public int lives;
 	public int bricksLeft;

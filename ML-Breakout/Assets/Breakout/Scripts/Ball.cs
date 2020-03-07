@@ -16,6 +16,8 @@ public class Ball : MonoBehaviour
 	public Vector3 ballImpactVector;
 	public float launchAngle;
 	public PlayerGM gm;
+	public AIGM aiGM;
+	public bool AIBall;
 	private Rigidbody rb;
 	private Vector3 heldBallPosition;
 	public bool firstLaunch;
@@ -29,7 +31,13 @@ public class Ball : MonoBehaviour
     	rb = GetComponent<Rigidbody>();
         ps = gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>();
         ps.Stop();
-        firstLaunch = true;
+
+		if (training){
+			firstLaunch = false;
+		} else {
+			firstLaunch = true;
+		}
+
     	ResetBall();
     }
 
@@ -114,6 +122,7 @@ public class Ball : MonoBehaviour
                 emitParams.velocity = col.gameObject.transform.position - transform.position;
                 gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 10);
     		} 	
+
 		}
     	else if (col.gameObject.tag != "ground")
     	{
@@ -130,7 +139,12 @@ public class Ball : MonoBehaviour
             emitParams.startSize = 0.5f;
             gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 30);
 
-            gm.LoseLife();
+			if (AIBall){
+				aiGM.LoseLife();
+			} 
+			else{
+				gm.LoseLife();
+			}
         }
     }
 
@@ -157,10 +171,11 @@ public class Ball : MonoBehaviour
     // launches ball at specified speed and angle
     public void LaunchBall(float speed, float angle)
     {
-		if (firstLaunch)
+		if (firstLaunch && !AIBall)
 		{
 			Time.timeScale = 1;
 			firstLaunch = false;
+			gm.masterGM.gameStarted = true;
 		}
 
     	float xVelocity = speed * Mathf.Cos(angle * Mathf.Deg2Rad);

@@ -12,11 +12,11 @@ public class Brick : MonoBehaviour
 	public GameManager gm;
 	public PlayerGM playerGM;
 	public AIGM aiGM;
-	private int counter = 0;
+	public int counter = 0;
 	public int points;
 	public List<Color> colors;	//colors defined in inspector window for prefabs
 
-	public Color thisColor;
+	public BreakoutArea breakoutArea;
 
 	void Start()
 	{
@@ -51,6 +51,11 @@ public class Brick : MonoBehaviour
 	//check for collisions and destroy brick
 	void OnCollisionEnter(Collision other)
 	{
+		if (training)
+		{
+			paddleAgent.AddReward(1f);
+		}			
+		
 		collisionCount++;
 		
 		if (collisionCount > maxCollisions)
@@ -72,7 +77,13 @@ public class Brick : MonoBehaviour
 					gm.UpdateUI();
 				}
 			}
-			Destroy(gameObject);
+			else
+			{
+				breakoutArea.decrementBrick();
+			}
+
+			gameObject.SetActive(false);
+//			Destroy(gameObject);
 		}
 		else if (maxCollisions > 0 && counter < colors.Count-1)	//for tough bricks
 		{
@@ -81,10 +92,11 @@ public class Brick : MonoBehaviour
 			var brickRenderer = gameObject.GetComponent<Renderer>();
 			brickRenderer.material.SetColor("_Color", colors[counter]);
 		}
-
-		if (training)
+		else
 		{
-			paddleAgent.AddReward(1f);
+			Debug.Log("MaxCollision > 0 but counter !< colors.Count-1");
 		}
+
+
 	}
 }

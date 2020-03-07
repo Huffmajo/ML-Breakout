@@ -7,11 +7,12 @@ using System;
 public class PaddleAgent : Agent
 {
 
-    private BreakoutArea breakoutArea;
+    public BreakoutArea breakoutArea;
     public bool training;
     public List<Vector3> brickPositions;
 	public List<GameObject> bricks;
-    public AIBall ball;
+    public Ball ball;
+
     public float paddleXScale;
 
     public float ballCollisionReward = 10f;
@@ -39,10 +40,10 @@ public class PaddleAgent : Agent
     {
         if (training)
         {
-            breakoutArea = GetComponentInParent<BreakoutArea>();
+            //breakoutArea = GetComponentInParent<BreakoutArea>();
             // take note of all the bricks in the scene
             brickPositions = breakoutArea.brickPositions;
-            bricks = breakoutArea.brickList;
+            //bricks = breakoutArea.brickList;
             bricksPrev = breakoutArea.brickList.Count;
         }
 
@@ -151,23 +152,28 @@ public class PaddleAgent : Agent
         
         if (training)
         {
-            bricks.Clear();
-            bricks = breakoutArea.brickList;
-            bricksNext = bricks.Count;
-            if (bricksNext < bricksPrev)
-            {
-                if (bricksPrev == 84 && bricksNext == 0)
-                {
-                    Debug.Log("All Bricks Broken!");            
-                    //AddReward(completionAward);
-                }
-                else
-                {                
-                    Debug.Log("brick break order error");
-                    Debug.Log("prev: " + bricksPrev);
-                    Debug.Log("next: " + bricksNext);
-                }
-            }
+            //bricks.Clear();
+            //bricks = breakoutArea.brickList;
+            bricksNext = breakoutArea.activeBricks;
+            // if (bricksNext < bricksPrev)
+            // {
+            //     if (bricksPrev == bricks.Count && bricksNext == 0)
+            //     {
+            //         if (Time.time > 0)
+            //         {
+            //             Debug.Log("All Bricks Broken!");            
+            //             //AddReward(completionAward);
+            //         }
+
+            //     }
+            //     else
+            //     {                
+            //         Debug.Log("brick break order error");
+            //         Debug.Log("prev: " + bricksPrev);
+            //         Debug.Log("next: " + bricksNext);
+            //         Debug.Log("bricks.count: " + bricks.Count);
+            //     }
+            // }
             bricksPrev = bricksNext;
         }
         

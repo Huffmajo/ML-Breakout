@@ -15,6 +15,7 @@ public class PlayerGM : MonoBehaviour
 
 	private Vector3 paddleStartingPos;
 	public int playerScore;
+	public MasterGM masterGM;
 
     void Start()
     {
@@ -68,3 +69,5 @@ public class PlayerGM : MonoBehaviour
 		ball.ResetBall();
 	}
 }
+
+
