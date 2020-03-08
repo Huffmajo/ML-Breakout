@@ -15,12 +15,12 @@ public class MainMenu : MonoBehaviour
 
 	public void level02()
 	{
-		SceneManager.LoadScene("Versus 02");
+		SceneManager.LoadScene("Versus 03");
 	}
 
 	public void level03()
 	{
-		SceneManager.LoadScene("Versus 02");
+		SceneManager.LoadScene("Versus 04");
 	}
 
 
