@@ -10,25 +10,18 @@ public class MainMenu : MonoBehaviour
 	// loads level select scene
 	public void level01()
 	{
-		SceneManager.LoadScene("Breakout Level 01");
+		SceneManager.LoadScene("Versus 02");
 	}
 
 	public void level02()
 	{
-		SceneManager.LoadScene("Breakout Level 02");
+		SceneManager.LoadScene("Versus 02");
 	}
 
 	public void level03()
 	{
-		SceneManager.LoadScene("Breakout Level 03");
+		SceneManager.LoadScene("Versus 02");
 	}
-
-
-	public void level04()
-	{
-		SceneManager.LoadScene("Breakout Level 04");
-	}
-
 
 
 

@@ -6858,6 +6858,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: AIBall
       objectReference: {fileID: 0}
+    - target: {fileID: 1027687622349107909, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027687622349107909, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.8861277
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027687622349107909, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7315302289889887298, guid: 24dde7feade7fe8428deb6e199bb18ce,
         type: 3}
       propertyPath: m_Parameters.colorGradient.key0.r
