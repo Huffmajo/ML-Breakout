@@ -25,6 +25,7 @@ public class PaddleAgent : Agent
     public float xPosLimit;
     public float xNegLimit;
     public float horizontalInput;
+    public bool demo;
 
 	//brick observation/rewards
 
@@ -51,6 +52,11 @@ public class PaddleAgent : Agent
 		paddleYPos = transform.position.y;
 		ballYPos = ball.transform.position.y;
 
+        if (demo)
+        {
+            xPosLimit = 5.5f;
+            xNegLimit = -52.5f;
+        }
  	}
 
     /// <summary>
@@ -132,7 +138,7 @@ public class PaddleAgent : Agent
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
 
         // release ball from paddle
-        if (release == 1f && ball.heldByPaddle == true)
+        if ((release == 1f && ball.heldByPaddle == true) || (demo && ball.heldByPaddle))
         //if (release == 1 && ball.heldByPaddle)
         {
             ball.heldByPaddle = false;
