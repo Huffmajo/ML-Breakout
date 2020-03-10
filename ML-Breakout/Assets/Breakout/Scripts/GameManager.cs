@@ -1,47 +1,52 @@
-﻿using System.Collections;
+﻿//using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-	public static int _lives;
+	//objects
 	public static GameObject ball;
 	static Ball ballScript;
 	public static GameObject paddle;
-	public bool gameOver = false;
-	public bool levelComplete = false;
-	public int bricksTotal;
-	public int bricksLeft;
 	public GameObject nextLevelButton;
 	public GameObject endGameUI;
 	public GameObject pauseGameUI;
 	public List<GameObject> bricks;
-	public float currentTime;
 
+	//Variables
+	public static int _lives;
+	public int bricksTotal;
+	public int bricksLeft;
+	public float currentTime;
+	public bool gameOver = false;
+	public bool levelComplete = false;
+
+	//Text Objects
 	public TextMeshProUGUI brickText;
 	public TextMeshProUGUI titleText;
 	public TextMeshProUGUI livesText;
 	public TextMeshProUGUI timerText;
 
-	// Start is called before the first frame update
+
 	void Start()
 	{
-
-		currentTime = 0f;
-		gameOver = false;
-		levelComplete = false;
-		_lives = 3;
+		//initialize all gameObjects
 		ball = GameObject.FindWithTag("ball");
 		paddle = GameObject.FindWithTag("paddle");
 		ballScript = ball.GetComponent<Ball>();
 		ball.SetActive(true);
 		paddle.SetActive(true);
+		//initialize all vars
+		currentTime = 0f;
+		gameOver = false;
+		levelComplete = false;
+		_lives = 3;
 
-		if (ballScript == null)
-		{
+		
+		if (ballScript == null){
 			Debug.Log("ballScript is NULL");
 		}
 

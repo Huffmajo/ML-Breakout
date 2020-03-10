@@ -1,5 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿//using System.Collections;
+//using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -8,30 +8,32 @@ using System;
 
 public class MasterGM : MonoBehaviour
 {
-    private int playerLives;
-    private int aiLives;
+	//Game Objects
 	private GameObject ball;
 	private GameObject aiBall;
 	private Ball ballScript;
 	private Ball aiBallScript;
 	private GameObject paddle;
 	private GameObject aiPaddle;
+    public GameObject nextLevelButton;
+	public GameObject endGameUI;
+	public GameObject pauseGameUI;
+	public PlayerGM playerGM;
+	public AIGM aiGM;
+	
+	//Variables	
+	public bool gameStarted;
 	private bool gameOver;
 	private bool levelComplete;
+	private int playerLives;
+    private int aiLives;
 	private int bricksTotal;
 	private int playerBricksLeft;
 	private int aiBricksLeft;
-
-	public GameObject nextLevelButton;
-	public GameObject endGameUI;
-	public GameObject pauseGameUI;
 	public float currentTime;
 	public float finalTime;
 
-
-	public PlayerGM playerGM;
-	public AIGM aiGM;
-
+	//Text Objects
 	public TextMeshProUGUI titleText;
 	public TextMeshProUGUI playerStats;
 	public TextMeshProUGUI aiStats;
@@ -39,21 +41,21 @@ public class MasterGM : MonoBehaviour
 	public TextMeshProUGUI timerText;
 	public TextMeshProUGUI scoreText;
 
+	//image var
 	public Image crown;
-	public bool gameStarted;
+
 
 
 	// Start is called before the first frame update
 	void Start()
 	{
+		//initialize all vars
 		currentTime = 0f;
 		gameOver = false;
 		levelComplete = false;
-
 		getAllObjects();
 		initializeUI();
 		Time.timeScale = 0;
-
 		gameStarted = false;
 	}
 
@@ -66,14 +68,15 @@ public class MasterGM : MonoBehaviour
 		playerLives = playerGM.lives;
 		playerBricksLeft = playerGM.bricksLeft;
 		
-		bricksTotal = playerBricksLeft;
-
 		//ai side
 		aiBall = aiGM.aiBall.gameObject;
 		aiBallScript = aiBall.GetComponent<Ball>();
 		aiPaddle = aiGM.aiPaddle.gameObject;
 		aiLives = aiGM.lives;
 		aiBricksLeft = aiGM.bricksLeft;
+
+		//both sides
+		bricksTotal = playerBricksLeft;
 	}
 
 
@@ -90,37 +93,27 @@ public class MasterGM : MonoBehaviour
 	void Update()
 	{
 		// check for end game conditions
-		if (IsGameOver() && gameOver == false)	//is gameOver boolean redundant?
+		if (IsGameOver())
 		{
-			finalTime = currentTime;
-			gameOver = true;
-			
-			Time.timeScale = 0;
 
-			//disables ball/paddles and endables EndGameUI
+			//sets final time, disables ball/paddles, enables endgame UI
+			finalTime = currentTime;
+			Time.timeScale = 0;
 			endGameCleanup();
 			setPlayerStats();
 			setAiStats();
 
 			// find winner
 			int winner = VictorIs();
-			if (winner == 1)
-			{
-				// player won
+			if (winner == 1){	
 				PlayerWins();
-			}
-			else if (winner == 2)
-			{
-				// ai won
+			} else if (winner == 2) {
 				PlayerLoses();
-			}
-			else
-			{
-				// draw
+			} else {
 				PlayerWins();
 			}
 		}
-		else if (!gameOver && !ballScript.firstLaunch)
+		else if (!ballScript.firstLaunch)	//if not waiting on player to launch ball
 		{
 			// update UI information
 			GetUpdatesFromSubGMs();
@@ -143,39 +136,35 @@ public class MasterGM : MonoBehaviour
 		}
 	}
 
-
-    void setPlayerStats()
-    {
-        playerStats.text = "Lives:	" + playerLives + '\n' + "Bricks:	" + playerBricksLeft + "/" + bricksTotal;
-    }
-
-	void setAiStats()
-	{
-		aiStats.text = "Lives:	" + aiLives + '\n' + "Bricks:	" + aiBricksLeft + "/" + bricksTotal;
-	}
-
     void GetUpdatesFromSubGMs()
-	{
+	{	//grabs vars from each GM
 		playerLives = playerGM.lives;
 		aiLives = aiGM.lives;
 		playerBricksLeft = playerGM.bricksLeft;
 		aiBricksLeft = aiGM.bricksLeft;
-		currentTime += 1 * Time.deltaTime;
-	}
 
+	}
 	// update brick UI
 	public void UpdateUI()
-	{
+	{	//updates time, score, lives and associated texts
+		currentTime += 1 * Time.deltaTime;
 		var formattedTime = TimeSpan.FromSeconds(currentTime);
 		timerText.text = string.Format("TIME\n{0:0}:{1:00}", formattedTime.Minutes, formattedTime.Seconds);
 		scoreText.text = "Score" + '\n' + playerGM.playerScore + "	" + aiGM.aiScore;
 		livesText.text = "Lives\n" + playerGM.lives + "	" + aiGM.lives;
 	}
+	
+	//Sets the final stats for the player and AI
+    void setPlayerStats() {
+        playerStats.text = "Lives:	" + playerLives + '\n' + "Bricks:	" + playerBricksLeft + "/" + bricksTotal;
+    }
+	void setAiStats(){
+		aiStats.text = "Lives:	" + aiLives + '\n' + "Bricks:	" + aiBricksLeft + "/" + bricksTotal;
+	}
 
 	// returns true if endgame conditions are met
-	// does not return victor of the game
 	bool IsGameOver()
-	{
+	{	
 		bool isOver = false;
 
 		if (playerBricksLeft <= 0 ||
@@ -185,48 +174,33 @@ public class MasterGM : MonoBehaviour
 		{
 			isOver = true;
 		}
-
 		return isOver;
 	}
 
 	// returns 1 if player won, 2 if AI won and 0 if draw
 	int VictorIs()
 	{
-		int victor = 0;
-
+		int victor = -1;
 		// if both players lose last life at same frame, victor is side with fewer remaining bricks
 		if (playerLives <= 0 && aiLives <= 0)
 		{
 			if (playerBricksLeft == aiBricksLeft)
-			{
-				// rare draw scenario
+			{	// rare draw scenario
 				victor = 0;
-			}
-			else if (playerBricksLeft < aiBricksLeft)
-			{
+			} else if (playerBricksLeft < aiBricksLeft) {
 				victor = 1;
-			}
-			else
-			{
+			} else {
 				victor = 2;
 			}
-		}
-		// otherwise victor is who ever didn't lose last life
-		else if (aiLives <= 0)
-		{
+		}// otherwise victor is who ever didn't lose last life
+		else if (aiLives <= 0) {
 			victor = 1;
-		}
-		else if (playerLives <= 0)
-		{
+		} else if (playerLives <= 0) {
 			victor = 2;
-		}
-		// otherwise victor is whom ever removed all their bricks
-		else if (playerBricksLeft == 0)
-		{
+		} // otherwise victor is whom ever removed all their bricks
+		else if (playerBricksLeft == 0) {
 			victor = 1;
-		}
-		else if (aiBricksLeft == 0)
-		{
+		} else if (aiBricksLeft == 0) {
 			victor = 2;
 		}
 		return victor;
@@ -248,26 +222,17 @@ public class MasterGM : MonoBehaviour
 
 	public void PlayerLoses()
 	{
-		// play sad trombone
+		// play sad trombone, update text, set crown image above AI
         FindObjectOfType<AudioManager>().Play("GameOver");
-
-        // update game over message
 		titleText.text = "AI WINS";
-
-		// set crown image above "A.I."
 		crown.transform.localPosition = new Vector3(370.0f, 90.0f, 0f);
 	}
 
 	void PlayerWins()
 	{
-		// play victory sound
-		//FindObjectOfType<AudioManager>().Stop("BGM");
+		// play victory sound, update text, set crown above player
         FindObjectOfType<AudioManager>().Play("Victory");
-
-		// update game over message
 		titleText.text = "PLAYER WINS";
-
-		// set crown image above "Player"
 		crown.transform.localPosition = new Vector3(-360.0f, 90.0f, 0f);
 
 		// disable next level button if no more levels
@@ -281,28 +246,23 @@ public class MasterGM : MonoBehaviour
 		}
 	}
 
-
-
-	// reload current level
-	public void RestartLevel()
-	{
+	public void RestartLevel() {
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 
-	// load main menu scene
-	public void GoToMainMenu()
-	{
+	public void GoToMainMenu() {
 		SceneManager.LoadScene("Main Menu");
 	}
 
-	// check if this is the last level
+	public void GoToNextLevel() {
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+	}
+
 	public bool IsLastLevel()
-	{
+	{	//checks if this level is the last in loaded list
 		int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
 		int totalNumLevels = SceneManager.sceneCountInBuildSettings - 1;
 		bool isLast = true;
-
-		//Debug.Log("currentLevel: " + currentLevelIndex + " totalLevels: " + totalNumLevels);
 
 		if (currentLevelIndex < totalNumLevels)
 		{
@@ -310,11 +270,5 @@ public class MasterGM : MonoBehaviour
 		}
 
 		return isLast;
-	}
-
-	// loads next level in build list
-	public void GoToNextLevel()
-	{
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }
