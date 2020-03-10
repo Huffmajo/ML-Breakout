@@ -10,17 +10,17 @@ public class MainMenu : MonoBehaviour
 	// loads level select scene
 	public void level01()
 	{
-		SceneManager.LoadScene("Versus 02");
+		SceneManager.LoadScene("Versus01");
 	}
 
 	public void level02()
 	{
-		SceneManager.LoadScene("Versus 03");
+		SceneManager.LoadScene("Versus02");
 	}
 
 	public void level03()
 	{
-		SceneManager.LoadScene("Versus 04");
+		SceneManager.LoadScene("Versus03");
 	}
 
 
