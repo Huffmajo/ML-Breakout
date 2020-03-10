@@ -25,6 +25,7 @@ public class MasterGM : MonoBehaviour
 	public GameObject nextLevelButton;
 	public GameObject endGameUI;
 	public GameObject pauseGameUI;
+	public GameObject startGameUI;
 	public float currentTime;
 	public float finalTime;
 
@@ -89,8 +90,14 @@ public class MasterGM : MonoBehaviour
 
 	void Update()
 	{
+		// remove gameplay instructions once game begins
+		if (gameStarted && startGameUI.activeSelf)
+		{
+			startGameUI.SetActive(false);
+		}
+
 		// check for end game conditions
-		if (IsGameOver() && gameOver == false)	//is gameOver boolean redundant?
+		if (IsGameOver() && gameOver == false)	//is gameOver boolean redundant? gameOver bool makes sure this is only called once per gameover, not every frame after a game over :)
 		{
 			finalTime = currentTime;
 			gameOver = true;
