@@ -51,13 +51,13 @@ public class MasterGM : MonoBehaviour
 	{
 		//initialize all vars
 		currentTime = 0f;
-		gameStarted = false;
 		gameOver = false;
 		levelComplete = false;
 		getAllObjects();
 		initializeUI();
 		Time.timeScale = 0;
-
+		
+		gameStarted = false;//changed to true by player ball on first launch
 	}
 
 	void getAllObjects() 
@@ -114,7 +114,7 @@ public class MasterGM : MonoBehaviour
 				PlayerWins();
 			}
 		}
-		else if (!ballScript.firstLaunch)	//if not waiting on player to launch ball
+		else if (gameStarted)	//if player has done initial launch
 		{
 			// update UI information
 			GetUpdatesFromSubGMs();

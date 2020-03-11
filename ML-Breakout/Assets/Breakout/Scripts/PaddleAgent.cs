@@ -167,7 +167,7 @@ public class PaddleAgent : Agent
         AddVectorObs(ball.heldByPaddle);
 
 		//number of bricks
-		AddVectorObs(breakoutArea.brickList.Count);
+		AddVectorObs(bricksLeft);
 	
     }
 

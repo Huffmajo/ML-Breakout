@@ -66,7 +66,6 @@ public class PlayerGM : MonoBehaviour
 	{	
         FindObjectOfType<AudioManager>().Play("Death");
 		lives--;
-		ball.ResetBall();
 	}
 }
 

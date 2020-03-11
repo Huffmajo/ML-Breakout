@@ -63,6 +63,5 @@ public class AIGM : MonoBehaviour
 	{	
         FindObjectOfType<AudioManager>().Play("Death");
 		lives--;
-		aiBall.ResetBall();
 	}
 }

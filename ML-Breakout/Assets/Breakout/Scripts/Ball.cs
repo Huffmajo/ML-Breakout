@@ -1,84 +1,80 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿//using System.Collections;
+//using System.Collections.Generic;
 using UnityEngine;
 
 
 public class Ball : MonoBehaviour
 {
-	public bool training = false;
-	public float ballSpeed = 20f;
-	public Vector3 ballDirection;
-	public Vector3 ballVelocity;
+	// Game Objects
 	public GameObject paddle;
-	public float totalVelocity;
-	public bool heldByPaddle;
-	public float velocityAngle;
-	public Vector3 ballImpactVector;
-	public float launchAngle;
 	public PlayerGM gm;
 	public AIGM aiGM;
-	public bool AIBall;
 	private Rigidbody rb;
-	private Vector3 heldBallPosition;
-	public bool firstLaunch;
     private ParticleSystem ps;
 
+	// Variables
+	public bool firstLaunch;
+	public bool AIBall;
+	public bool heldByPaddle;
+	public bool training = false;
+	public float ballSpeed = 20f;
+	public float totalVelocity;
+	public float velocityAngle;
+	public float launchAngle;
 
-    // Start is called before the first frame update
+	// Vector3s
+	public Vector3 ballImpactVector;
+	public Vector3 ballVelocity;
+
+
     void Start()
     {
-    	// get ball rigidbody
+    	// get ball rigidbody and particle system
     	rb = GetComponent<Rigidbody>();
         ps = gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>();
         ps.Stop();
 
+		// firstLaunch is set to true to prevent game from starting before player launches the ball
 		if (training){
 			firstLaunch = false;
 		} else {
 			firstLaunch = true;
 		}
-
     	ResetBall();
     }
 
-    // Update is called once per frame
     void Update()
     {
     	// get input for ball release
     	bool releaseButton = Input.GetButtonDown("Jump");
 
-    	// track velocity for interactions with bricks and paddle
-        ballVelocity = rb.velocity;
-		totalVelocity = Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.y);
-
-        // get angle of ball's vector, 0-359°
-        velocityAngle = Mathf.Atan2(ballVelocity.y, ballVelocity.x) * Mathf.Rad2Deg;
-        if (velocityAngle < 0)
-        {
-        	velocityAngle += 360;
-        }
-
-    	// ball is held in front of paddle until released
     	if (heldByPaddle)
     	{
             // trail while held by paddle
             GetComponent<TrailRenderer>().Clear();
-
-    		heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
-    		transform.position = heldBallPosition;
+			//move ball with the paddle
+    		transform.position = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
 
     		// release ball from user input
     		if (releaseButton)
     		{
     			heldByPaddle = false;
-
-	    		// start ball moving
     	    	LaunchBall(ballSpeed, launchAngle);
     		}
     	}
-    	// otherwise ball is released and play is active
-    	else
+    	else //ball is in play
     	{
+			// track velocity for interactions with bricks and paddle
+			ballVelocity = rb.velocity;
+			totalVelocity = Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.y);
+
+			// get angle of ball's vector, 0-359°
+			velocityAngle = Mathf.Atan2(ballVelocity.y, ballVelocity.x) * Mathf.Rad2Deg;
+			if (velocityAngle < 0)
+			{
+				velocityAngle += 360;
+			}
+
     		// correct ball launch angle if too horizontal
     		if (BallAngleNeedFixing(velocityAngle))
     		{
@@ -87,6 +83,8 @@ public class Ball : MonoBehaviour
     		}
     	}
     }
+
+
 
     // ball bounces toward side of paddle hit, bounces as usual in center of paddle
     void OnCollisionEnter(Collision col)
@@ -98,14 +96,9 @@ public class Ball : MonoBehaviour
     			FindObjectOfType<AudioManager>().Play("Bounce");
     		}
 
-    		// get where ball hits paddle
-    		ContactPoint contact = col.contacts[0];
-    		Vector3 pos = contact.point;
-    		ballImpactVector = paddle.transform.InverseTransformPoint(pos); 
-
+    		// get impact vector, convert to launch angle, launch
+    		ballImpactVector = paddle.transform.InverseTransformPoint(col.contacts[0].point); 
 	    	launchAngle = CalculateLaunchAngle(ballImpactVector.x);
-
-	    	// launch ball at angle
     		LaunchBall(ballSpeed, launchAngle);
     	}
     	else if (col.gameObject.tag == "brick")
@@ -145,8 +138,10 @@ public class Ball : MonoBehaviour
 			else{
 				gm.LoseLife();
 			}
+			ResetBall();
         }
     }
+
 
     // resets local variables and location of the ball
     public void ResetBall()
@@ -155,18 +150,19 @@ public class Ball : MonoBehaviour
 
         // ball is docked to paddle
         heldByPaddle = true;
-        heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
-        transform.position = heldBallPosition;
+        transform.position = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
 
         // remove trail
         GetComponent<TrailRenderer>().Clear();
     }
+
 
     // returns launch angle based on where the paddle is impacted
     float CalculateLaunchAngle(float impactPos)
     {
     	return 90 - (12 * impactPos);
     }
+
 
     // launches ball at specified speed and angle
     public void LaunchBall(float speed, float angle)
@@ -183,6 +179,7 @@ public class Ball : MonoBehaviour
     	rb.velocity = new Vector3(xVelocity, yVelocity, 0f);
     }
 
+
     // check if ball's velocity angle is too horizontal 
     bool BallAngleNeedFixing(float angle)
     {
@@ -198,6 +195,7 @@ public class Ball : MonoBehaviour
     	
     	return needFix;
     }
+
 
     // return fixed ball velocity if angle is not vertical enough
     float FixBallAngle(float angle)
