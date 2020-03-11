@@ -15,12 +15,15 @@ public class MasterGM : MonoBehaviour
 	private Ball aiBallScript;
 	private GameObject paddle;
 	private GameObject aiPaddle;
-    public GameObject nextLevelButton;
-	public GameObject endGameUI;
-	public GameObject pauseGameUI;
 	public PlayerGM playerGM;
 	public AIGM aiGM;
 	
+	//UI objects
+    public GameObject nextLevelButton;
+	public GameObject endGameUI;
+	public GameObject pauseGameUI;
+	public GameObject startGameUI;
+
 	//Variables	
 	public bool gameStarted;
 	private bool gameOver;
@@ -93,6 +96,12 @@ public class MasterGM : MonoBehaviour
 
 	void Update()
 	{
+		// remove gameplay instructions once game begins
+		if (gameStarted && startGameUI.activeSelf)
+		{
+			startGameUI.SetActive(false);
+		}
+
 		// check for end game conditions
 		if (IsGameOver() && !gameOver)
 		{
