@@ -1,51 +1,43 @@
-using System.Collections;
+//using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MLAgents;
-using System;
+//using System;
 
 public class PaddleAgent : Agent
 {
-
+    // Game Objects
     public BreakoutArea breakoutArea;
-    public bool training;
     public List<Vector3> brickPositions;
 	public List<GameObject> bricks;
     public Ball ball;
-
+    
+    // Variables
+    public bool training;
     public float paddleXScale;
+    public float paddleSpeed = 20f;
+    public float xPosLimit;
+    public float xNegLimit;
+    public float horizontalInput;
+    public bool demo;
+	public int bricksLeft;
+	float ballYPos;
+	float paddleYPos;
 
+
+    // Rewards
     public float ballCollisionReward = 10f;
 	public float brickBreakReward = 5f;
 	public float ballDropPenalty = -5f;
 	public float ballHeldPenalty = -0.1f;
 
 
-    public float paddleSpeed = 20f;
-    public float xPosLimit;
-    public float xNegLimit;
-    public float horizontalInput;
-    public bool demo;
-
-	//brick observation/rewards
-
-	public int bricksPrev;
-	public int bricksNext;
-
-	//dropping ball obs + rewards
-	float ballYPos;
-	float paddleYPos;
-
-	// Start is called before the first frame update
 	void Start()
     {
         if (training)
-        {
-            //breakoutArea = GetComponentInParent<BreakoutArea>();
-            // take note of all the bricks in the scene
+        {   //get positions of all bricks from breakoutArea
             brickPositions = breakoutArea.brickPositions;
-            //bricks = breakoutArea.brickList;
-            bricksPrev = breakoutArea.brickList.Count;
+            bricksLeft = breakoutArea.brickList.Count;
         }
 
 		//get initial y values of paddle and ball
@@ -96,109 +88,22 @@ public class PaddleAgent : Agent
 
     public override void AgentAction(float[] vectorAction)
     {
-
-        // convert actions to axis values
-    /*
-        float release = vectorAction[0];
-        float leftOrRight = 0f;
-
-        
-        if (vectorAction[1] == 1f)
-        {
-            leftOrRight = -1f;
-        }
-        else if (vectorAction[1] == 2f)
-        {
-            leftOrRight = 1f;
-        }
-
-
-    */
+        // Set controls for agent
         int release = (int)vectorAction[0];
-
         int leftOrRight = (int)vectorAction[1];
-        // convert axis values to movement
-//		transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
-
-        if (leftOrRight == 0)
-        {
+        if (leftOrRight == 0) {
             transform.position += new Vector3(1 * Time.deltaTime * paddleSpeed, 0f, 0f);
-        }
-        else if (leftOrRight == 1)
-        {
+        } else if (leftOrRight == 1) {
             transform.position += new Vector3(-1 * Time.deltaTime * paddleSpeed, 0f, 0f);
-        }
-        else
-        {
+        } else {
             transform.position += new Vector3(0 * Time.deltaTime * paddleSpeed, 0f, 0f);
         }
     
-
         // restrict paddle movement to positive and negative limits
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
 
-        // release ball from paddle
-        if ((release == 1f && ball.heldByPaddle == true) || (demo && ball.heldByPaddle))
-        //if (release == 1 && ball.heldByPaddle)
-        {
-            ball.heldByPaddle = false;
-
-            // start ball moving
-            ball.LaunchBall(ball.ballSpeed, ball.launchAngle);
-        
-        }
-
         // small reward loss over time
         AddReward(-1f / agentParameters.maxStep);
-
-        //large reward for breaking a brick
-        //get number of bricks
-        //compare to previous number of bricks
-        //if number of bricks decreased add large reward
-        
-        if (training)
-        {
-            //bricks.Clear();
-            //bricks = breakoutArea.brickList;
-            bricksNext = breakoutArea.activeBricks;
-            // if (bricksNext < bricksPrev)
-            // {
-            //     if (bricksPrev == bricks.Count && bricksNext == 0)
-            //     {
-            //         if (Time.time > 0)
-            //         {
-            //             Debug.Log("All Bricks Broken!");            
-            //             //AddReward(completionAward);
-            //         }
-
-            //     }
-            //     else
-            //     {                
-            //         Debug.Log("brick break order error");
-            //         Debug.Log("prev: " + bricksPrev);
-            //         Debug.Log("next: " + bricksNext);
-            //         Debug.Log("bricks.count: " + bricks.Count);
-            //     }
-            // }
-            bricksPrev = bricksNext;
-        }
-        
-        //penalty for dropping ball
-        //get y position of ball
-        //get y position of paddle
-        //if ball is below paddle, small penalty
-        //mark as done
-        
-        paddleYPos = transform.position.y;
-        ballYPos = ball.transform.position.y;
-        if (ballYPos < paddleYPos)
-        {
-            //AddReward(ballDropPenalty);
-
-            //mark agent as done and reset
-            Done();
-        }
-        
 
         // penalty for holding ball
         if (ball.heldByPaddle)
@@ -206,7 +111,26 @@ public class PaddleAgent : Agent
             AddReward(ballHeldPenalty);
         }
 
-	}
+        // release ball from paddle
+        if ((release == 1f && ball.heldByPaddle == true) || (demo && ball.heldByPaddle))
+        {
+            ball.heldByPaddle = false;
+            ball.LaunchBall(ball.ballSpeed, ball.launchAngle);
+        }
+        
+        if (training)
+        {
+            bricksLeft = breakoutArea.activeBricks;
+        }
+    
+        // get ball and paddle positions
+        paddleYPos = transform.position.y;
+        ballYPos = ball.transform.position.y;
+        if (ballYPos < paddleYPos)
+        {
+            Done();
+        }
+    }
 
     public override void AgentReset()
     {
@@ -243,7 +167,7 @@ public class PaddleAgent : Agent
         AddVectorObs(ball.heldByPaddle);
 
 		//number of bricks
-		AddVectorObs(bricksPrev);
+		AddVectorObs(breakoutArea.brickList.Count);
 	
     }
 

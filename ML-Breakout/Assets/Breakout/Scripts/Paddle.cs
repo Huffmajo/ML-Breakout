@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Paddle : MonoBehaviour
 {
-
     public float paddleSpeed = 20f;
     public float xPosLimit;
     public float xNegLimit;
     public float horizontalInput;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         
