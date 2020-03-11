@@ -12866,14 +12866,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0560dad21017b4a4591f744d0563eb68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerGM: {fileID: 671064149828231803}
+  aiGM: {fileID: 1830298132}
   nextLevelButton: {fileID: 446227049}
   endGameUI: {fileID: 512881106}
   pauseGameUI: {fileID: 783968862}
   startGameUI: {fileID: 1918890426}
+  gameStarted: 0
   currentTime: 0
   finalTime: 0
-  playerGM: {fileID: 671064149828231803}
-  aiGM: {fileID: 1830298132}
   titleText: {fileID: 652840136}
   playerStats: {fileID: 916325610}
   aiStats: {fileID: 351236108}
@@ -12881,7 +12882,6 @@ MonoBehaviour:
   timerText: {fileID: 1525144996}
   scoreText: {fileID: 1699230698}
   crown: {fileID: 595075892}
-  gameStarted: 0
 --- !u!4 &1319347755
 Transform:
   m_ObjectHideFlags: 0
@@ -14355,8 +14355,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 11400000, guid: c18cd6509fd24a74b9c4b91a1889f516,
+      objectReference: {fileID: 11400000, guid: 025bceefe663bba41bbb47643b1268b1,
         type: 3}
+    - target: {fileID: 7054559768836287620, guid: 4281c959c852fc84a92fb2f26ab22bc8,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4281c959c852fc84a92fb2f26ab22bc8, type: 3}
 --- !u!4 &1487586487 stripped
