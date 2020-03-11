@@ -27,7 +27,6 @@ public class MasterGM : MonoBehaviour
 	//Variables	
 	public bool gameStarted;
 	private bool gameOver;
-	private bool levelComplete;
 	private int playerLives;
     private int aiLives;
 	private int bricksTotal;
@@ -55,7 +54,6 @@ public class MasterGM : MonoBehaviour
 		//initialize all vars
 		currentTime = 0f;
 		gameOver = false;
-		levelComplete = false;
 		getAllObjects();
 		initializeUI();
 		Time.timeScale = 0;
@@ -246,12 +244,9 @@ public class MasterGM : MonoBehaviour
 		crown.transform.localPosition = new Vector3(-360.0f, 90.0f, 0f);
 
 		// disable next level button if no more levels
-		if (IsLastLevel())
-		{
+		if (IsLastLevel()) {
 			nextLevelButton.SetActive(false);
-		}
-		else
-		{
+		} else {
 			nextLevelButton.SetActive(true);
 		}
 	}

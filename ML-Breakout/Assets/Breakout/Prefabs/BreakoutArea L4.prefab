@@ -104,18 +104,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &464436356382610306
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,18 +220,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &511629322442602911
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,20 +336,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &539558323295610188
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,20 +454,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &573165869048214313
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,20 +572,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &679915626229198647
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,18 +690,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &854590172294402476
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,18 +806,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &897073810373871735
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,18 +922,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &1005923534942610318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1148,6 @@ GameObject:
   - component: {fileID: 1061884156098737439}
   - component: {fileID: 7317776561773845242}
   - component: {fileID: 5310728741133087467}
-  - component: {fileID: 5102154150128557739}
   m_Layer: 0
   m_Name: Floor
   m_TagString: ground
@@ -1228,26 +1227,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5102154150128557739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196093785937425113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbfb2b0305dd4724288bcab2ccf368e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 114149399011207424, guid: 48f60ac4eafc4af48b96af0ebf175d98,
-    type: 3}
-  playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
-    type: 3}
-  aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  paddleAgent: {fileID: 2867360313308345293}
-  ball: {fileID: 3891196361584707885}
-  training: 1
 --- !u!1 &1291352260095356721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,20 +1365,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &1560108783654665733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,18 +1483,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &1562659643653056337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,18 +1707,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &2835064188987608323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,20 +1931,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &3133702883759049967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2070,20 +2049,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &3361634407344153284
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,18 +2167,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &3696238447570714597
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,20 +2374,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &3762455736923731997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2513,20 +2492,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &4074319690649134805
 GameObject:
   m_ObjectHideFlags: 0
@@ -2631,20 +2610,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &4149492516958965205
 GameObject:
   m_ObjectHideFlags: 0
@@ -2749,20 +2728,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &4339906071367142095
 GameObject:
   m_ObjectHideFlags: 0
@@ -2867,20 +2846,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &4640012198211529680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2985,18 +2964,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &4708009789364444283
 GameObject:
   m_ObjectHideFlags: 0
@@ -3101,20 +3080,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &4739333978571132725
 GameObject:
   m_ObjectHideFlags: 0
@@ -3219,20 +3198,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &4912620635972894892
 GameObject:
   m_ObjectHideFlags: 0
@@ -3428,20 +3407,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &5671664041780841564
 GameObject:
   m_ObjectHideFlags: 0
@@ -3546,18 +3525,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &5928339482552015345
 GameObject:
   m_ObjectHideFlags: 0
@@ -3754,20 +3733,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &5963237537072313481
 GameObject:
   m_ObjectHideFlags: 0
@@ -3872,18 +3851,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &5989693822991302315
 GameObject:
   m_ObjectHideFlags: 0
@@ -3988,20 +3967,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &6191366171813725177
 GameObject:
   m_ObjectHideFlags: 0
@@ -4214,20 +4193,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &6656247900015540045
 GameObject:
   m_ObjectHideFlags: 0
@@ -4332,20 +4311,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &6662374980457516357
 GameObject:
   m_ObjectHideFlags: 0
@@ -4450,20 +4429,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &6695208992088608230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4585,19 +4564,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c01240cccd17f4995e234dde2cd6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  training: 1
-  ballSpeed: 20
-  ballDirection: {x: 0, y: 0, z: 0}
-  ballVelocity: {x: 0, y: 0, z: 0}
   paddle: {fileID: 6992733597263282851}
-  totalVelocity: 0
-  heldByPaddle: 1
-  velocityAngle: 0
-  ballImpactVector: {x: 0, y: 0, z: 0}
-  launchAngle: 45
   gm: {fileID: 0}
   aiGM: {fileID: 0}
+  firstLaunch: 0
   AIBall: 0
+  heldByPaddle: 1
+  training: 1
+  ballSpeed: 20
+  totalVelocity: 0
+  velocityAngle: 0
+  launchAngle: 45
+  ballImpactVector: {x: 0, y: 0, z: 0}
+  ballVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &6699766796784252811
 GameObject:
   m_ObjectHideFlags: 0
@@ -4702,18 +4681,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &6841387913592431793
 GameObject:
   m_ObjectHideFlags: 0
@@ -4818,18 +4797,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &6992733597263282851
 GameObject:
   m_ObjectHideFlags: 0
@@ -4907,21 +4886,21 @@ MonoBehaviour:
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 1
   breakoutArea: {fileID: 1700435763823561474}
-  training: 1
   brickPositions: []
   bricks: []
   ball: {fileID: 3891196361584707885}
+  training: 1
   paddleXScale: 1
-  ballCollisionReward: 10
-  brickBreakReward: 1
-  ballDropPenalty: -3
-  ballHeldPenalty: -0.1
   paddleSpeed: 20
   xPosLimit: 11
   xNegLimit: -9
   horizontalInput: 0
-  bricksPrev: -1
-  bricksNext: -1
+  demo: 0
+  bricksLeft: 0
+  ballCollisionReward: 10
+  brickBreakReward: 1
+  ballDropPenalty: -3
+  ballHeldPenalty: -0.1
 --- !u!1 &7019517382441560660
 GameObject:
   m_ObjectHideFlags: 0
@@ -5026,18 +5005,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &7139763988405956715
 GameObject:
   m_ObjectHideFlags: 0
@@ -5142,20 +5121,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &7654252576534779828
 GameObject:
   m_ObjectHideFlags: 0
@@ -5260,20 +5239,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &7904110156415468349
 GameObject:
   m_ObjectHideFlags: 0
@@ -5378,18 +5357,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &8063362747465032965
 GameObject:
   m_ObjectHideFlags: 0
@@ -5443,10 +5422,8 @@ MonoBehaviour:
   currentReward: {fileID: 4731487505682090335}
   paddleAcademy: {fileID: 0}
   brickListContainer: {fileID: 1439745963314946676}
-  paddleXScale: 0
-  ballSpeed: 0
-  brickPositions: []
   brickList: []
+  brickPositions: []
   totalBricks: 0
   activeBricks: 0
 --- !u!1 &8148822913308054683
@@ -5553,18 +5530,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &8424797539643619594
 GameObject:
   m_ObjectHideFlags: 0
@@ -5669,20 +5646,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &8722541839312872308
 GameObject:
   m_ObjectHideFlags: 0
@@ -5787,18 +5764,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &8723189540708161265
 GameObject:
   m_ObjectHideFlags: 0
@@ -5903,18 +5880,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &8885267750720837360
 GameObject:
   m_ObjectHideFlags: 0
@@ -6019,18 +5996,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &8888343890737637610
 GameObject:
   m_ObjectHideFlags: 0
@@ -6135,20 +6112,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &9079563230391315363
 GameObject:
   m_ObjectHideFlags: 0
@@ -6253,20 +6230,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 2
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 0}
   aiGM: {fileID: 0}
-  counter: 0
-  points: 0
   colors:
   - {r: 0.2427701, g: 0.24163404, b: 0.2830189, a: 1}
   - {r: 0.4804646, g: 0.4804646, b: 0.5566038, a: 1}
   - {r: 0.629717, g: 0.629717, b: 0.8396226, a: 1}
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 2
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &9158399563482639366
 GameObject:
   m_ObjectHideFlags: 0
@@ -6371,18 +6348,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6eb88c7d476ea4395e1d0cc900aa7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollisions: 0
-  training: 1
   paddleAgent: {fileID: 2867360313308345293}
-  collisionCount: 0
+  breakoutArea: {fileID: 1700435763823561474}
   gm: {fileID: 0}
   playerGM: {fileID: 7906158548483930966, guid: 1c27d891c58d3754db7260f6b6eed664,
     type: 3}
   aiGM: {fileID: 663294472868498662, guid: ad37fa20f0040d84097bdedb1b710aea, type: 3}
-  counter: 0
-  points: 0
   colors: []
-  breakoutArea: {fileID: 1700435763823561474}
+  maxCollisions: 0
+  collisionCount: 0
+  colorIndex: 0
+  training: 1
+  points: 0
 --- !u!1 &9169263949502682413
 GameObject:
   m_ObjectHideFlags: 0

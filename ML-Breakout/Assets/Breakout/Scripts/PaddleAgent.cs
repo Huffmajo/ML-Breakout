@@ -102,34 +102,36 @@ public class PaddleAgent : Agent
         // restrict paddle movement to positive and negative limits
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
 
-        // small reward loss over time
-        AddReward(-1f / agentParameters.maxStep);
-
-        // penalty for holding ball
-        if (ball.heldByPaddle)
-        {
-            AddReward(ballHeldPenalty);
-        }
-
         // release ball from paddle
         if ((release == 1f && ball.heldByPaddle == true) || (demo && ball.heldByPaddle))
         {
             ball.heldByPaddle = false;
             ball.LaunchBall(ball.ballSpeed, ball.launchAngle);
         }
-        
+        // small reward loss over time
+        AddReward(-1f / agentParameters.maxStep);
+        // penalty for holding ball
+        if (ball.heldByPaddle)
+        {
+            AddReward(ballHeldPenalty);
+        }
         if (training)
         {
-            bricksLeft = breakoutArea.activeBricks;
+            bricksLeft = breakoutArea.activeBricks;        
+            
+
+
+
         }
     
         // get ball and paddle positions
-        paddleYPos = transform.position.y;
+/*/        paddleYPos = transform.position.y;
         ballYPos = ball.transform.position.y;
         if (ballYPos < paddleYPos)
         {
             Done();
         }
+*/
     }
 
     public override void AgentReset()

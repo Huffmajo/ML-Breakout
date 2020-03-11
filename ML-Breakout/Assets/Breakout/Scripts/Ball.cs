@@ -128,7 +128,7 @@ public class Ball : MonoBehaviour
         {
             // emit particles on death
             var emitParams = new ParticleSystem.EmitParams();
-            emitParams.startColor = Color.red;
+            emitParams.startColor = gameObject.GetComponent<Renderer>().material.color;
             emitParams.startSize = 0.5f;
             gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 30);
 
@@ -171,6 +171,7 @@ public class Ball : MonoBehaviour
 		{
 			Time.timeScale = 1;
 			firstLaunch = false;
+			gm.masterGM.aiGM.aiBall.firstLaunch = false;
 			gm.masterGM.gameStarted = true;
 		}
 

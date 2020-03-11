@@ -53,9 +53,6 @@ MonoBehaviour:
   currentReward: {fileID: 8736691405335089167}
   paddleAcademy: {fileID: 0}
   brickListContainer: {fileID: 8736691405309155403}
-  paddleXScale: 0
-  ballSpeed: 0
-  brickPositions: []
   brickList:
   - {fileID: 872738979187892636}
   - {fileID: 872738978778340209}
@@ -141,6 +138,7 @@ MonoBehaviour:
   - {fileID: 872738978735925278}
   - {fileID: 872738978126443362}
   - {fileID: 872738978339684501}
+  brickPositions: []
   totalBricks: 0
   activeBricks: 0
 --- !u!1 &8736691405309155400
@@ -541,7 +539,8 @@ PrefabInstance:
       propertyPath: ball
       value: 
       objectReference: {fileID: 9111044864890338734}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5453217464470672917, guid: e27bec92605756b44877538838cacf24, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e27bec92605756b44877538838cacf24, type: 3}
 --- !u!4 &8736691404114861832 stripped
 Transform:
