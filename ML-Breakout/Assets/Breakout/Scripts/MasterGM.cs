@@ -51,12 +51,13 @@ public class MasterGM : MonoBehaviour
 	{
 		//initialize all vars
 		currentTime = 0f;
+		gameStarted = false;
 		gameOver = false;
 		levelComplete = false;
 		getAllObjects();
 		initializeUI();
 		Time.timeScale = 0;
-		gameStarted = false;
+
 	}
 
 	void getAllObjects() 
@@ -93,9 +94,9 @@ public class MasterGM : MonoBehaviour
 	void Update()
 	{
 		// check for end game conditions
-		if (IsGameOver())
+		if (IsGameOver() && !gameOver)
 		{
-
+			gameOver = true;
 			//sets final time, disables ball/paddles, enables endgame UI
 			finalTime = currentTime;
 			Time.timeScale = 0;

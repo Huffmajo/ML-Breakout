@@ -1,71 +1,71 @@
-﻿using System.Collections;
+﻿//using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerGM : MonoBehaviour
 {
+	//Game Objects
 	public Paddle playerPaddle;
 	public Ball ball;
-
-	public int lives;
-	public int bricksLeft;
-
 	public List<GameObject> brickList;
 	public Transform brickListContainer;
-
-	private Vector3 paddleStartingPos;
-	public int playerScore;
 	public MasterGM masterGM;
+
+	//Variables
+	public int lives;
+	public int bricksLeft;
+	public int playerScore;	
+	private Vector3 paddleStartingPos;
+
+
 
     void Start()
     {
-    	// set player lives
+		// get game objects
+		if (brickListContainer == null){        
+			getBrickListContainer();
+		}
+	
+		// find each brick in the brickListContainer 
+		if (brickListContainer != null) {
+			foreach (Transform child in brickListContainer) {
+				brickList.Add(child.gameObject);
+			}
+		}
+	
+    	// set variables
     	lives = 3;
-
-    	// get paddle starting position for resets
     	paddleStartingPos = playerPaddle.transform.position;
-
-    	// get container of brick prefabs
-        brickListContainer = null;
-        Transform[] parentObjects = gameObject.GetComponentsInChildren<Transform>();
-
-        foreach (Transform child in parentObjects)
-        {
-        	if (child.tag == "BrickList")
-        	{
-        		brickListContainer = child;
-        	}
-        }
-
-        // find each brick in this 
-        if (brickListContainer != null)
-        {
-        	foreach (Transform child in brickListContainer)
-        	{
-        		brickList.Add(child.gameObject);
-        	}
-        }
-
-        // set number of bricks remaining
         bricksLeft = brickList.Count;
 		playerScore = 0;
     }
 
-    // called when player ball collides with a brick
+
+	void getBrickListContainer() {
+		//get this gameObject's transform for foreach traversal
+		Transform[] parentObjects = gameObject.GetComponentsInChildren<Transform>();
+
+		//find brickListContainer gameObject (empty gameObject that contains all bricks)
+		foreach (Transform child in parentObjects) {
+			if (child.tag == "BrickList") {
+				brickListContainer = child;
+			}
+		}
+	}
+
+
+    // when player ball breaks brick
     public void DecrementBrick(int brickPoints)
-    {
+    {	//dec bricksLeft and increase player score by passed in points from brick
     	bricksLeft--;
 		playerScore += brickPoints;
     }
 
-    // decrements lives and resets ball
+    // when player misses ball
 	public void LoseLife()
-	{
-		// big oof
+	{	
         FindObjectOfType<AudioManager>().Play("Death");
-
 		lives--;
-
 		ball.ResetBall();
 	}
 }

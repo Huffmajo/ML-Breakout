@@ -9,12 +9,12 @@ EditorBuildSettings:
     path: Assets/Breakout/Scenes/Main Menu.unity
     guid: dfe5dc23af4fdc642ac1bc6e76c04680
   - enabled: 1
-    path: Assets/Breakout/Scenes/Versus 02.unity
+    path: Assets/Breakout/Scenes/Versus01.unity
     guid: 8d5a9761f9ac5864499ff7f9a78c070b
   - enabled: 1
-    path: Assets/Breakout/Scenes/Versus 03.unity
+    path: Assets/Breakout/Scenes/Versus02.unity
     guid: e3b631791d442654b9c6ffba132de3dc
   - enabled: 1
-    path: Assets/Breakout/Scenes/Versus 04.unity
+    path: Assets/Breakout/Scenes/Versus03.unity
     guid: 46c829c604f59b042a8dd9dcaeea4c79
   m_configObjects: {}
