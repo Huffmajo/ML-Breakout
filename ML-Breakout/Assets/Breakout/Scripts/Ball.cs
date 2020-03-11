@@ -31,8 +31,12 @@ public class Ball : MonoBehaviour
     {
     	// get ball rigidbody and particle system
     	rb = GetComponent<Rigidbody>();
-        ps = gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>();
-        ps.Stop();
+
+        if (!training)
+        {
+            ps = gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>();
+            ps.Stop();
+        }
 
 		// firstLaunch is set to true to prevent game from starting before player launches the ball
 		if (training){
@@ -51,7 +55,11 @@ public class Ball : MonoBehaviour
     	if (heldByPaddle)
     	{
             // trail while held by paddle
-            GetComponent<TrailRenderer>().Clear();
+            if (!training)
+            {
+                GetComponent<TrailRenderer>().Clear();    
+            }
+            
 			//move ball with the paddle
     		transform.position = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
 
@@ -95,6 +103,10 @@ public class Ball : MonoBehaviour
     		{
     			FindObjectOfType<AudioManager>().Play("Bounce");
     		}
+            else
+            {
+                paddle.GetComponent<PaddleAgent>().AddReward(1f);
+            }
 
     		// get impact vector, convert to launch angle, launch
     		ballImpactVector = paddle.transform.InverseTransformPoint(col.contacts[0].point); 
@@ -126,19 +138,29 @@ public class Ball : MonoBehaviour
     	}
         else if (col.gameObject.tag == "ground")
         {
-            // emit particles on death
-            var emitParams = new ParticleSystem.EmitParams();
-            emitParams.startColor = gameObject.GetComponent<Renderer>().material.color;
-            emitParams.startSize = 0.5f;
-            gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 30);
+            if (!training)
+            {
+                // emit particles on death
+                var emitParams = new ParticleSystem.EmitParams();
+                emitParams.startColor = gameObject.GetComponent<Renderer>().material.color;
+                emitParams.startSize = 0.5f;
+                gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 30);
 
-			if (AIBall){
-				aiGM.LoseLife();
-			} 
-			else{
-				gm.LoseLife();
-			}
-			ResetBall();
+                if (AIBall)
+                {
+                    aiGM.LoseLife();
+                } 
+                else
+                {
+                    gm.LoseLife();
+                }
+
+                ResetBall();
+            }
+            else
+            {
+                paddle.GetComponent<PaddleAgent>().Done();
+            }
         }
     }
 
@@ -152,8 +174,11 @@ public class Ball : MonoBehaviour
         heldByPaddle = true;
         transform.position = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
 
-        // remove trail
-        GetComponent<TrailRenderer>().Clear();
+        if (!training)
+        {
+            // remove trail
+            GetComponent<TrailRenderer>().Clear();
+        }
     }
 
 
