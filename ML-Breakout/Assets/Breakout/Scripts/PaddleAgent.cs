@@ -15,9 +15,9 @@ public class PaddleAgent : Agent
 
     public float paddleXScale;
 
-    public float ballCollisionReward = 10f;
+    public float ballCollisionReward = 1f;
 	public float brickBreakReward = 5f;
-	public float ballDropPenalty = -5f;
+	public float ballDropPenalty = -1f;
 	public float ballHeldPenalty = -0.1f;
 
 
@@ -120,19 +120,20 @@ public class PaddleAgent : Agent
         // convert axis values to movement
 //		transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
 
-        if (leftOrRight == 0)
+        if ((int)vectorAction[1] == 0)
         {
-            transform.position += new Vector3(1 * Time.deltaTime * paddleSpeed, 0f, 0f);
+            leftOrRight = 0;
         }
-        else if (leftOrRight == 1)
+        else if ((int)vectorAction[1] == 1)
         {
-            transform.position += new Vector3(-1 * Time.deltaTime * paddleSpeed, 0f, 0f);
+            leftOrRight = 1;
         }
         else
         {
-            transform.position += new Vector3(0 * Time.deltaTime * paddleSpeed, 0f, 0f);
+            leftOrRight = -1;
         }
-    
+
+        transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
 
         // restrict paddle movement to positive and negative limits
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
@@ -149,7 +150,7 @@ public class PaddleAgent : Agent
         }
 
         // small reward loss over time
-        AddReward(-1f / agentParameters.maxStep);
+        //AddReward(-1f / agentParameters.maxStep);
 
         //large reward for breaking a brick
         //get number of bricks
@@ -160,7 +161,7 @@ public class PaddleAgent : Agent
         {
             //bricks.Clear();
             //bricks = breakoutArea.brickList;
-            bricksNext = breakoutArea.activeBricks;
+            //bricksNext = breakoutArea.activeBricks;
             // if (bricksNext < bricksPrev)
             // {
             //     if (bricksPrev == bricks.Count && bricksNext == 0)
@@ -180,7 +181,7 @@ public class PaddleAgent : Agent
             //         Debug.Log("bricks.count: " + bricks.Count);
             //     }
             // }
-            bricksPrev = bricksNext;
+            //bricksPrev = bricksNext;
         }
         
         //penalty for dropping ball
@@ -188,7 +189,7 @@ public class PaddleAgent : Agent
         //get y position of paddle
         //if ball is below paddle, small penalty
         //mark as done
-        
+/*
         paddleYPos = transform.position.y;
         ballYPos = ball.transform.position.y;
         if (ballYPos < paddleYPos)
@@ -198,14 +199,13 @@ public class PaddleAgent : Agent
             //mark agent as done and reset
             Done();
         }
-        
+*/        
 
         // penalty for holding ball
         if (ball.heldByPaddle)
         {
             AddReward(ballHeldPenalty);
         }
-
 	}
 
     public override void AgentReset()
@@ -219,16 +219,18 @@ public class PaddleAgent : Agent
     public override void CollectObservations()
     {
         // paddle position
-        AddVectorObs(transform.position);
+        AddVectorObs(transform.position.x);
+        AddVectorObs(transform.position.y);
 
         //get ball position
-        AddVectorObs(ball.transform.position);
+        AddVectorObs(ball.transform.position.x);
+        AddVectorObs(ball.transform.position.y);
 
         // distance to ball
-        AddVectorObs(Vector3.Distance(ball.transform.position, transform.position));
+//        AddVectorObs(Vector3.Distance(ball.transform.position, transform.position));
 
         // direction to ball
-        AddVectorObs((ball.transform.position - transform.position).normalized);
+//        AddVectorObs((ball.transform.position - transform.position).normalized);
 
         // ball movement direction
         // may want to normalize with:
@@ -237,7 +239,7 @@ public class PaddleAgent : Agent
         Vector3 normalized = rotation.eulerAngles / 180.0f - Vector3.one;  // [-1,1]
         Vector3 normalized = rotation.eulerAngles / 360.0f;  // [0,1]
         */
-        AddVectorObs(ball.velocityAngle);
+        AddVectorObs(ball.velocityAngle/360f);
 
         // if ball is held
         AddVectorObs(ball.heldByPaddle);

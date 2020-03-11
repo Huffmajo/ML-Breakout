@@ -29,13 +29,14 @@ public class Ball : MonoBehaviour
     {
     	// get ball rigidbody
     	rb = GetComponent<Rigidbody>();
-        ps = gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>();
-        ps.Stop();
+        
 
 		if (training){
 			firstLaunch = false;
 		} else {
 			firstLaunch = true;
+            ps = gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>();
+            ps.Stop();
 		}
 
     	ResetBall();
@@ -61,8 +62,11 @@ public class Ball : MonoBehaviour
     	// ball is held in front of paddle until released
     	if (heldByPaddle)
     	{
-            // trail while held by paddle
-            GetComponent<TrailRenderer>().Clear();
+            if (!training)
+            {
+                // trail while held by paddle
+                GetComponent<TrailRenderer>().Clear();
+            }
 
     		heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
     		transform.position = heldBallPosition;
@@ -97,6 +101,10 @@ public class Ball : MonoBehaviour
     		{
     			FindObjectOfType<AudioManager>().Play("Bounce");
     		}
+            else
+            {
+                paddle.GetComponent<PaddleAgent>().AddReward(1f);
+            }
 
     		// get where ball hits paddle
     		ContactPoint contact = col.contacts[0];
@@ -133,18 +141,21 @@ public class Ball : MonoBehaviour
     	}
         else if (col.gameObject.tag == "ground")
         {
-            // emit particles on death
-            var emitParams = new ParticleSystem.EmitParams();
-            emitParams.startColor = Color.red;
-            emitParams.startSize = 0.5f;
-            gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 30);
+            if (!training)
+            {
+                // emit particles on death
+                var emitParams = new ParticleSystem.EmitParams();
+                emitParams.startColor = Color.red;
+                emitParams.startSize = 0.5f;
+                gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 30);
 
-			if (AIBall){
-				aiGM.LoseLife();
-			} 
-			else{
-				gm.LoseLife();
-			}
+                if (AIBall){
+                    aiGM.LoseLife();
+                } 
+                else{
+                    gm.LoseLife();
+                }
+            }
         }
     }
 
@@ -152,14 +163,18 @@ public class Ball : MonoBehaviour
     public void ResetBall()
     {
     	launchAngle = 45f;
+        //launchAngle = Random.Range(45f, 135f);
 
         // ball is docked to paddle
         heldByPaddle = true;
         heldBallPosition = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
         transform.position = heldBallPosition;
 
-        // remove trail
-        GetComponent<TrailRenderer>().Clear();
+        if (!training)
+        {
+            // remove trail
+            GetComponent<TrailRenderer>().Clear();
+        }
     }
 
     // returns launch angle based on where the paddle is impacted

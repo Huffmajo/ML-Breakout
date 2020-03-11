@@ -313,9 +313,9 @@ My Behavior:
     summary_freq: 2000
     time_horizon: 128
     num_epoch: 6
-    batch_size: 512
-    buffer_size: 4096
+    batch_size: 128
+    buffer_size: 2048
     hidden_units: 128
     beta: 1.0e-2
-    max_steps: 4.0e6
+    max_steps: 5.0e4
     num_layers: 2
