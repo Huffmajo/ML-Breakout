@@ -90,6 +90,7 @@ public class PaddleAgent : Agent
     {
         // Set controls for agent
         int release = (int)vectorAction[0];
+/*
         int leftOrRight;
         if ((int)vectorAction[1] == 0)
         {
@@ -101,6 +102,16 @@ public class PaddleAgent : Agent
         }
     
         transform.position += new Vector3(leftOrRight * Time.deltaTime * paddleSpeed, 0f, 0f);
+*/
+
+        int leftOrRight = (int)vectorAction[1];
+        if (leftOrRight == 0) {
+            transform.position += new Vector3(1 * Time.deltaTime * paddleSpeed, 0f, 0f);
+        } else if (leftOrRight == 1) {
+            transform.position += new Vector3(-1 * Time.deltaTime * paddleSpeed, 0f, 0f);
+        } else {
+            transform.position += new Vector3(0 * Time.deltaTime * paddleSpeed, 0f, 0f);
+        }
 
         // restrict paddle movement to positive and negative limits
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
@@ -124,12 +135,13 @@ public class PaddleAgent : Agent
         {
             bricksLeft = breakoutArea.activeBricks;        
         }
-
+/*
         // small reward for holding still
-        if (leftOrRight == 0)
+        if (leftOrRight > 1 && !ball.heldByPaddle)
         {
-            AddReward(0.01f);
+            AddReward(0.001f);
         }
+*/
     }
 
     public override void AgentReset()
