@@ -21,6 +21,7 @@ public class PaddleAgent : Agent
     public float horizontalInput;
     public bool demo;
 	public int bricksLeft;
+    public int deathCounter;
 	float ballYPos;
 	float paddleYPos;
 
@@ -29,7 +30,7 @@ public class PaddleAgent : Agent
     public float ballCollisionReward = 10f;
 	public float brickBreakReward = 5f;
 	public float ballDropPenalty = -5f;
-	public float ballHeldPenalty = -0.1f;
+	public float ballHeldPenalty = -0.3f;
 
 
 	void Start()
@@ -38,6 +39,7 @@ public class PaddleAgent : Agent
         {   //get positions of all bricks from breakoutArea
             brickPositions = breakoutArea.brickPositions;
             bricksLeft = breakoutArea.brickList.Count;
+            deathCounter = 0;
         }
 
 		//get initial y values of paddle and ball
@@ -103,7 +105,7 @@ public class PaddleAgent : Agent
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
 
         // release ball from paddle
-        if ((release == 1f && ball.heldByPaddle == true) || (demo && ball.heldByPaddle))
+        if ((release == 1 && ball.heldByPaddle == true) || (demo && ball.heldByPaddle))
         {
             ball.heldByPaddle = false;
             ball.LaunchBall(ball.ballSpeed, ball.launchAngle);
@@ -115,23 +117,26 @@ public class PaddleAgent : Agent
         {
             AddReward(ballHeldPenalty);
         }
+
         if (training)
         {
             bricksLeft = breakoutArea.activeBricks;        
-            
-
-
-
         }
     
         // get ball and paddle positions
-/*/        paddleYPos = transform.position.y;
+        paddleYPos = transform.position.y;
         ballYPos = ball.transform.position.y;
         if (ballYPos < paddleYPos)
         {
+
+            deathCounter++;
+
+        }
+
+        if (deathCounter >= 2 || GetCumulativeReward() < -100f){
+            deathCounter = 0;
             Done();
         }
-*/
     }
 
     public override void AgentReset()
