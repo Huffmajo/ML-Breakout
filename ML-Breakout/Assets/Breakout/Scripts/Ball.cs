@@ -214,7 +214,9 @@ public class Ball : MonoBehaviour
     	if  ((angle < 30) ||
     		(angle > 150 && angle <= 180) ||
     		(angle > 180 && angle <= 210) ||
-    		(angle > 330))
+    		(angle > 330) ||
+            (angle > 85 && angle <= 95) ||
+            (angle > 265 && angle <= 275))
     	{
     		needFix = true;
     	}
@@ -232,6 +234,14 @@ public class Ball : MonoBehaviour
     	{
     		fixedAngle = 30;
     	}
+        else if (angle > 85 && angle < 90)
+        {
+            fixedAngle = 85;
+        }
+        else if (angle >= 90 && angle <= 95)
+        {
+            fixedAngle = 96;
+        }
     	else if (angle > 150 && angle <= 180)
     	{
     		fixedAngle = 150;
@@ -240,6 +250,14 @@ public class Ball : MonoBehaviour
     	{
    			fixedAngle = 210;
    		}
+        else if (angle > 265 && angle < 270)
+        {
+            fixedAngle = 265;
+        }
+        else if (angle >= 270 && angle <= 275)
+        {
+            fixedAngle = 276;
+        }
    		else if (angle > 330)
    		{    		
    			fixedAngle = 330;
