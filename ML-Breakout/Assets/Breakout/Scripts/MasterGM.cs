@@ -257,6 +257,7 @@ public class MasterGM : MonoBehaviour
 
 	public void GoToMainMenu() {
 		SceneManager.LoadScene("Main Menu");
+        Time.timeScale = 1;
 	}
 
 	public void GoToNextLevel() {
