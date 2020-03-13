@@ -29,6 +29,15 @@ public class Ball : MonoBehaviour
 
     void Start()
     {
+    	// get ball rigidbody and particle system
+    	rb = GetComponent<Rigidbody>();
+
+        if (!training)
+        {
+            ps = gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>();
+            ps.Stop();
+        }
+
 		// firstLaunch is set to true to prevent game from starting before player launches the ball
 		if (training){
 			firstLaunch = false;
@@ -53,9 +62,12 @@ public class Ball : MonoBehaviour
     	if (heldByPaddle)
     	{
             // trail while held by paddle
-            if (!training) {
-				GetComponent<TrailRenderer>().Clear();
-			}
+
+            if (!training)
+            {
+                GetComponent<TrailRenderer>().Clear();    
+            }
+
 			//move ball with the paddle
     		transform.position = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
 
@@ -99,6 +111,10 @@ public class Ball : MonoBehaviour
     		{
     			FindObjectOfType<AudioManager>().Play("Bounce");
     		}
+            else
+            {
+                paddle.GetComponent<PaddleAgent>().AddReward(1f);
+            }
 
     		// get impact vector, convert to launch angle, launch
     		ballImpactVector = paddle.transform.InverseTransformPoint(col.contacts[0].point); 
@@ -130,23 +146,30 @@ public class Ball : MonoBehaviour
     	}
         else if (col.gameObject.tag == "ground")
         {
-			if (!training)
-			{
-				// emit particles on death
-				var emitParams = new ParticleSystem.EmitParams();
-				emitParams.startColor = gameObject.GetComponent<Renderer>().material.color;
-				emitParams.startSize = 0.5f;
-				gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 30);
-				if (AIBall){
-					aiGM.LoseLife();
-				} 
-				else{
-					gm.LoseLife();
-				}
-			
-			}
 
-			ResetBall();
+            if (!training)
+            {
+                // emit particles on death
+                var emitParams = new ParticleSystem.EmitParams();
+                emitParams.startColor = gameObject.GetComponent<Renderer>().material.color;
+                emitParams.startSize = 0.5f;
+                gameObject.transform.Find("Particle System").GetComponent<ParticleSystem>().Emit(emitParams, 30);
+
+                if (AIBall)
+                {
+                    aiGM.LoseLife();
+                } 
+                else
+                {
+                    gm.LoseLife();
+                }
+
+                ResetBall();
+            }
+            else
+            {
+                paddle.GetComponent<PaddleAgent>().Done();
+            }
         }
     }
 
@@ -160,10 +183,11 @@ public class Ball : MonoBehaviour
         heldByPaddle = true;
         transform.position = new Vector3(paddle.transform.position.x, paddle.transform.position.y + 2, paddle.transform.position.z);
 
-		if (!training){
-			// remove trail
-			GetComponent<TrailRenderer>().Clear();
-		}
+        if (!training)
+        {
+            // remove trail
+            GetComponent<TrailRenderer>().Clear();
+        }
     }
 
 
@@ -199,7 +223,9 @@ public class Ball : MonoBehaviour
     	if  ((angle < 30) ||
     		(angle > 150 && angle <= 180) ||
     		(angle > 180 && angle <= 210) ||
-    		(angle > 330))
+    		(angle > 330) ||
+            (angle > 85 && angle <= 95) ||
+            (angle > 265 && angle <= 275))
     	{
     		needFix = true;
     	}
@@ -217,6 +243,14 @@ public class Ball : MonoBehaviour
     	{
     		fixedAngle = 30;
     	}
+        else if (angle > 85 && angle < 90)
+        {
+            fixedAngle = 85;
+        }
+        else if (angle >= 90 && angle <= 95)
+        {
+            fixedAngle = 96;
+        }
     	else if (angle > 150 && angle <= 180)
     	{
     		fixedAngle = 150;
@@ -225,6 +259,14 @@ public class Ball : MonoBehaviour
     	{
    			fixedAngle = 210;
    		}
+        else if (angle > 265 && angle < 270)
+        {
+            fixedAngle = 265;
+        }
+        else if (angle >= 270 && angle <= 275)
+        {
+            fixedAngle = 276;
+        }
    		else if (angle > 330)
    		{    		
    			fixedAngle = 330;

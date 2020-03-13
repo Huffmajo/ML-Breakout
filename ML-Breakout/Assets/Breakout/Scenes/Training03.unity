@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -184,6 +184,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2867360313308345293, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: agentParameters.maxStep
+      value: 8000
+      objectReference: {fileID: 0}
     - target: {fileID: 4731487505682090335, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -203,6 +208,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8063362747465032965, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
@@ -283,6 +298,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2867360313308345293, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: agentParameters.maxStep
+      value: 8000
+      objectReference: {fileID: 0}
     - target: {fileID: 4731487505682090335, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -302,6 +322,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8063362747465032965, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
@@ -382,6 +412,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2867360313308345293, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: agentParameters.maxStep
+      value: 8000
+      objectReference: {fileID: 0}
     - target: {fileID: 4731487505682090335, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -401,6 +436,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8063362747465032965, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
@@ -481,6 +526,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2867360313308345293, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: agentParameters.maxStep
+      value: 8000
+      objectReference: {fileID: 0}
     - target: {fileID: 4731487505682090335, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -500,6 +550,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8063362747465032965, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
@@ -580,6 +640,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2867360313308345293, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: agentParameters.maxStep
+      value: 8000
+      objectReference: {fileID: 0}
     - target: {fileID: 4731487505682090335, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -599,6 +664,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8063362747465032965, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
@@ -679,6 +754,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2867360313308345293, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: agentParameters.maxStep
+      value: 8000
+      objectReference: {fileID: 0}
     - target: {fileID: 4731487505682090335, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -698,6 +778,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8063362747465032965, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
@@ -929,6 +1019,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2867360313308345293, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: agentParameters.maxStep
+      value: 8000
+      objectReference: {fileID: 0}
     - target: {fileID: 4731487505682090335, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -948,6 +1043,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8063362747465032965, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
@@ -1028,6 +1133,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2867360313308345293, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: agentParameters.maxStep
+      value: 8000
+      objectReference: {fileID: 0}
     - target: {fileID: 4731487505682090335, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1047,6 +1157,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859597353489181828, guid: 2f8905eaa4703f44889a188710474c38,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8063362747465032965, guid: 2f8905eaa4703f44889a188710474c38,
         type: 3}

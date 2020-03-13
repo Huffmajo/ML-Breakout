@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using MLAgents;
-//using System;
 
 public class PaddleAgent : Agent
 {
@@ -93,6 +92,7 @@ public class PaddleAgent : Agent
         // Set controls for agent
         int release = (int)vectorAction[0];
         int leftOrRight = (int)vectorAction[1];
+
         if (leftOrRight == 0) {
             transform.position += new Vector3(1 * Time.deltaTime * paddleSpeed, 0f, 0f);
         } else if (leftOrRight == 1) {
@@ -100,7 +100,7 @@ public class PaddleAgent : Agent
         } else {
             transform.position += new Vector3(0 * Time.deltaTime * paddleSpeed, 0f, 0f);
         }
-    
+
         // restrict paddle movement to positive and negative limits
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xNegLimit, xPosLimit), transform.position.y, transform.position.z);
 
@@ -110,8 +110,7 @@ public class PaddleAgent : Agent
             ball.heldByPaddle = false;
             ball.LaunchBall(ball.ballSpeed, ball.launchAngle);
         }
-        // small reward loss over time
-        AddReward(-1f / agentParameters.maxStep);
+
         // penalty for holding ball
         if (ball.heldByPaddle)
         {
@@ -121,21 +120,6 @@ public class PaddleAgent : Agent
         if (training)
         {
             bricksLeft = breakoutArea.activeBricks;        
-        }
-    
-        // get ball and paddle positions
-        paddleYPos = transform.position.y;
-        ballYPos = ball.transform.position.y;
-        if (ballYPos < paddleYPos)
-        {
-
-            deathCounter++;
-
-        }
-
-        if (deathCounter >= 2 || GetCumulativeReward() < -100f){
-            deathCounter = 0;
-            Done();
         }
     }
 
@@ -150,32 +134,18 @@ public class PaddleAgent : Agent
     public override void CollectObservations()
     {
         // paddle position
-        AddVectorObs(transform.position);
+        AddVectorObs(transform.position.x);
+        AddVectorObs(transform.position.y);
 
         //get ball position
-        AddVectorObs(ball.transform.position);
-
-        // distance to ball
-        AddVectorObs(Vector3.Distance(ball.transform.position, transform.position));
-
-        // direction to ball
-        AddVectorObs((ball.transform.position - transform.position).normalized);
+        AddVectorObs(ball.transform.position.x);
+        AddVectorObs(ball.transform.position.y);
 
         // ball movement direction
-        // may want to normalize with:
-        /*
-        Quaternion rotation = transform.rotation;
-        Vector3 normalized = rotation.eulerAngles / 180.0f - Vector3.one;  // [-1,1]
-        Vector3 normalized = rotation.eulerAngles / 360.0f;  // [0,1]
-        */
-        AddVectorObs(ball.velocityAngle);
+        AddVectorObs(ball.velocityAngle/360f);
 
         // if ball is held
         AddVectorObs(ball.heldByPaddle);
-
-		//number of bricks
-		AddVectorObs(bricksLeft);
-	
     }
 
     // BUG: not adding reward

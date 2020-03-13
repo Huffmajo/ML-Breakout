@@ -568,12 +568,12 @@ PrefabInstance:
     - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -131.84557
+      value: -131.95444
       objectReference: {fileID: 0}
     - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 628.6879
+      value: 641.6879
       objectReference: {fileID: 0}
     - target: {fileID: 1739627893379913042, guid: 4281c959c852fc84a92fb2f26ab22bc8,
         type: 3}
@@ -3854,17 +3854,32 @@ PrefabInstance:
         type: 3}
       propertyPath: paddleAgent
       value: 
-      objectReference: {fileID: 4452859988216146587}
+      objectReference: {fileID: 0}
     - target: {fileID: 1388733740163500826, guid: a97449194bf81964e82bdaa852f9c9b5,
         type: 3}
       propertyPath: training
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1388733740163500826, guid: a97449194bf81964e82bdaa852f9c9b5,
         type: 3}
       propertyPath: breakoutArea
       value: 
-      objectReference: {fileID: 8736691405185512033}
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388733740163500826, guid: a97449194bf81964e82bdaa852f9c9b5,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388733740163500826, guid: a97449194bf81964e82bdaa852f9c9b5,
+        type: 3}
+      propertyPath: playerGM
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388733740163500826, guid: a97449194bf81964e82bdaa852f9c9b5,
+        type: 3}
+      propertyPath: aiGM
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1989428944145716255, guid: a97449194bf81964e82bdaa852f9c9b5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5587,15 +5602,20 @@ PrefabInstance:
       propertyPath: training
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 526386256933971417, guid: 24dde7feade7fe8428deb6e199bb18ce,
+        type: 3}
+      propertyPath: heldByPaddle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 526386256933971418, guid: 24dde7feade7fe8428deb6e199bb18ce,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -131.84557
+      value: -131.95444
       objectReference: {fileID: 0}
     - target: {fileID: 526386256933971418, guid: 24dde7feade7fe8428deb6e199bb18ce,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 630.6179
+      value: 643.6879
       objectReference: {fileID: 0}
     - target: {fileID: 526386256933971418, guid: 24dde7feade7fe8428deb6e199bb18ce,
         type: 3}
