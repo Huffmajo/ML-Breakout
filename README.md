@@ -10,11 +10,11 @@ A compiled version of the ML-Breakout game called Machine Learning Breakout.exe 
 #### Controls
 The menus are navigated with the mouse while the paddle can be controlled by keyboard or gamepad with the controls seen below.
 ##### Keyboard
-- Paddle movement: A/D or Left arrow/Right arrow
-- Start game/Launch ball: Spacebar
+- **Paddle movement:** A/D or Left arrow/Right arrow
+- **Start game/Launch ball:** Spacebar
 ##### Gamepad
-- Start game/Launch ball: Left analog stick
-- Paddle movement: Y/Triangle
+- **Paddle movement:** Left analog stick
+- **Start game/Launch ball:** Y/Triangle 
 
 ### The Process
 #### ML Agents Workflow
